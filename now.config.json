@@ -1,0 +1,6 @@
+{
+  "scope": "x_maf_core",
+  "scopeId": "4bf84d8fdd7d46a9ac225ce71bdb76b2",
+  "name": "Maturity Assessment Framework",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}

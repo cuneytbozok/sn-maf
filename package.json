@@ -1,0 +1,23 @@
+{
+  "name": "maf-core",
+  "version": "1.9.5",
+  "description": "Generic, pack-based maturity assessment framework for ServiceNow.",
+  "license": "UNLICENSED",
+  "imports": {
+    "#now:*": "./@types/servicenow/fluent/*/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs && node scripts/verify-metric-weights.mjs && node scripts/verify-platform-health-pack.mjs",
+    "build": "npx now-sdk build",
+    "deploy": "npx now-sdk install --async",
+    "deploy:full": "npx now-sdk clean && npx now-sdk build && npx now-sdk install --reinstall --async",
+    "deploy:reinstall": "npx now-sdk install --reinstall --async",
+    "transform": "npx now-sdk transform",
+    "types": "npx now-sdk dependencies"
+  },
+  "devDependencies": {
+    "@servicenow/glide": "27.0.5",
+    "@servicenow/sdk": "4.5.0",
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,36 @@
+import { Record } from '@servicenow/sdk/core'
+
+Record({
+    $id: Now.ID['f1f269a7834c03105f67c9a6feaad392'],
+    table: 'par_dashboard_user_metadata',
+    data: {
+        cache_expiration_time: '0',
+        created_by_user: '6816f79cc0a8016401c5a33be04be441',
+        created_on: '2026-04-10 17:23:25',
+        dashboard: '75f269a7834c03105f67c9a6feaad38a',
+        edit_locked:
+            '{"sysId":"6816f79cc0a8016401c5a33be04be441","name":"System Administrator","avatar":"a5d3c898c3222010ae17dd981840dd8b.iix?t=small","lockedOn":"1775843006354"}',
+        enable_data_cache: 'false',
+        include_custom_insights: 'true',
+        include_key_contributors: 'true',
+        include_kpi_signals: 'true',
+        include_predictive_target: 'true',
+        include_predictive_thresholds: 'true',
+        include_process_mining: 'true',
+        include_severity: 'true',
+        include_target: 'true',
+        include_thresholds: 'true',
+        include_trends: 'true',
+        include_widget_notification: 'true',
+        last_updated_on: '2026-04-10 17:23:25',
+        refresh_information: 'false',
+        refresh_interval: '-1',
+        schedule_repetition: 'false',
+        show_insights_panel: 'true',
+        sys_domain: 'global',
+        sys_domain_path: '/',
+        updated_by_user: '6816f79cc0a8016401c5a33be04be441',
+        use_custom_tab_colors: 'false',
+        widgets_margin: '$now-global-space--sm',
+    },
+})
