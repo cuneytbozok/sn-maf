@@ -204,27 +204,56 @@ UiAction({
     name: 'Execute Run',
     actionName: 'maf_execute_run',
     active: true,
+    client: {
+        isClient: true,
+        isUi11Compatible: true,
+        isUi16Compatible: true,
+        onClick: 'maf_execute_run_client',
+    },
     form: {
         showButton: true,
         style: 'primary',
     },
     workspace: {
         clientScriptV2: `function onClick(g_form) {
-
+  if (!g_form.isNewRecord()) {
+    return;
+  }
+  var actionName = 'maf_execute_run';
+  function runServerAction() {
+    g_form.submit(actionName);
+  }
+  var saveResult = g_form.save();
+  if (saveResult && typeof saveResult.then === 'function') {
+    saveResult.then(runServerAction);
+  } else {
+    runServerAction();
+  }
+  return false;
 }`,
         showFormButtonV2: true,
         isConfigurableWorkspace: true,
     },
     messages: [],
     condition: "current.state == 'draft'",
-    script: `var runner = new MAFAssessmentRunner();
-var ok = runner.run(current.getUniqueValue());
-if (ok) {
-  gs.addInfoMessage('Run started');
-} else {
-  gs.addErrorMessage('Could not start the assessment run.');
+    script: `function maf_execute_run_client() {
+  if (!g_form.isNewRecord()) {
+    return true;
+  }
+  gsftSubmit(null, g_form.getFormElement(), 'maf_execute_run');
+  return false;
 }
-action.setRedirectURL(current);`,
+
+if (typeof window === 'undefined') {
+  var runner = new MAFAssessmentRunner();
+  var ok = runner.run(current.getUniqueValue());
+  if (ok) {
+    gs.addInfoMessage('Run started');
+  } else {
+    gs.addErrorMessage('Could not start the assessment run.');
+  }
+  action.setRedirectURL(current);
+}`,
     hint: 'Collect metrics, score categories, and generate AI summary in the background.',
     showUpdate: true,
     showInsert: true,

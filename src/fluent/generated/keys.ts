@@ -3855,6 +3855,26 @@ declare global {
                         table: 'x_maf_core_category'
                         id: '0fba3b1c31f946419e4a4b79f57abe9e'
                     }
+                    maf_seed_change_custom_risk_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'a5cd1101dfaf495e86519fe0b208c8d5'
+                    }
+                    maf_seed_change_custom_state_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'aa45d6ccdb0644b68a07c7afe224612a'
+                    }
+                    maf_seed_change_pir_completion_rate: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '6646d80df1364f378487d9ad4811a68e'
+                    }
+                    maf_seed_change_rollback_rate: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '1b9d3bdbf36f46f3a4c6aeb65adde826'
+                    }
+                    maf_seed_change_schedule_adherence: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'cd6ef37cc1e44131bb85c3eb9018a636'
+                    }
                     maf_seed_cmdb1_problem_ci_linked: {
                         table: 'x_maf_core_metric_definition'
                         id: '3db6550f31f74297b9a3e02460e417de'
@@ -3890,6 +3910,10 @@ declare global {
                     maf_seed_i3_incident_reassignment_low: {
                         table: 'x_maf_core_metric_definition'
                         id: '7f666ab42ec2429581c2683d43481717'
+                    }
+                    maf_seed_incident_custom_state_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '5e53b253bc0c4a97b75de0121167c8d8'
                     }
                     maf_seed_k1_kb_article_freshness: {
                         table: 'x_maf_core_metric_definition'
@@ -4087,6 +4111,10 @@ declare global {
                         table: 'x_maf_core_metric_definition'
                         id: 'cfdfb95b3cef4af18c9058090dd2573d'
                     }
+                    maf_seed_problem_custom_state_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '2c94930e308847cbbdb9273ee38f9e5a'
+                    }
                     maf_seed_r1_sla_attainment_ritm: {
                         table: 'x_maf_core_metric_definition'
                         id: 'e805634d5257491988f4053dad76dceb'
@@ -4098,6 +4126,14 @@ declare global {
                     maf_seed_r3_ritm_approval_cycle_time: {
                         table: 'x_maf_core_metric_definition'
                         id: '7838987e7dc14434bb2f452f4d0acb42'
+                    }
+                    maf_seed_request_custom_stage_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'b8c42b25a3304f3182865c359bbafda3'
+                    }
+                    maf_seed_ritm_custom_stage_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '89ebb31c36954dfd8c431bb50d767f6e'
                     }
                     maf_seed_sub_itsm_automation_reuse: {
                         table: 'x_maf_core_sub_category'
@@ -4134,6 +4170,18 @@ declare global {
                     maf_seed_sub_itsm_process_governance: {
                         table: 'x_maf_core_sub_category'
                         id: '2df42d32924b467b9c2e708130cbd965'
+                    }
+                    maf_seed_task_custom_impact_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '50ce7113355f414683549281c52e1163'
+                    }
+                    maf_seed_task_custom_priority_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '90d2fd5432ec434398aa3e70d36aeaf4'
+                    }
+                    maf_seed_task_custom_urgency_values: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '6975b19d7d17465f8a4fe1f2720bc197'
                     }
                     maf_si_ai_summary_provider: {
                         table: 'sys_script_include'

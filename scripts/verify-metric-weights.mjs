@@ -12,7 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const SEED = path.join(__dirname, '../src/fluent/data/itsm-pack-seed.now.ts')
 
 /** ITSM pack — expected rows in `itsm-pack-seed.now.ts` (active scoring vs retired). */
-const EXPECTED_ACTIVE_METRICS = 75
+const EXPECTED_ACTIVE_METRICS = 87
 const EXPECTED_INACTIVE_METRICS = 2
 
 const CATEGORY_SEED_IDS = [
