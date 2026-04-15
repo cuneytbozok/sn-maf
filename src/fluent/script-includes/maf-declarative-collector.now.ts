@@ -2,7 +2,7 @@ import '@servicenow/sdk/global'
 import { ScriptInclude } from '@servicenow/sdk/core'
 
 export const mafDeclarativeCollector = ScriptInclude({
-    $id: Now.ID['maf_si_declarative_collector'],
+    $id: Now.ID['4b9e0123c5d6457890e1f2a3b4c5d6e7'],
     name: 'MAFDeclarativeCollector',
     description: 'Declarative GlideAggregate collector for MAF (PRD §6.2).',
     accessibleFrom: 'package_private',

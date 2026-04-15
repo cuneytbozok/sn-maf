@@ -2,7 +2,7 @@ import '@servicenow/sdk/global'
 import { ScriptInclude } from '@servicenow/sdk/core'
 
 export const mafAssessmentRunner = ScriptInclude({
-    $id: Now.ID['maf_si_assessment_runner'],
+    $id: Now.ID['2e543e5493c948c9b67893ecea62ba86'],
     name: 'MAFAssessmentRunner',
     description: 'Orchestrates MAF assessment runs (sync + GlideScriptedProgressWorker), PRD §6.3.',
     accessibleFrom: 'package_private',

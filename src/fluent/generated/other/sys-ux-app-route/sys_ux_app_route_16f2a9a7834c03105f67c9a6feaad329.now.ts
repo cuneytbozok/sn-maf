@@ -4,7 +4,7 @@ Record({
     $id: Now.ID['16f2a9a7834c03105f67c9a6feaad329'],
     table: 'sys_ux_app_route',
     data: {
-        app_config: '02dc36706f01011089060168e25b3691',
+        app_config: '6fc21ed6cd3c496194fa8afdb8836da1',
         interoperable: 'false',
         name: 'Overview',
         order: '0',

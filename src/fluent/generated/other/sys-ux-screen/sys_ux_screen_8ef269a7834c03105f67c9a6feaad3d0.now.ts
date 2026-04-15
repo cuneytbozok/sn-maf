@@ -5,7 +5,7 @@ Record({
     table: 'sys_ux_screen',
     data: {
         active: true,
-        app_config: '02dc36706f01011089060168e25b3691',
+        app_config: '6fc21ed6cd3c496194fa8afdb8836da1',
         disable_auto_reflow: false,
         disable_interoperable: 'false',
         event_mappings: '[]',

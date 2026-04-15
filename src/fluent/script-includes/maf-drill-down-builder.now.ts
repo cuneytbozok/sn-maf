@@ -2,7 +2,7 @@ import '@servicenow/sdk/global'
 import { ScriptInclude } from '@servicenow/sdk/core'
 
 export const mafDrillDownBuilder = ScriptInclude({
-    $id: Now.ID['maf_si_drill_down_builder'],
+    $id: Now.ID['cee341954662484e8e6d737341dd667c'],
     name: 'MAFDrillDownBuilder',
     description: 'Builds global table list URLs for metric drill-down (PRD §13.2).',
     accessibleFrom: 'package_private',

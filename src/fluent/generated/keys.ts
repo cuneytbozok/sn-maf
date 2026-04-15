@@ -5,6 +5,10 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    '02d0552383c803105f67c9a6feaad325': {
+                        table: 'sys_scope_privilege'
+                        id: '02d0552383c803105f67c9a6feaad325'
+                    }
                     '02e29ccf838043105f67c9a6feaad3a8': {
                         table: 'sys_scope_privilege'
                         id: '02e29ccf838043105f67c9a6feaad3a8'
@@ -20,6 +24,22 @@ declare global {
                         id: '03230307834883105f67c9a6feaad334'
                         deleted: true
                     }
+                    '033489a8558d40e68d86bdfb43476a09': {
+                        table: 'sys_security_acl'
+                        id: '033489a8558d40e68d86bdfb43476a09'
+                    }
+                    '0364fdf783cc83105f67c9a6feaad346': {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad346'
+                    }
+                    '0364fdf783cc83105f67c9a6feaad34d': {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad34d'
+                    }
+                    '0364fdf783cc83105f67c9a6feaad354': {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad354'
+                    }
                     '042cfa43830883105f67c9a6feaad3e4': {
                         table: 'sys_scope_privilege'
                         id: '042cfa43830883105f67c9a6feaad3e4'
@@ -30,10 +50,34 @@ declare global {
                         id: '0439306783c403105f67c9a6feaad330'
                         deleted: true
                     }
+                    '04e6767b83c4c3105f67c9a6feaad339': {
+                        table: 'sys_ui_element'
+                        id: '04e6767b83c4c3105f67c9a6feaad339'
+                    }
+                    '05c09def838803105f67c9a6feaad37d': {
+                        table: 'sys_scope_privilege'
+                        id: '05c09def838803105f67c9a6feaad37d'
+                    }
+                    '0630fe873f334dab8701915144fa7252': {
+                        table: 'sys_ux_screen_type'
+                        id: '0630fe873f334dab8701915144fa7252'
+                    }
+                    '066f2b29020f438cb8cb63b89e0a452c': {
+                        table: 'sys_security_acl'
+                        id: '066f2b29020f438cb8cb63b89e0a452c'
+                    }
                     '06e29ccf838043105f67c9a6feaad3a4': {
                         table: 'sys_scope_privilege'
                         id: '06e29ccf838043105f67c9a6feaad3a4'
                         deleted: true
+                    }
+                    '06f269a7834c03105f67c9a6feaad3c8': {
+                        table: 'sys_ux_macroponent'
+                        id: '06f269a7834c03105f67c9a6feaad3c8'
+                    }
+                    '0718293140516e6f708192a3b4c5d6e7': {
+                        table: 'sys_properties'
+                        id: '0718293140516e6f708192a3b4c5d6e7'
                     }
                     '07230307834883105f67c9a6feaad360': {
                         table: 'sys_scope_privilege'
@@ -55,20 +99,60 @@ declare global {
                         id: '075236cb838483105f67c9a6feaad3b1'
                         deleted: true
                     }
+                    '0764fdf783cc83105f67c9a6feaad344': {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad344'
+                    }
+                    '0764fdf783cc83105f67c9a6feaad34b': {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad34b'
+                    }
+                    '0764fdf783cc83105f67c9a6feaad352': {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad352'
+                    }
                     '07dce78b838c83105f67c9a6feaad36d': {
                         table: 'sys_scope_privilege'
                         id: '07dce78b838c83105f67c9a6feaad36d'
                         deleted: true
+                    }
+                    '08e6767b83c4c3105f67c9a6feaad337': {
+                        table: 'sys_ui_element'
+                        id: '08e6767b83c4c3105f67c9a6feaad337'
                     }
                     '09738d23834803105f67c9a6feaad351': {
                         table: 'sys_scope_privilege'
                         id: '09738d23834803105f67c9a6feaad351'
                         deleted: true
                     }
+                    '09c09def838803105f67c9a6feaad371': {
+                        table: 'sys_scope_privilege'
+                        id: '09c09def838803105f67c9a6feaad371'
+                    }
                     '0aa77b478300c3105f67c9a6feaad329': {
                         table: 'sys_scope_privilege'
                         id: '0aa77b478300c3105f67c9a6feaad329'
                         deleted: true
+                    }
+                    '0ab01def838803105f67c9a6feaad377': {
+                        table: 'sys_scope_privilege'
+                        id: '0ab01def838803105f67c9a6feaad377'
+                    }
+                    '0b49c10d43bb4ce69525f41ac1e38e82': {
+                        table: 'sys_properties'
+                        id: '0b49c10d43bb4ce69525f41ac1e38e82'
+                    }
+                    '0b64fdf783cc83105f67c9a6feaad342': {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad342'
+                    }
+                    '0b64fdf783cc83105f67c9a6feaad349': {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad349'
+                    }
+                    '0b64fdf783cc83105f67c9a6feaad350': {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad350'
                     }
                     '0c39306783c403105f67c9a6feaad313': {
                         table: 'sys_scope_privilege'
@@ -79,6 +163,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '0c39306783c403105f67c9a6feaad374'
                         deleted: true
+                    }
+                    '0ce6767b83c4c3105f67c9a6feaad335': {
+                        table: 'sys_ui_element'
+                        id: '0ce6767b83c4c3105f67c9a6feaad335'
                     }
                     '0db7bb478300c3105f67c9a6feaad389': {
                         table: 'sys_scope_privilege'
@@ -100,6 +188,30 @@ declare global {
                         id: '0ee29ccf838043105f67c9a6feaad392'
                         deleted: true
                     }
+                    '0ef269a7834c03105f67c9a6feaad3a9': {
+                        table: 'sys_ux_screen_type'
+                        id: '0ef269a7834c03105f67c9a6feaad3a9'
+                    }
+                    '0f64fdf783cc83105f67c9a6feaad340': {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad340'
+                    }
+                    '0f64fdf783cc83105f67c9a6feaad347': {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad347'
+                    }
+                    '0f64fdf783cc83105f67c9a6feaad34e': {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad34e'
+                    }
+                    '0f64fdf783cc83105f67c9a6feaad355': {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad355'
+                    }
+                    '0fabd9a7830c03105f67c9a6feaad31a': {
+                        table: 'sys_scope_privilege'
+                        id: '0fabd9a7830c03105f67c9a6feaad31a'
+                    }
                     '0fdce78b838c83105f67c9a6feaad38f': {
                         table: 'sys_scope_privilege'
                         id: '0fdce78b838c83105f67c9a6feaad38f'
@@ -114,6 +226,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '11738d23834803105f67c9a6feaad375'
                         deleted: true
+                    }
+                    '11928a7220894d7db24696b9e764cded': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '11928a7220894d7db24696b9e764cded'
+                    }
+                    '12547b0543714e0fb422e74dd7a31c2d': {
+                        table: 'sys_ux_app_route'
+                        id: '12547b0543714e0fb422e74dd7a31c2d'
                     }
                     '12a77b478300c3105f67c9a6feaad349': {
                         table: 'sys_scope_privilege'
@@ -140,6 +260,19 @@ declare global {
                         id: '15cc638b838c83105f67c9a6feaad371'
                         deleted: true
                     }
+                    '15f9bd204dac4b94a8cac1a2fcd444dc': {
+                        table: 'sys_security_acl'
+                        id: '15f9bd204dac4b94a8cac1a2fcd444dc'
+                    }
+                    '1687fabb83c4c3105f67c9a6feaad3e5': {
+                        table: 'sys_ui_section'
+                        id: '1687fabb83c4c3105f67c9a6feaad3e5'
+                    }
+                    '16b336b904a247b7b067c42b756c8973': {
+                        table: 'sys_app_module'
+                        id: '16b336b904a247b7b067c42b756c8973'
+                        deleted: true
+                    }
                     '16c737878300c3105f67c9a6feaad39c': {
                         table: 'sys_scope_privilege'
                         id: '16c737878300c3105f67c9a6feaad39c'
@@ -148,6 +281,15 @@ declare global {
                     '16f2100383c043105f67c9a6feaad369': {
                         table: 'sys_scope_privilege'
                         id: '16f2100383c043105f67c9a6feaad369'
+                        deleted: true
+                    }
+                    '16f2a9a7834c03105f67c9a6feaad329': {
+                        table: 'sys_ux_app_route'
+                        id: '16f2a9a7834c03105f67c9a6feaad329'
+                    }
+                    '16f454f602204aa382828f9ccbffd012': {
+                        table: 'sys_app_module'
+                        id: '16f454f602204aa382828f9ccbffd012'
                         deleted: true
                     }
                     '17d44127834803105f67c9a6feaad36f': {
@@ -160,10 +302,26 @@ declare global {
                         id: '1839306783c403105f67c9a6feaad39b'
                         deleted: true
                     }
+                    '18cfdf5eb7ef4e47911b0299dc277b7b': {
+                        table: 'sys_security_acl'
+                        id: '18cfdf5eb7ef4e47911b0299dc277b7b'
+                    }
+                    '1925fbb9abd74314afc834bc2b4550b5': {
+                        table: 'sys_script_include'
+                        id: '1925fbb9abd74314afc834bc2b4550b5'
+                    }
+                    '19854d40e72e480cab2b1f8f7d724463': {
+                        table: 'sys_ux_list'
+                        id: '19854d40e72e480cab2b1f8f7d724463'
+                    }
                     '1ac737878300c3105f67c9a6feaad3a3': {
                         table: 'sys_scope_privilege'
                         id: '1ac737878300c3105f67c9a6feaad3a3'
                         deleted: true
+                    }
+                    '1ae3ad417ea74836a2247fd094c7801d': {
+                        table: 'sys_ux_macroponent'
+                        id: '1ae3ad417ea74836a2247fd094c7801d'
                     }
                     '1b1cfa43830883105f67c9a6feaad305': {
                         table: 'sys_scope_privilege'
@@ -175,6 +333,10 @@ declare global {
                         id: '1b230307834883105f67c9a6feaad3eb'
                         deleted: true
                     }
+                    '1b6e7b6f66574dedb8ea432df02fce52': {
+                        table: 'sys_security_acl'
+                        id: '1b6e7b6f66574dedb8ea432df02fce52'
+                    }
                     '1ba17f0783cc83105f67c9a6feaad3c6': {
                         table: 'sys_ui_element'
                         id: '1ba17f0783cc83105f67c9a6feaad3c6'
@@ -183,6 +345,15 @@ declare global {
                     '1c39306783c403105f67c9a6feaad3a0': {
                         table: 'sys_scope_privilege'
                         id: '1c39306783c403105f67c9a6feaad3a0'
+                        deleted: true
+                    }
+                    '1cba2141fda54dadbed5e1f19e189132': {
+                        table: 'sys_security_acl'
+                        id: '1cba2141fda54dadbed5e1f19e189132'
+                    }
+                    '1cfcd19f7bb24ab5bddb7d8b2983c6f3': {
+                        table: 'sys_app_application'
+                        id: '1cfcd19f7bb24ab5bddb7d8b2983c6f3'
                         deleted: true
                     }
                     '1d738d23834803105f67c9a6feaad3be': {
@@ -210,6 +381,19 @@ declare global {
                         id: '1fa17f0783cc83105f67c9a6feaad3c3'
                         deleted: true
                     }
+                    '20a0faacc67147989de84391917569c4': {
+                        table: 'sys_app_module'
+                        id: '20a0faacc67147989de84391917569c4'
+                        deleted: true
+                    }
+                    '2117b1905b6d45eb9c6a4bf1b0d37b22': {
+                        table: 'sys_ux_screen'
+                        id: '2117b1905b6d45eb9c6a4bf1b0d37b22'
+                    }
+                    '21236ab38344c3105f67c9a6feaad324': {
+                        table: 'sys_ui_element'
+                        id: '21236ab38344c3105f67c9a6feaad324'
+                    }
                     '2163a4c3834443105f67c9a6feaad3f9': {
                         table: 'sys_scope_privilege'
                         id: '2163a4c3834443105f67c9a6feaad3f9'
@@ -220,10 +404,22 @@ declare global {
                         id: '2193c563834803105f67c9a6feaad363'
                         deleted: true
                     }
+                    '21b01def838803105f67c9a6feaad310': {
+                        table: 'sys_scope_privilege'
+                        id: '21b01def838803105f67c9a6feaad310'
+                    }
                     '21dca78b838c83105f67c9a6feaad3cc': {
                         table: 'sys_scope_privilege'
                         id: '21dca78b838c83105f67c9a6feaad3cc'
                         deleted: true
+                    }
+                    '2227fe7b83c4c3105f67c9a6feaad342': {
+                        table: 'sys_ui_element'
+                        id: '2227fe7b83c4c3105f67c9a6feaad342'
+                    }
+                    '233c952b830c03105f67c9a6feaad3e0': {
+                        table: 'sys_scope_privilege'
+                        id: '233c952b830c03105f67c9a6feaad3e0'
                     }
                     '23b7bf478300c3105f67c9a6feaad3e6': {
                         table: 'sys_scope_privilege'
@@ -234,6 +430,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '23bc238b838c83105f67c9a6feaad3ce'
                         deleted: true
+                    }
+                    '25236ab38344c3105f67c9a6feaad322': {
+                        table: 'sys_ui_element'
+                        id: '25236ab38344c3105f67c9a6feaad322'
                     }
                     '2563a4c3834443105f67c9a6feaad3eb': {
                         table: 'sys_scope_privilege'
@@ -255,6 +455,26 @@ declare global {
                         id: '25a73b478300c3105f67c9a6feaad377'
                         deleted: true
                     }
+                    '25b0d9ef838803105f67c9a6feaad3d8': {
+                        table: 'sys_scope_privilege'
+                        id: '25b0d9ef838803105f67c9a6feaad3d8'
+                    }
+                    '25b0d9ef838803105f67c9a6feaad3f4': {
+                        table: 'sys_scope_privilege'
+                        id: '25b0d9ef838803105f67c9a6feaad3f4'
+                    }
+                    '2627189397814be4a0318212825b125c': {
+                        table: 'sys_security_acl'
+                        id: '2627189397814be4a0318212825b125c'
+                    }
+                    '2627fe7b83c4c3105f67c9a6feaad340': {
+                        table: 'sys_ui_element'
+                        id: '2627fe7b83c4c3105f67c9a6feaad340'
+                    }
+                    '2627fe7b83c4c3105f67c9a6feaad347': {
+                        table: 'sys_ui_element'
+                        id: '2627fe7b83c4c3105f67c9a6feaad347'
+                    }
                     '271cfa43830883105f67c9a6feaad37f': {
                         table: 'sys_scope_privilege'
                         id: '271cfa43830883105f67c9a6feaad37f'
@@ -265,6 +485,10 @@ declare global {
                         id: '271cfa43830883105f67c9a6feaad383'
                         deleted: true
                     }
+                    '273c952b830c03105f67c9a6feaad3dc': {
+                        table: 'sys_scope_privilege'
+                        id: '273c952b830c03105f67c9a6feaad3dc'
+                    }
                     '2839706783c403105f67c9a6feaad319': {
                         table: 'sys_scope_privilege'
                         id: '2839706783c403105f67c9a6feaad319'
@@ -274,6 +498,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '2839706783c403105f67c9a6feaad336'
                         deleted: true
+                    }
+                    '29232ab38344c3105f67c9a6feaad3af': {
+                        table: 'sys_ui_section'
+                        id: '29232ab38344c3105f67c9a6feaad3af'
+                    }
+                    '29236ab38344c3105f67c9a6feaad320': {
+                        table: 'sys_ui_element'
+                        id: '29236ab38344c3105f67c9a6feaad320'
                     }
                     '2963e4c3834443105f67c9a6feaad313': {
                         table: 'sys_scope_privilege'
@@ -295,6 +527,30 @@ declare global {
                         id: '29a73b478300c3105f67c9a6feaad381'
                         deleted: true
                     }
+                    '29b01def838803105f67c9a6feaad304': {
+                        table: 'sys_scope_privilege'
+                        id: '29b01def838803105f67c9a6feaad304'
+                    }
+                    '29b01def838803105f67c9a6feaad31c': {
+                        table: 'sys_scope_privilege'
+                        id: '29b01def838803105f67c9a6feaad31c'
+                    }
+                    '29b0d9ef838803105f67c9a6feaad3cf': {
+                        table: 'sys_scope_privilege'
+                        id: '29b0d9ef838803105f67c9a6feaad3cf'
+                    }
+                    '29d0152383c803105f67c9a6feaad3b5': {
+                        table: 'sys_scope_privilege'
+                        id: '29d0152383c803105f67c9a6feaad3b5'
+                    }
+                    '2a27fe7b83c4c3105f67c9a6feaad33e': {
+                        table: 'sys_ui_element'
+                        id: '2a27fe7b83c4c3105f67c9a6feaad33e'
+                    }
+                    '2a27fe7b83c4c3105f67c9a6feaad345': {
+                        table: 'sys_ui_element'
+                        id: '2a27fe7b83c4c3105f67c9a6feaad345'
+                    }
                     '2b1cfa43830883105f67c9a6feaad323': {
                         table: 'sys_scope_privilege'
                         id: '2b1cfa43830883105f67c9a6feaad323'
@@ -305,10 +561,18 @@ declare global {
                         id: '2b1cfa43830883105f67c9a6feaad328'
                         deleted: true
                     }
+                    '2b517d7383cc83105f67c9a6feaad32b': {
+                        table: 'sys_script_include'
+                        id: '2b517d7383cc83105f67c9a6feaad32b'
+                    }
                     '2b7a782b83c403105f67c9a6feaad3ce': {
                         table: 'sys_scope_privilege'
                         id: '2b7a782b83c403105f67c9a6feaad3ce'
                         deleted: true
+                    }
+                    '2bb01def838803105f67c9a6feaad3b3': {
+                        table: 'sys_scope_privilege'
+                        id: '2bb01def838803105f67c9a6feaad3b3'
                     }
                     '2bbc238b838c83105f67c9a6feaad3c1': {
                         table: 'sys_scope_privilege'
@@ -330,6 +594,27 @@ declare global {
                         id: '2c430523834803105f67c9a6feaad378'
                         deleted: true
                     }
+                    '2c75a3723e044ce2a639dd134e9273d7': {
+                        table: 'sys_ux_list'
+                        id: '2c75a3723e044ce2a639dd134e9273d7'
+                    }
+                    '2c7a72b540474fe88635d888ea27a10c': {
+                        table: 'sys_security_acl'
+                        id: '2c7a72b540474fe88635d888ea27a10c'
+                    }
+                    '2cb0a1e826014bd287378c1b11da7565': {
+                        table: 'sys_app_module'
+                        id: '2cb0a1e826014bd287378c1b11da7565'
+                        deleted: true
+                    }
+                    '2d236ab38344c3105f67c9a6feaad325': {
+                        table: 'sys_ui_element'
+                        id: '2d236ab38344c3105f67c9a6feaad325'
+                    }
+                    '2d6327496e15449d973c219d88fd8031': {
+                        table: 'sys_ux_list'
+                        id: '2d6327496e15449d973c219d88fd8031'
+                    }
                     '2d63a4c3834443105f67c9a6feaad3f2': {
                         table: 'sys_scope_privilege'
                         id: '2d63a4c3834443105f67c9a6feaad3f2'
@@ -340,15 +625,47 @@ declare global {
                         id: '2d738d23834803105f67c9a6feaad3db'
                         deleted: true
                     }
+                    '2dd0152383c803105f67c9a6feaad3ac': {
+                        table: 'sys_scope_privilege'
+                        id: '2dd0152383c803105f67c9a6feaad3ac'
+                    }
+                    '2de7a75daf8f4292b9bf79ee6aa876a8': {
+                        table: 'sys_script_include'
+                        id: '2de7a75daf8f4292b9bf79ee6aa876a8'
+                    }
+                    '2e27fe7b83c4c3105f67c9a6feaad343': {
+                        table: 'sys_ui_element'
+                        id: '2e27fe7b83c4c3105f67c9a6feaad343'
+                    }
+                    '2e543e5493c948c9b67893ecea62ba86': {
+                        table: 'sys_script_include'
+                        id: '2e543e5493c948c9b67893ecea62ba86'
+                    }
+                    '2eb1872c12694791992c756cee0ebd9c': {
+                        table: 'sys_security_acl'
+                        id: '2eb1872c12694791992c756cee0ebd9c'
+                    }
                     '2f1cfa43830883105f67c9a6feaad361': {
                         table: 'sys_scope_privilege'
                         id: '2f1cfa43830883105f67c9a6feaad361'
                         deleted: true
                     }
+                    '2f9272dbcbe24d5d8fed81c022a756e9': {
+                        table: 'sys_ux_list'
+                        id: '2f9272dbcbe24d5d8fed81c022a756e9'
+                    }
                     '2fbc238b838c83105f67c9a6feaad3a5': {
                         table: 'sys_scope_privilege'
                         id: '2fbc238b838c83105f67c9a6feaad3a5'
                         deleted: true
+                    }
+                    '2fbcf0ee4d9140faad8dcac6aacb3836': {
+                        table: 'sys_security_acl'
+                        id: '2fbcf0ee4d9140faad8dcac6aacb3836'
+                    }
+                    '30115e8d835043105f67c9a6feaad357': {
+                        table: 'sys_ux_page_property'
+                        id: '30115e8d835043105f67c9a6feaad357'
                     }
                     '30834163834803105f67c9a6feaad31d': {
                         table: 'sys_scope_privilege'
@@ -364,6 +681,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '31a73b478300c3105f67c9a6feaad3a7'
                         deleted: true
+                    }
+                    '31c83e7f83c4c3105f67c9a6feaad369': {
+                        table: 'sys_ui_element'
+                        id: '31c83e7f83c4c3105f67c9a6feaad369'
                     }
                     '321a3ce783c403105f67c9a6feaad349': {
                         table: 'sys_scope_privilege'
@@ -395,6 +716,10 @@ declare global {
                         id: '35a73b478300c3105f67c9a6feaad3cf'
                         deleted: true
                     }
+                    '35c83e7f83c4c3105f67c9a6feaad367': {
+                        table: 'sys_ui_element'
+                        id: '35c83e7f83c4c3105f67c9a6feaad367'
+                    }
                     '361a3ce783c403105f67c9a6feaad345': {
                         table: 'sys_scope_privilege'
                         id: '361a3ce783c403105f67c9a6feaad345'
@@ -415,6 +740,22 @@ declare global {
                         id: '3759f46783c403105f67c9a6feaad3ef'
                         deleted: true
                     }
+                    '37c8aac2a3f0482898958bd79a8d202f': {
+                        table: 'sys_ux_screen_type'
+                        id: '37c8aac2a3f0482898958bd79a8d202f'
+                    }
+                    '383c67d6f0c644d8899de6d7aa4ed25a': {
+                        table: 'par_dashboard_widget'
+                        id: '383c67d6f0c644d8899de6d7aa4ed25a'
+                    }
+                    '39c83e7f83c4c3105f67c9a6feaad365': {
+                        table: 'sys_ui_element'
+                        id: '39c83e7f83c4c3105f67c9a6feaad365'
+                    }
+                    '39c83e7f83c4c3105f67c9a6feaad36c': {
+                        table: 'sys_ui_element'
+                        id: '39c83e7f83c4c3105f67c9a6feaad36c'
+                    }
                     '3a1a3ce783c403105f67c9a6feaad338': {
                         table: 'sys_scope_privilege'
                         id: '3a1a3ce783c403105f67c9a6feaad338'
@@ -424,6 +765,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '3a23cfc3834883105f67c9a6feaad3d9'
                         deleted: true
+                    }
+                    '3a8f9012b4c3456789d0e1f2a3b4c5d6': {
+                        table: 'sys_script_include'
+                        id: '3a8f9012b4c3456789d0e1f2a3b4c5d6'
                     }
                     '3b09f82783c403105f67c9a6feaad37e': {
                         table: 'sys_ux_form_action_layout_item'
@@ -435,6 +780,14 @@ declare global {
                         id: '3b1cfa43830883105f67c9a6feaad3b8'
                         deleted: true
                     }
+                    '3c1b7c34e6234475b19e6350ea37dcc8': {
+                        table: 'sys_ux_list'
+                        id: '3c1b7c34e6234475b19e6350ea37dcc8'
+                    }
+                    '3c574bbb8348c3105f67c9a6feaad3c8': {
+                        table: 'sys_ux_form_action_layout_item'
+                        id: '3c574bbb8348c3105f67c9a6feaad3c8'
+                    }
                     '3c738d23834803105f67c9a6feaad30a': {
                         table: 'sys_scope_privilege'
                         id: '3c738d23834803105f67c9a6feaad30a'
@@ -444,6 +797,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '3c738d23834803105f67c9a6feaad30e'
                         deleted: true
+                    }
+                    '3d128bccd5474991a1ea15fad473d49f': {
+                        table: 'sys_script'
+                        id: '3d128bccd5474991a1ea15fad473d49f'
                     }
                     '3d9cf3038340c3105f67c9a6feaad3be': {
                         table: 'sys_ui_related_list_entry'
@@ -455,15 +812,51 @@ declare global {
                         id: '3da73b478300c3105f67c9a6feaad3c2'
                         deleted: true
                     }
+                    '3db01def838803105f67c9a6feaad367': {
+                        table: 'sys_scope_privilege'
+                        id: '3db01def838803105f67c9a6feaad367'
+                    }
                     '3dc7f3878300c3105f67c9a6feaad3a5': {
                         table: 'sys_scope_privilege'
                         id: '3dc7f3878300c3105f67c9a6feaad3a5'
                         deleted: true
                     }
+                    '3dc83e7f83c4c3105f67c9a6feaad363': {
+                        table: 'sys_ui_element'
+                        id: '3dc83e7f83c4c3105f67c9a6feaad363'
+                    }
+                    '3dc83e7f83c4c3105f67c9a6feaad36a': {
+                        table: 'sys_ui_element'
+                        id: '3dc83e7f83c4c3105f67c9a6feaad36a'
+                    }
+                    '3dd0552383c803105f67c9a6feaad317': {
+                        table: 'sys_scope_privilege'
+                        id: '3dd0552383c803105f67c9a6feaad317'
+                    }
                     '3e23cfc3834883105f67c9a6feaad3f8': {
                         table: 'sys_scope_privilege'
                         id: '3e23cfc3834883105f67c9a6feaad3f8'
                         deleted: true
+                    }
+                    '3e47c3bb8348c3105f67c9a6feaad3c6': {
+                        table: 'sys_ux_form_action'
+                        id: '3e47c3bb8348c3105f67c9a6feaad3c6'
+                    }
+                    '3e58ee6901bc4d6a893c2ceea214597f': {
+                        table: 'sys_ux_screen'
+                        id: '3e58ee6901bc4d6a893c2ceea214597f'
+                    }
+                    '3e5c1d2b830c03105f67c9a6feaad321': {
+                        table: 'sys_ui_element'
+                        id: '3e5c1d2b830c03105f67c9a6feaad321'
+                    }
+                    '3e5cd92b830c03105f67c9a6feaad321': {
+                        table: 'sys_ui_section'
+                        id: '3e5cd92b830c03105f67c9a6feaad321'
+                    }
+                    '3f7808c9f59e4cf3aa6543d02abb2c3c': {
+                        table: 'sys_security_acl'
+                        id: '3f7808c9f59e4cf3aa6543d02abb2c3c'
                     }
                     '40cc638b838c83105f67c9a6feaad359': {
                         table: 'sys_scope_privilege'
@@ -475,6 +868,27 @@ declare global {
                         id: '40cc638b838c83105f67c9a6feaad36d'
                         deleted: true
                     }
+                    '40e20c2420c848b4b36e73d40dd2c050': {
+                        table: 'sys_ux_page_property'
+                        id: '40e20c2420c848b4b36e73d40dd2c050'
+                    }
+                    '40e6767b83c4c3105f67c9a6feaad34a': {
+                        table: 'sys_ui_element'
+                        id: '40e6767b83c4c3105f67c9a6feaad34a'
+                    }
+                    '4104babc7b0d410c805d5d1a02db4422': {
+                        table: 'sys_script_include'
+                        id: '4104babc7b0d410c805d5d1a02db4422'
+                    }
+                    '415134ddc5604d57b2f55b1504d22f7d': {
+                        table: 'sys_app_module'
+                        id: '415134ddc5604d57b2f55b1504d22f7d'
+                        deleted: true
+                    }
+                    '415c592b830c03105f67c9a6feaad3c7': {
+                        table: 'sys_ui_related_list_entry'
+                        id: '415c592b830c03105f67c9a6feaad3c7'
+                    }
                     '41738d23834803105f67c9a6feaad32d': {
                         table: 'sys_scope_privilege'
                         id: '41738d23834803105f67c9a6feaad32d'
@@ -484,6 +898,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '41b7bb478300c3105f67c9a6feaad3e7'
                         deleted: true
+                    }
+                    '4229d6bd83464fa9aa6d4f77b0a315e9': {
+                        table: 'sys_ux_app_route'
+                        id: '4229d6bd83464fa9aa6d4f77b0a315e9'
+                    }
+                    '42b01def838803105f67c9a6feaad38c': {
+                        table: 'sys_scope_privilege'
+                        id: '42b01def838803105f67c9a6feaad38c'
                     }
                     '43230307834883105f67c9a6feaad33d': {
                         table: 'sys_scope_privilege'
@@ -515,10 +937,38 @@ declare global {
                         id: '4439306783c403105f67c9a6feaad359'
                         deleted: true
                     }
+                    '44d0152383c803105f67c9a6feaad306': {
+                        table: 'sys_scope_privilege'
+                        id: '44d0152383c803105f67c9a6feaad306'
+                    }
+                    '44e6767b83c4c3105f67c9a6feaad348': {
+                        table: 'sys_ui_element'
+                        id: '44e6767b83c4c3105f67c9a6feaad348'
+                    }
+                    '4569195dfafa43baa5447d65722ed706': {
+                        table: 'par_dashboard_tab'
+                        id: '4569195dfafa43baa5447d65722ed706'
+                    }
+                    '460aad3f011246e181f68c74479f55e6': {
+                        table: 'sys_ux_list_category'
+                        id: '460aad3f011246e181f68c74479f55e6'
+                    }
                     '46930963834803105f67c9a6feaad368': {
                         table: 'sys_scope_privilege'
                         id: '46930963834803105f67c9a6feaad368'
                         deleted: true
+                    }
+                    '46b01def838803105f67c9a6feaad370': {
+                        table: 'sys_scope_privilege'
+                        id: '46b01def838803105f67c9a6feaad370'
+                    }
+                    '46b01def838803105f67c9a6feaad393': {
+                        table: 'sys_scope_privilege'
+                        id: '46b01def838803105f67c9a6feaad393'
+                    }
+                    '46d0552383c803105f67c9a6feaad333': {
+                        table: 'sys_scope_privilege'
+                        id: '46d0552383c803105f67c9a6feaad333'
                     }
                     '46e29ccf838043105f67c9a6feaad3d9': {
                         table: 'sys_scope_privilege'
@@ -540,10 +990,18 @@ declare global {
                         id: '475236cb838483105f67c9a6feaad399'
                         deleted: true
                     }
+                    '4764fdf783cc83105f67c9a6feaad33f': {
+                        table: 'sys_ui_element'
+                        id: '4764fdf783cc83105f67c9a6feaad33f'
+                    }
                     '482cfa43830883105f67c9a6feaad3ed': {
                         table: 'sys_scope_privilege'
                         id: '482cfa43830883105f67c9a6feaad3ed'
                         deleted: true
+                    }
+                    '495c592b830c03105f67c9a6feaad3c7': {
+                        table: 'sys_ui_related_list_entry'
+                        id: '495c592b830c03105f67c9a6feaad3c7'
                     }
                     '49738d23834803105f67c9a6feaad338': {
                         table: 'sys_scope_privilege'
@@ -555,6 +1013,10 @@ declare global {
                         id: '49738d23834803105f67c9a6feaad365'
                         deleted: true
                     }
+                    '4a3b4841ccba418abbbca0825c8c7e30': {
+                        table: 'sys_security_acl'
+                        id: '4a3b4841ccba418abbbca0825c8c7e30'
+                    }
                     '4aa77b478300c3105f67c9a6feaad314': {
                         table: 'sys_scope_privilege'
                         id: '4aa77b478300c3105f67c9a6feaad314'
@@ -565,14 +1027,35 @@ declare global {
                         id: '4ae29ccf838043105f67c9a6feaad38e'
                         deleted: true
                     }
+                    '4b9e0123c5d6457890e1f2a3b4c5d6e7': {
+                        table: 'sys_script_include'
+                        id: '4b9e0123c5d6457890e1f2a3b4c5d6e7'
+                    }
                     '4c397ce383c403105f67c9a6feaad3c3': {
                         table: 'sys_scope_privilege'
                         id: '4c397ce383c403105f67c9a6feaad3c3'
                         deleted: true
                     }
+                    '4d1be1808b334397804749e1cc1569ba': {
+                        table: 'sys_ux_app_route'
+                        id: '4d1be1808b334397804749e1cc1569ba'
+                    }
+                    '4d3c5b13095145e5b7ecd15163b422b2': {
+                        table: 'par_dashboard_tab'
+                        id: '4d3c5b13095145e5b7ecd15163b422b2'
+                    }
                     '4d738d23834803105f67c9a6feaad358': {
                         table: 'sys_scope_privilege'
                         id: '4d738d23834803105f67c9a6feaad358'
+                        deleted: true
+                    }
+                    '4d769a0389d04abe92e99bb26f04331d': {
+                        table: 'sys_ux_list'
+                        id: '4d769a0389d04abe92e99bb26f04331d'
+                    }
+                    '4e1075ea87ba400b8a5db4ff490b69fb': {
+                        table: 'sys_app_module'
+                        id: '4e1075ea87ba400b8a5db4ff490b69fb'
                         deleted: true
                     }
                     '4e930963834803105f67c9a6feaad336': {
@@ -590,10 +1073,26 @@ declare global {
                         id: '4ee29ccf838043105f67c9a6feaad388'
                         deleted: true
                     }
+                    '4f1016c9248a42d2939a76070d56c8eb': {
+                        table: 'sys_ux_screen'
+                        id: '4f1016c9248a42d2939a76070d56c8eb'
+                    }
                     '4f230307834883105f67c9a6feaad365': {
                         table: 'sys_scope_privilege'
                         id: '4f230307834883105f67c9a6feaad365'
                         deleted: true
+                    }
+                    '51b0d9ef838803105f67c9a6feaad3a8': {
+                        table: 'sys_scope_privilege'
+                        id: '51b0d9ef838803105f67c9a6feaad3a8'
+                    }
+                    '52e7c071299c40ba8a1528f7c284fdf5': {
+                        table: 'sys_ux_list'
+                        id: '52e7c071299c40ba8a1528f7c284fdf5'
+                    }
+                    '52f63e3b83c4c3105f67c9a6feaad345': {
+                        table: 'sys_ui_section'
+                        id: '52f63e3b83c4c3105f67c9a6feaad345'
                     }
                     '531cba43830883105f67c9a6feaad3fd': {
                         table: 'sys_scope_privilege'
@@ -610,6 +1109,10 @@ declare global {
                         id: '53a17f0783cc83105f67c9a6feaad3c3'
                         deleted: true
                     }
+                    '53b725c68a4640f4ad4dffad8b632b7c': {
+                        table: 'sys_scope_privilege'
+                        id: '53b725c68a4640f4ad4dffad8b632b7c'
+                    }
                     '53bc238b838c83105f67c9a6feaad377': {
                         table: 'sys_scope_privilege'
                         id: '53bc238b838c83105f67c9a6feaad377'
@@ -620,10 +1123,18 @@ declare global {
                         id: '5439306783c403105f67c9a6feaad379'
                         deleted: true
                     }
+                    '554787bb8348c3105f67c9a6feaad31f': {
+                        table: 'sys_ux_form_action_layout_item'
+                        id: '554787bb8348c3105f67c9a6feaad31f'
+                    }
                     '55738d23834803105f67c9a6feaad3b7': {
                         table: 'sys_scope_privilege'
                         id: '55738d23834803105f67c9a6feaad3b7'
                         deleted: true
+                    }
+                    '566f1bd6c84f41c6a20639e68e483032': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '566f1bd6c84f41c6a20639e68e483032'
                     }
                     '571cba43830883105f67c9a6feaad3e7': {
                         table: 'sys_scope_privilege'
@@ -655,6 +1166,10 @@ declare global {
                         id: '5839306783c403105f67c9a6feaad3eb'
                         deleted: true
                     }
+                    '59b0d9ef838803105f67c9a6feaad3af': {
+                        table: 'sys_scope_privilege'
+                        id: '59b0d9ef838803105f67c9a6feaad3af'
+                    }
                     '5b230307834883105f67c9a6feaad3dd': {
                         table: 'sys_scope_privilege'
                         id: '5b230307834883105f67c9a6feaad3dd'
@@ -665,25 +1180,58 @@ declare global {
                         id: '5b5236cb838483105f67c9a6feaad3d4'
                         deleted: true
                     }
+                    '5b5c23509156434b85171277e3d53cd4': {
+                        table: 'sys_security_acl'
+                        id: '5b5c23509156434b85171277e3d53cd4'
+                    }
                     '5bbc238b838c83105f67c9a6feaad35a': {
                         table: 'sys_scope_privilege'
                         id: '5bbc238b838c83105f67c9a6feaad35a'
                         deleted: true
+                    }
+                    '5c9acc82e4a04b1894efbe390a37b1c3': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '5c9acc82e4a04b1894efbe390a37b1c3'
+                    }
+                    '5caf1234d6e7568901f2a3b4c5d6e7f8': {
+                        table: 'sys_script_include'
+                        id: '5caf1234d6e7568901f2a3b4c5d6e7f8'
                     }
                     '5d738d23834803105f67c9a6feaad3a2': {
                         table: 'sys_scope_privilege'
                         id: '5d738d23834803105f67c9a6feaad3a2'
                         deleted: true
                     }
+                    '5db099ef838803105f67c9a6feaad376': {
+                        table: 'sys_scope_privilege'
+                        id: '5db099ef838803105f67c9a6feaad376'
+                    }
                     '5f230307834883105f67c9a6feaad3bf': {
                         table: 'sys_scope_privilege'
                         id: '5f230307834883105f67c9a6feaad3bf'
                         deleted: true
                     }
+                    '5f45e30c23d84e96b6eec3dc652b5fd5': {
+                        table: 'sys_script_include'
+                        id: '5f45e30c23d84e96b6eec3dc652b5fd5'
+                    }
+                    '5f631d98c8254b769561132ae7dfbd79': {
+                        table: 'sys_app_module'
+                        id: '5f631d98c8254b769561132ae7dfbd79'
+                        deleted: true
+                    }
+                    '5f742dab834c03105f67c9a6feaad399': {
+                        table: 'sys_analytics_bucket'
+                        id: '5f742dab834c03105f67c9a6feaad399'
+                    }
                     '5fa17f0783cc83105f67c9a6feaad3c5': {
                         table: 'sys_ui_element'
                         id: '5fa17f0783cc83105f67c9a6feaad3c5'
                         deleted: true
+                    }
+                    '5fe3ad3e95b5428d90b3a7a1ca36d868': {
+                        table: 'sys_ux_registry_m2m_category'
+                        id: '5fe3ad3e95b5428d90b3a7a1ca36d868'
                     }
                     '6039706783c403105f67c9a6feaad331': {
                         table: 'sys_scope_privilege'
@@ -705,10 +1253,46 @@ declare global {
                         id: '61738d23834803105f67c9a6feaad3c3'
                         deleted: true
                     }
+                    '61b0d9ef838803105f67c9a6feaad3e4': {
+                        table: 'sys_scope_privilege'
+                        id: '61b0d9ef838803105f67c9a6feaad3e4'
+                    }
+                    '61ea022c0d6a48fbb16dc672ada1edfb': {
+                        table: 'sys_security_acl'
+                        id: '61ea022c0d6a48fbb16dc672ada1edfb'
+                    }
+                    '629095ef838803105f67c9a6feaad3c6': {
+                        table: 'sys_ui_section'
+                        id: '629095ef838803105f67c9a6feaad3c6'
+                    }
+                    '6328f23f83c4c3105f67c9a6feaad3cb': {
+                        table: 'sys_ui_element'
+                        id: '6328f23f83c4c3105f67c9a6feaad3cb'
+                    }
+                    '6328f23f83c4c3105f67c9a6feaad3d2': {
+                        table: 'sys_ui_element'
+                        id: '6328f23f83c4c3105f67c9a6feaad3d2'
+                    }
+                    '633c952b830c03105f67c9a6feaad3f0': {
+                        table: 'sys_scope_privilege'
+                        id: '633c952b830c03105f67c9a6feaad3f0'
+                    }
+                    '6377babb83c4c3105f67c9a6feaad3a0': {
+                        table: 'sys_ui_element'
+                        id: '6377babb83c4c3105f67c9a6feaad3a0'
+                    }
                     '6439706783c403105f67c9a6feaad36d': {
                         table: 'sys_scope_privilege'
                         id: '6439706783c403105f67c9a6feaad36d'
                         deleted: true
+                    }
+                    '6495c5d44fe24a3185067dbbdd45f0dd': {
+                        table: 'sys_properties'
+                        id: '6495c5d44fe24a3185067dbbdd45f0dd'
+                    }
+                    '650e6d67ccc24b469d7133bdabdbb6b4': {
+                        table: 'sys_security_acl'
+                        id: '650e6d67ccc24b469d7133bdabdbb6b4'
                     }
                     '6563e4c3834443105f67c9a6feaad325': {
                         table: 'sys_scope_privilege'
@@ -725,6 +1309,14 @@ declare global {
                         id: '6593c563834803105f67c9a6feaad3c7'
                         deleted: true
                     }
+                    '65b0d9ef838803105f67c9a6feaad3d4': {
+                        table: 'sys_scope_privilege'
+                        id: '65b0d9ef838803105f67c9a6feaad3d4'
+                    }
+                    '65d0152383c803105f67c9a6feaad3c7': {
+                        table: 'sys_scope_privilege'
+                        id: '65d0152383c803105f67c9a6feaad3c7'
+                    }
                     '671cfa43830883105f67c9a6feaad31f': {
                         table: 'sys_scope_privilege'
                         id: '671cfa43830883105f67c9a6feaad31f'
@@ -734,6 +1326,18 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '67234307834883105f67c9a6feaad30e'
                         deleted: true
+                    }
+                    '6728f23f83c4c3105f67c9a6feaad3d0': {
+                        table: 'sys_ui_element'
+                        id: '6728f23f83c4c3105f67c9a6feaad3d0'
+                    }
+                    '6777babb83c4c3105f67c9a6feaad39e': {
+                        table: 'sys_ui_element'
+                        id: '6777babb83c4c3105f67c9a6feaad39e'
+                    }
+                    '679aa66e3c5d4719ae06ebe45a9ac5c0': {
+                        table: 'sys_security_acl'
+                        id: '679aa66e3c5d4719ae06ebe45a9ac5c0'
                     }
                     '67a77b478300c3105f67c9a6feaad34d': {
                         table: 'sys_scope_privilege'
@@ -755,6 +1359,10 @@ declare global {
                         id: '687328c3834443105f67c9a6feaad365'
                         deleted: true
                     }
+                    '68ea6788452845ca9004914ef9229db8': {
+                        table: 'sys_ux_list'
+                        id: '68ea6788452845ca9004914ef9229db8'
+                    }
                     '69738d23834803105f67c9a6feaad3f2': {
                         table: 'sys_scope_privilege'
                         id: '69738d23834803105f67c9a6feaad3f2'
@@ -765,15 +1373,63 @@ declare global {
                         id: '6993c563834803105f67c9a6feaad3e3'
                         deleted: true
                     }
+                    '69d0152383c803105f67c9a6feaad3a7': {
+                        table: 'sys_scope_privilege'
+                        id: '69d0152383c803105f67c9a6feaad3a7'
+                    }
                     '6b1cfa43830883105f67c9a6feaad32c': {
                         table: 'sys_scope_privilege'
                         id: '6b1cfa43830883105f67c9a6feaad32c'
                         deleted: true
                     }
+                    '6b28f23f83c4c3105f67c9a6feaad3ce': {
+                        table: 'sys_ui_element'
+                        id: '6b28f23f83c4c3105f67c9a6feaad3ce'
+                    }
+                    '6b3c952b830c03105f67c9a6feaad3c8': {
+                        table: 'sys_scope_privilege'
+                        id: '6b3c952b830c03105f67c9a6feaad3c8'
+                    }
+                    '6b77babb83c4c3105f67c9a6feaad39c': {
+                        table: 'sys_ui_element'
+                        id: '6b77babb83c4c3105f67c9a6feaad39c'
+                    }
                     '6d92e567834c03105f67c9a6feaad3a3': {
                         table: 'par_dashboard_tab'
                         id: '6d92e567834c03105f67c9a6feaad3a3'
                         deleted: true
+                    }
+                    '6db01def838803105f67c9a6feaad323': {
+                        table: 'sys_scope_privilege'
+                        id: '6db01def838803105f67c9a6feaad323'
+                    }
+                    '6db02345e7f8679012a3b4c5d6e7f809': {
+                        table: 'sys_script_include'
+                        id: '6db02345e7f8679012a3b4c5d6e7f809'
+                    }
+                    '6dd0152383c803105f67c9a6feaad3c1': {
+                        table: 'sys_scope_privilege'
+                        id: '6dd0152383c803105f67c9a6feaad3c1'
+                    }
+                    '6f28f23f83c4c3105f67c9a6feaad3cc': {
+                        table: 'sys_ui_element'
+                        id: '6f28f23f83c4c3105f67c9a6feaad3cc'
+                    }
+                    '6f28f23f83c4c3105f67c9a6feaad3d3': {
+                        table: 'sys_ui_element'
+                        id: '6f28f23f83c4c3105f67c9a6feaad3d3'
+                    }
+                    '6f77babb83c4c3105f67c9a6feaad3a1': {
+                        table: 'sys_ui_element'
+                        id: '6f77babb83c4c3105f67c9a6feaad3a1'
+                    }
+                    '6fc21ed6cd3c496194fa8afdb8836da1': {
+                        table: 'sys_ux_app_config'
+                        id: '6fc21ed6cd3c496194fa8afdb8836da1'
+                    }
+                    '6fdf2c5a763249ee9cfa946d02e88107': {
+                        table: 'sys_security_acl'
+                        id: '6fdf2c5a763249ee9cfa946d02e88107'
                     }
                     '71c7f3878300c3105f67c9a6feaad398': {
                         table: 'sys_scope_privilege'
@@ -785,15 +1441,43 @@ declare global {
                         id: '7223cfc3834883105f67c9a6feaad3ef'
                         deleted: true
                     }
+                    '72382ce55b6c4093935c54c6546c19fe': {
+                        table: 'sys_ux_list'
+                        id: '72382ce55b6c4093935c54c6546c19fe'
+                    }
+                    '725c1d2b830c03105f67c9a6feaad310': {
+                        table: 'sys_ui_element'
+                        id: '725c1d2b830c03105f67c9a6feaad310'
+                    }
+                    '72cc846f353746c080710568afaa1fec': {
+                        table: 'sys_security_acl'
+                        id: '72cc846f353746c080710568afaa1fec'
+                    }
                     '72cce38b838c83105f67c9a6feaad38f': {
                         table: 'sys_scope_privilege'
                         id: '72cce38b838c83105f67c9a6feaad38f'
                         deleted: true
                     }
+                    '73f1b8396c4b4628b4c6216660e9878c': {
+                        table: 'sys_ux_app_route'
+                        id: '73f1b8396c4b4628b4c6216660e9878c'
+                    }
                     '74834163834803105f67c9a6feaad301': {
                         table: 'sys_scope_privilege'
                         id: '74834163834803105f67c9a6feaad301'
                         deleted: true
+                    }
+                    '75f269a7834c03105f67c9a6feaad38a': {
+                        table: 'par_dashboard'
+                        id: '75f269a7834c03105f67c9a6feaad38a'
+                    }
+                    '765c1d2b830c03105f67c9a6feaad30d': {
+                        table: 'sys_ui_element'
+                        id: '765c1d2b830c03105f67c9a6feaad30d'
+                    }
+                    '7691f1bb834c83105f67c9a6feaad3fd': {
+                        table: 'sys_script_include'
+                        id: '7691f1bb834c83105f67c9a6feaad3fd'
                     }
                     '771c270b838c83105f67c9a6feaad336': {
                         table: 'sys_ui_related_list_entry'
@@ -820,6 +1504,10 @@ declare global {
                         id: '77bc638b838c83105f67c9a6feaad335'
                         deleted: true
                     }
+                    '79170fc8f2f14f78903395b9be9212d9': {
+                        table: 'sys_script_include'
+                        id: '79170fc8f2f14f78903395b9be9212d9'
+                    }
                     '7970378383cc83105f67c9a6feaad309': {
                         table: 'par_dashboard_widget'
                         id: '7970378383cc83105f67c9a6feaad309'
@@ -829,6 +1517,18 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '79a73b478300c3105f67c9a6feaad3d6'
                         deleted: true
+                    }
+                    '79b01def838803105f67c9a6feaad363': {
+                        table: 'sys_scope_privilege'
+                        id: '79b01def838803105f67c9a6feaad363'
+                    }
+                    '7a173057d08a4f7c92d212c5ddd75e56': {
+                        table: 'sys_scope_privilege'
+                        id: '7a173057d08a4f7c92d212c5ddd75e56'
+                    }
+                    '7a5c1d2b830c03105f67c9a6feaad313': {
+                        table: 'sys_ui_element'
+                        id: '7a5c1d2b830c03105f67c9a6feaad313'
                     }
                     '7ac737878300c3105f67c9a6feaad3b6': {
                         table: 'sys_scope_privilege'
@@ -850,6 +1550,10 @@ declare global {
                         id: '7b1cfa43830883105f67c9a6feaad3ca'
                         deleted: true
                     }
+                    '7b3d80f1a2c4356789e0d1c2b3a49587': {
+                        table: 'sys_script_include'
+                        id: '7b3d80f1a2c4356789e0d1c2b3a49587'
+                    }
                     '7b838563834803105f67c9a6feaad36a': {
                         table: 'sys_scope_privilege'
                         id: '7b838563834803105f67c9a6feaad36a'
@@ -859,6 +1563,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '7bbc638b838c83105f67c9a6feaad30c'
                         deleted: true
+                    }
+                    '7c574bbb8348c3105f67c9a6feaad3c4': {
+                        table: 'sys_ux_form_action'
+                        id: '7c574bbb8348c3105f67c9a6feaad3c4'
+                    }
+                    '7c72d25db29d4309ae62a40abe12016c': {
+                        table: 'sys_ux_list_category'
+                        id: '7c72d25db29d4309ae62a40abe12016c'
                     }
                     '7da73b478300c3105f67c9a6feaad39f': {
                         table: 'sys_scope_privilege'
@@ -875,10 +1587,22 @@ declare global {
                         id: '7e23cfc3834883105f67c9a6feaad393'
                         deleted: true
                     }
+                    '7e5c1d2b830c03105f67c9a6feaad311': {
+                        table: 'sys_ui_element'
+                        id: '7e5c1d2b830c03105f67c9a6feaad311'
+                    }
+                    '7eb56d7246554598ae1d9619cb5b4671': {
+                        table: 'sys_scope_privilege'
+                        id: '7eb56d7246554598ae1d9619cb5b4671'
+                    }
                     '7f1c270b838c83105f67c9a6feaad334': {
                         table: 'sys_ui_related_list'
                         id: '7f1c270b838c83105f67c9a6feaad334'
                         deleted: true
+                    }
+                    '80e6767b83c4c3105f67c9a6feaad33a': {
+                        table: 'sys_ui_element'
+                        id: '80e6767b83c4c3105f67c9a6feaad33a'
                     }
                     '81738d23834803105f67c9a6feaad318': {
                         table: 'sys_scope_privilege'
@@ -900,20 +1624,52 @@ declare global {
                         id: '83230307834883105f67c9a6feaad38b'
                         deleted: true
                     }
+                    '8364fdf783cc83105f67c9a6feaad345': {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad345'
+                    }
+                    '8364fdf783cc83105f67c9a6feaad34c': {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad34c'
+                    }
+                    '8364fdf783cc83105f67c9a6feaad353': {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad353'
+                    }
                     '8439306783c403105f67c9a6feaad365': {
                         table: 'sys_scope_privilege'
                         id: '8439306783c403105f67c9a6feaad365'
                         deleted: true
+                    }
+                    '84e6767b83c4c3105f67c9a6feaad338': {
+                        table: 'sys_ui_element'
+                        id: '84e6767b83c4c3105f67c9a6feaad338'
                     }
                     '85738d23834803105f67c9a6feaad334': {
                         table: 'sys_scope_privilege'
                         id: '85738d23834803105f67c9a6feaad334'
                         deleted: true
                     }
+                    '86b01def838803105f67c9a6feaad380': {
+                        table: 'sys_scope_privilege'
+                        id: '86b01def838803105f67c9a6feaad380'
+                    }
                     '86c7f3878300c3105f67c9a6feaad3f7': {
                         table: 'sys_scope_privilege'
                         id: '86c7f3878300c3105f67c9a6feaad3f7'
                         deleted: true
+                    }
+                    '8764fdf783cc83105f67c9a6feaad343': {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad343'
+                    }
+                    '8764fdf783cc83105f67c9a6feaad34a': {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad34a'
+                    }
+                    '8764fdf783cc83105f67c9a6feaad351': {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad351'
                     }
                     '87dce78b838c83105f67c9a6feaad38a': {
                         table: 'sys_scope_privilege'
@@ -930,6 +1686,10 @@ declare global {
                         id: '8839306783c403105f67c9a6feaad33a'
                         deleted: true
                     }
+                    '88e6767b83c4c3105f67c9a6feaad336': {
+                        table: 'sys_ui_element'
+                        id: '88e6767b83c4c3105f67c9a6feaad336'
+                    }
                     '89738d23834803105f67c9a6feaad369': {
                         table: 'sys_scope_privilege'
                         id: '89738d23834803105f67c9a6feaad369'
@@ -939,6 +1699,14 @@ declare global {
                         table: 'sys_ux_form_action_layout_item'
                         id: '8a434523834803105f67c9a6feaad395'
                         deleted: true
+                    }
+                    '8a4b201af14045828007b5fa7f53b87f': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '8a4b201af14045828007b5fa7f53b87f'
+                    }
+                    '8a6d6c5ccfa143db9a0cbcc543a28dfb': {
+                        table: 'sys_ux_screen_type'
+                        id: '8a6d6c5ccfa143db9a0cbcc543a28dfb'
                     }
                     '8aa73b478300c3105f67c9a6feaad3da': {
                         table: 'sys_scope_privilege'
@@ -960,40 +1728,116 @@ declare global {
                         id: '8b230307834883105f67c9a6feaad394'
                         deleted: true
                     }
+                    '8b64fdf783cc83105f67c9a6feaad341': {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad341'
+                    }
+                    '8b64fdf783cc83105f67c9a6feaad348': {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad348'
+                    }
+                    '8b64fdf783cc83105f67c9a6feaad34f': {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad34f'
+                    }
+                    '8b64fdf783cc83105f67c9a6feaad356': {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad356'
+                    }
                     '8bcce38b838c83105f67c9a6feaad3b6': {
                         table: 'sys_scope_privilege'
                         id: '8bcce38b838c83105f67c9a6feaad3b6'
                         deleted: true
+                    }
+                    '8be5c4c8e2bd433782dbadd66c102ebb': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '8be5c4c8e2bd433782dbadd66c102ebb'
                     }
                     '8c39306783c403105f67c9a6feaad30f': {
                         table: 'sys_scope_privilege'
                         id: '8c39306783c403105f67c9a6feaad30f'
                         deleted: true
                     }
+                    '8c4e91a2b3d5467890f1e2d3c4b5a697': {
+                        table: 'sys_script_include'
+                        id: '8c4e91a2b3d5467890f1e2d3c4b5a697'
+                    }
+                    '8c98ab44e2ce47eab440f127710cec72': {
+                        table: 'sys_security_acl'
+                        id: '8c98ab44e2ce47eab440f127710cec72'
+                    }
+                    '8ce6767b83c4c3105f67c9a6feaad334': {
+                        table: 'sys_ui_element'
+                        id: '8ce6767b83c4c3105f67c9a6feaad334'
+                    }
                     '8d738d23834803105f67c9a6feaad320': {
                         table: 'sys_scope_privilege'
                         id: '8d738d23834803105f67c9a6feaad320'
                         deleted: true
+                    }
+                    '8da3cff0446e4ae2980318abdfc199e8': {
+                        table: 'sys_scope_privilege'
+                        id: '8da3cff0446e4ae2980318abdfc199e8'
                     }
                     '8db7bb478300c3105f67c9a6feaad3c4': {
                         table: 'sys_scope_privilege'
                         id: '8db7bb478300c3105f67c9a6feaad3c4'
                         deleted: true
                     }
+                    '8dc09def838803105f67c9a6feaad381': {
+                        table: 'sys_scope_privilege'
+                        id: '8dc09def838803105f67c9a6feaad381'
+                    }
+                    '8e4c2a1b9d0e4f1a8b2c3d4e5f607182': {
+                        table: 'sys_script_include'
+                        id: '8e4c2a1b9d0e4f1a8b2c3d4e5f607182'
+                    }
                     '8ea77b478300c3105f67c9a6feaad318': {
                         table: 'sys_scope_privilege'
                         id: '8ea77b478300c3105f67c9a6feaad318'
                         deleted: true
+                    }
+                    '8ef269a7834c03105f67c9a6feaad3d0': {
+                        table: 'sys_ux_screen'
+                        id: '8ef269a7834c03105f67c9a6feaad3d0'
                     }
                     '8f230307834883105f67c9a6feaad338': {
                         table: 'sys_scope_privilege'
                         id: '8f230307834883105f67c9a6feaad338'
                         deleted: true
                     }
+                    '8f64fdf783cc83105f67c9a6feaad346': {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad346'
+                    }
+                    '8f64fdf783cc83105f67c9a6feaad34d': {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad34d'
+                    }
+                    '8f64fdf783cc83105f67c9a6feaad354': {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad354'
+                    }
+                    '8fe9ba07e61f4d5a8abb5bb0a99a38b1': {
+                        table: 'sys_ux_list_menu_config'
+                        id: '8fe9ba07e61f4d5a8abb5bb0a99a38b1'
+                    }
+                    '912b640577da40ffb226be6514d988dd': {
+                        table: 'sys_ux_list'
+                        id: '912b640577da40ffb226be6514d988dd'
+                    }
+                    '928db09121514cf6983973e909ac7a14': {
+                        table: 'sys_security_acl'
+                        id: '928db09121514cf6983973e909ac7a14'
+                    }
                     '92c737878300c3105f67c9a6feaad3a7': {
                         table: 'sys_scope_privilege'
                         id: '92c737878300c3105f67c9a6feaad3a7'
                         deleted: true
+                    }
+                    '92d7a1cd71c04de99afcb1dc826a750f': {
+                        table: 'sys_security_acl'
+                        id: '92d7a1cd71c04de99afcb1dc826a750f'
                     }
                     '93a17f0783cc83105f67c9a6feaad3c5': {
                         table: 'sys_ui_element'
@@ -1009,6 +1853,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '9439306783c403105f67c9a6feaad397'
                         deleted: true
+                    }
+                    '95c09def838803105f67c9a6feaad3a8': {
+                        table: 'sys_scope_privilege'
+                        id: '95c09def838803105f67c9a6feaad3a8'
                     }
                     '96c737878300c3105f67c9a6feaad351': {
                         table: 'sys_scope_privilege'
@@ -1040,6 +1888,10 @@ declare global {
                         id: '97dce78b838c83105f67c9a6feaad3e1'
                         deleted: true
                     }
+                    '9a4faf1d897445a3974d6e6e86dffadb': {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '9a4faf1d897445a3974d6e6e86dffadb'
+                    }
                     '9aa77b478300c3105f67c9a6feaad33d': {
                         table: 'sys_scope_privilege'
                         id: '9aa77b478300c3105f67c9a6feaad33d'
@@ -1060,6 +1912,10 @@ declare global {
                         id: '9bbc238b838c83105f67c9a6feaad385'
                         deleted: true
                     }
+                    '9c177433503740379728c1f629044329': {
+                        table: 'sys_ux_list'
+                        id: '9c177433503740379728c1f629044329'
+                    }
                     '9c39306783c403105f67c9a6feaad382': {
                         table: 'sys_scope_privilege'
                         id: '9c39306783c403105f67c9a6feaad382'
@@ -1069,6 +1925,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '9ec737878300c3105f67c9a6feaad39f'
                         deleted: true
+                    }
+                    '9f00ffdc152348da8555561a02a1f8c7': {
+                        table: 'sys_security_acl'
+                        id: '9f00ffdc152348da8555561a02a1f8c7'
                     }
                     '9f1cba43830883105f67c9a6feaad3dd': {
                         table: 'sys_scope_privilege'
@@ -1080,6 +1940,14 @@ declare global {
                         id: '9fa17f0783cc83105f67c9a6feaad3b6'
                         deleted: true
                     }
+                    '9fc231e41593484fb310cd2ab9471c1f': {
+                        table: 'sys_security_acl'
+                        id: '9fc231e41593484fb310cd2ab9471c1f'
+                    }
+                    '9fd2ee738344c3105f67c9a6feaad389': {
+                        table: 'sys_script_fix'
+                        id: '9fd2ee738344c3105f67c9a6feaad389'
+                    }
                     '9fd44127834803105f67c9a6feaad36d': {
                         table: 'sys_ui_related_list_entry'
                         id: '9fd44127834803105f67c9a6feaad36d'
@@ -1090,25 +1958,58 @@ declare global {
                         id: '9fd44127834803105f67c9a6feaad36e'
                         deleted: true
                     }
+                    a04197cf22d84efdadc1fdab263f1cdd: {
+                        table: 'sys_app_module'
+                        id: 'a04197cf22d84efdadc1fdab263f1cdd'
+                        deleted: true
+                    }
+                    a1236ab38344c3105f67c9a6feaad31e: {
+                        table: 'sys_ui_element'
+                        id: 'a1236ab38344c3105f67c9a6feaad31e'
+                    }
+                    a1236ab38344c3105f67c9a6feaad323: {
+                        table: 'sys_ui_element'
+                        id: 'a1236ab38344c3105f67c9a6feaad323'
+                    }
                     a163a4c3834443105f67c9a6feaad3ef: {
                         table: 'sys_scope_privilege'
                         id: 'a163a4c3834443105f67c9a6feaad3ef'
                         deleted: true
+                    }
+                    a191de8d835043105f67c9a6feaad38f: {
+                        table: 'sys_scope_privilege'
+                        id: 'a191de8d835043105f67c9a6feaad38f'
                     }
                     a1c7f3878300c3105f67c9a6feaad383: {
                         table: 'sys_scope_privilege'
                         id: 'a1c7f3878300c3105f67c9a6feaad383'
                         deleted: true
                     }
+                    a227fe7b83c4c3105f67c9a6feaad341: {
+                        table: 'sys_ui_element'
+                        id: 'a227fe7b83c4c3105f67c9a6feaad341'
+                    }
                     a31cfa43830883105f67c9a6feaad318: {
                         table: 'sys_scope_privilege'
                         id: 'a31cfa43830883105f67c9a6feaad318'
                         deleted: true
                     }
+                    a3abd9a7830c03105f67c9a6feaad397: {
+                        table: 'sys_scope_privilege'
+                        id: 'a3abd9a7830c03105f67c9a6feaad397'
+                    }
+                    a421c3bbcc784ffd93e200114431850a: {
+                        table: 'sys_security_acl'
+                        id: 'a421c3bbcc784ffd93e200114431850a'
+                    }
                     a439706783c403105f67c9a6feaad314: {
                         table: 'sys_scope_privilege'
                         id: 'a439706783c403105f67c9a6feaad314'
                         deleted: true
+                    }
+                    a5236ab38344c3105f67c9a6feaad321: {
+                        table: 'sys_ui_element'
+                        id: 'a5236ab38344c3105f67c9a6feaad321'
                     }
                     a563e4c3834443105f67c9a6feaad317: {
                         table: 'sys_scope_privilege'
@@ -1118,6 +2019,47 @@ declare global {
                     a5738d23834803105f67c9a6feaad3fe: {
                         table: 'sys_scope_privilege'
                         id: 'a5738d23834803105f67c9a6feaad3fe'
+                        deleted: true
+                    }
+                    a5b0d9ef838803105f67c9a6feaad3be: {
+                        table: 'sys_scope_privilege'
+                        id: 'a5b0d9ef838803105f67c9a6feaad3be'
+                    }
+                    a6254f357e634495afbe40aa8b00a879: {
+                        table: 'sys_scope_privilege'
+                        id: 'a6254f357e634495afbe40aa8b00a879'
+                    }
+                    a627fe7b83c4c3105f67c9a6feaad33f: {
+                        table: 'sys_ui_element'
+                        id: 'a627fe7b83c4c3105f67c9a6feaad33f'
+                    }
+                    a627fe7b83c4c3105f67c9a6feaad346: {
+                        table: 'sys_ui_element'
+                        id: 'a627fe7b83c4c3105f67c9a6feaad346'
+                    }
+                    a769c2bc90194b39b4894eb08515bda6: {
+                        table: 'sys_ui_action'
+                        id: 'a769c2bc90194b39b4894eb08515bda6'
+                    }
+                    a777babb83c4c3105f67c9a6feaad38e: {
+                        table: 'sys_ui_element'
+                        id: 'a777babb83c4c3105f67c9a6feaad38e'
+                    }
+                    a78dbc47ecd9438084fc4e7ddc3b1e6c: {
+                        table: 'sys_ux_screen'
+                        id: 'a78dbc47ecd9438084fc4e7ddc3b1e6c'
+                    }
+                    a9236ab38344c3105f67c9a6feaad31f: {
+                        table: 'sys_ui_element'
+                        id: 'a9236ab38344c3105f67c9a6feaad31f'
+                    }
+                    a930ac0e25ce4bb3a6822a2f720adba1: {
+                        table: 'sys_properties'
+                        id: 'a930ac0e25ce4bb3a6822a2f720adba1'
+                    }
+                    a9705fa486ef4de19faa938732527f14: {
+                        table: 'sys_app_module'
+                        id: 'a9705fa486ef4de19faa938732527f14'
                         deleted: true
                     }
                     a9738d23834803105f67c9a6feaad3d2: {
@@ -1130,10 +2072,22 @@ declare global {
                         id: 'a9a73b478300c3105f67c9a6feaad36f'
                         deleted: true
                     }
+                    aa0b0feb4e744a2f871e688b85f81bff: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'aa0b0feb4e744a2f871e688b85f81bff'
+                    }
+                    aa27fe7b83c4c3105f67c9a6feaad344: {
+                        table: 'sys_ui_element'
+                        id: 'aa27fe7b83c4c3105f67c9a6feaad344'
+                    }
                     ab1cfa43830883105f67c9a6feaad377: {
                         table: 'sys_scope_privilege'
                         id: 'ab1cfa43830883105f67c9a6feaad377'
                         deleted: true
+                    }
+                    ab3c952b830c03105f67c9a6feaad3d8: {
+                        table: 'sys_scope_privilege'
+                        id: 'ab3c952b830c03105f67c9a6feaad3d8'
                     }
                     abdc2b8b838c83105f67c9a6feaad309: {
                         table: 'sys_scope_privilege'
@@ -1145,15 +2099,43 @@ declare global {
                         id: 'ac39706783c403105f67c9a6feaad37c'
                         deleted: true
                     }
+                    ad236ab38344c3105f67c9a6feaad324: {
+                        table: 'sys_ui_element'
+                        id: 'ad236ab38344c3105f67c9a6feaad324'
+                    }
                     ada73b478300c3105f67c9a6feaad38a: {
                         table: 'sys_scope_privilege'
                         id: 'ada73b478300c3105f67c9a6feaad38a'
                         deleted: true
                     }
+                    adc11685839043105f67c9a6feaad3c3: {
+                        table: 'sys_scope_privilege'
+                        id: 'adc11685839043105f67c9a6feaad3c3'
+                    }
+                    adc708462a604d778addbd1f4f5c2ab4: {
+                        table: 'sys_script_include'
+                        id: 'adc708462a604d778addbd1f4f5c2ab4'
+                    }
+                    adce3215bdd142569d7fa3636e61a179: {
+                        table: 'sys_security_acl'
+                        id: 'adce3215bdd142569d7fa3636e61a179'
+                    }
+                    ae0ea84cc91a49f9b99bc82d61b5ecfe: {
+                        table: 'sys_script_include'
+                        id: 'ae0ea84cc91a49f9b99bc82d61b5ecfe'
+                    }
+                    ae27fe7b83c4c3105f67c9a6feaad342: {
+                        table: 'sys_ui_element'
+                        id: 'ae27fe7b83c4c3105f67c9a6feaad342'
+                    }
                     afbc238b838c83105f67c9a6feaad3b5: {
                         table: 'sys_scope_privilege'
                         id: 'afbc238b838c83105f67c9a6feaad3b5'
                         deleted: true
+                    }
+                    b041a0a150c341e19dc33ad7ba0ea745: {
+                        table: 'sys_properties'
+                        id: 'b041a0a150c341e19dc33ad7ba0ea745'
                     }
                     b0830163834803105f67c9a6feaad3d6: {
                         table: 'sys_scope_privilege'
@@ -1180,6 +2162,14 @@ declare global {
                         id: 'b1a73b478300c3105f67c9a6feaad3b7'
                         deleted: true
                     }
+                    b1c83e7f83c4c3105f67c9a6feaad368: {
+                        table: 'sys_ui_element'
+                        id: 'b1c83e7f83c4c3105f67c9a6feaad368'
+                    }
+                    b1ed394ae5d54e94b43bc5d9cbb3f51f: {
+                        table: 'sys_security_acl'
+                        id: 'b1ed394ae5d54e94b43bc5d9cbb3f51f'
+                    }
                     b31cfa43830883105f67c9a6feaad396: {
                         table: 'sys_scope_privilege'
                         id: 'b31cfa43830883105f67c9a6feaad396'
@@ -1189,6 +2179,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'b31cfa43830883105f67c9a6feaad39f'
                         deleted: true
+                    }
+                    b33772bb83c4c3105f67c9a6feaad335: {
+                        table: 'sys_ui_section'
+                        id: 'b33772bb83c4c3105f67c9a6feaad335'
                     }
                     b37a782b83c403105f67c9a6feaad3d2: {
                         table: 'sys_scope_privilege'
@@ -1205,10 +2199,30 @@ declare global {
                         id: 'b59cf3038340c3105f67c9a6feaad3be'
                         deleted: true
                     }
+                    b5b01def838803105f67c9a6feaad34c: {
+                        table: 'sys_scope_privilege'
+                        id: 'b5b01def838803105f67c9a6feaad34c'
+                    }
+                    b5b01def838803105f67c9a6feaad35c: {
+                        table: 'sys_scope_privilege'
+                        id: 'b5b01def838803105f67c9a6feaad35c'
+                    }
                     b5c7f3878300c3105f67c9a6feaad3a0: {
                         table: 'sys_scope_privilege'
                         id: 'b5c7f3878300c3105f67c9a6feaad3a0'
                         deleted: true
+                    }
+                    b5c83e7f83c4c3105f67c9a6feaad366: {
+                        table: 'sys_ui_element'
+                        id: 'b5c83e7f83c4c3105f67c9a6feaad366'
+                    }
+                    b5d0152383c803105f67c9a6feaad3f9: {
+                        table: 'sys_scope_privilege'
+                        id: 'b5d0152383c803105f67c9a6feaad3f9'
+                    }
+                    b5feec479d234050b38e380e56fa42ae: {
+                        table: 'sys_security_acl'
+                        id: 'b5feec479d234050b38e380e56fa42ae'
                     }
                     b6230307834883105f67c9a6feaad328: {
                         table: 'sys_scope_privilege'
@@ -1230,20 +2244,56 @@ declare global {
                         id: 'b623cfc3834883105f67c9a6feaad3ea'
                         deleted: true
                     }
+                    b647c7bb8348c3105f67c9a6feaad388: {
+                        table: 'sys_ux_form_action_layout_item'
+                        id: 'b647c7bb8348c3105f67c9a6feaad388'
+                    }
                     b71cfa43830883105f67c9a6feaad3bd: {
                         table: 'sys_scope_privilege'
                         id: 'b71cfa43830883105f67c9a6feaad3bd'
                         deleted: true
+                    }
+                    b7b2ea738344c3105f67c9a6feaad3b6: {
+                        table: 'sys_scope_privilege'
+                        id: 'b7b2ea738344c3105f67c9a6feaad3b6'
                     }
                     b7bc238b838c83105f67c9a6feaad3d9: {
                         table: 'sys_scope_privilege'
                         id: 'b7bc238b838c83105f67c9a6feaad3d9'
                         deleted: true
                     }
+                    b7c5cafbe7f2418392a508a6f51a10bb: {
+                        table: 'sys_security_acl'
+                        id: 'b7c5cafbe7f2418392a508a6f51a10bb'
+                    }
+                    b8227533e2604315a6f9e1626d867828: {
+                        table: 'sys_security_acl'
+                        id: 'b8227533e2604315a6f9e1626d867828'
+                    }
+                    b84c78134427477cb08b8c32c26984d6: {
+                        table: 'sys_security_acl'
+                        id: 'b84c78134427477cb08b8c32c26984d6'
+                    }
                     b8734d23834803105f67c9a6feaad3f4: {
                         table: 'sys_scope_privilege'
                         id: 'b8734d23834803105f67c9a6feaad3f4'
                         deleted: true
+                    }
+                    b89c713b8300c3105f67c9a6feaad324: {
+                        table: 'sys_scope_privilege'
+                        id: 'b89c713b8300c3105f67c9a6feaad324'
+                    }
+                    b8b0e343cdc449368ddd9e2b64edfe6c: {
+                        table: 'sys_ux_applicability'
+                        id: 'b8b0e343cdc449368ddd9e2b64edfe6c'
+                    }
+                    b8f9a0b488054ba99b556163fcbe9e2e: {
+                        table: 'sys_scope_privilege'
+                        id: 'b8f9a0b488054ba99b556163fcbe9e2e'
+                    }
+                    b8fbe7232af143bd9330c3833f5f0b7b: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'b8fbe7232af143bd9330c3833f5f0b7b'
                     }
                     b970378383cc83105f67c9a6feaad305: {
                         table: 'par_dashboard_widget'
@@ -1260,6 +2310,14 @@ declare global {
                         id: 'b9a73b478300c3105f67c9a6feaad393'
                         deleted: true
                     }
+                    b9c83e7f83c4c3105f67c9a6feaad364: {
+                        table: 'sys_ui_element'
+                        id: 'b9c83e7f83c4c3105f67c9a6feaad364'
+                    }
+                    b9c83e7f83c4c3105f67c9a6feaad36b: {
+                        table: 'sys_ui_element'
+                        id: 'b9c83e7f83c4c3105f67c9a6feaad36b'
+                    }
                     ba1a3ce783c403105f67c9a6feaad341: {
                         table: 'sys_scope_privilege'
                         id: 'ba1a3ce783c403105f67c9a6feaad341'
@@ -1275,15 +2333,40 @@ declare global {
                         id: 'ba23cfc3834883105f67c9a6feaad3fc'
                         deleted: true
                     }
+                    ba5c1d2b830c03105f67c9a6feaad322: {
+                        table: 'sys_ui_element'
+                        id: 'ba5c1d2b830c03105f67c9a6feaad322'
+                    }
                     bbbc638b838c83105f67c9a6feaad339: {
                         table: 'sys_scope_privilege'
                         id: 'bbbc638b838c83105f67c9a6feaad339'
                         deleted: true
                     }
+                    bbc43d722f224525ab2b301ca6d94a12: {
+                        table: 'sys_ux_page_property'
+                        id: 'bbc43d722f224525ab2b301ca6d94a12'
+                    }
                     bc830163834803105f67c9a6feaad3e4: {
                         table: 'sys_scope_privilege'
                         id: 'bc830163834803105f67c9a6feaad3e4'
                         deleted: true
+                    }
+                    bdb01def838803105f67c9a6feaad327: {
+                        table: 'sys_scope_privilege'
+                        id: 'bdb01def838803105f67c9a6feaad327'
+                    }
+                    bdb332d878554a82b20a2ced53ac6ca2: {
+                        table: 'sys_app_module'
+                        id: 'bdb332d878554a82b20a2ced53ac6ca2'
+                        deleted: true
+                    }
+                    bdc83e7f83c4c3105f67c9a6feaad369: {
+                        table: 'sys_ui_element'
+                        id: 'bdc83e7f83c4c3105f67c9a6feaad369'
+                    }
+                    be517f7b57c44b90ba0a7a76ee36055f: {
+                        table: 'sys_security_acl'
+                        id: 'be517f7b57c44b90ba0a7a76ee36055f'
                     }
                     bf1cfa43830883105f67c9a6feaad3a3: {
                         table: 'sys_scope_privilege'
@@ -1309,10 +2392,30 @@ declare global {
                         id: 'c039306783c403105f67c9a6feaad36d'
                         deleted: true
                     }
+                    c042289efc5f400db8069e466e54760d: {
+                        table: 'sys_ux_list'
+                        id: 'c042289efc5f400db8069e466e54760d'
+                    }
+                    c0e6767b83c4c3105f67c9a6feaad349: {
+                        table: 'sys_ui_element'
+                        id: 'c0e6767b83c4c3105f67c9a6feaad349'
+                    }
                     c1b7bb478300c3105f67c9a6feaad3d1: {
                         table: 'sys_scope_privilege'
                         id: 'c1b7bb478300c3105f67c9a6feaad3d1'
                         deleted: true
+                    }
+                    c1c09def838803105f67c9a6feaad356: {
+                        table: 'sys_scope_privilege'
+                        id: 'c1c09def838803105f67c9a6feaad356'
+                    }
+                    c2b01def838803105f67c9a6feaad397: {
+                        table: 'sys_scope_privilege'
+                        id: 'c2b01def838803105f67c9a6feaad397'
+                    }
+                    c2b01def838803105f67c9a6feaad3af: {
+                        table: 'sys_scope_privilege'
+                        id: 'c2b01def838803105f67c9a6feaad3af'
                     }
                     c3230307834883105f67c9a6feaad383: {
                         table: 'sys_scope_privilege'
@@ -1329,15 +2432,43 @@ declare global {
                         id: 'c439306783c403105f67c9a6feaad355'
                         deleted: true
                     }
+                    c43f67b4e9294c63a80db29d43e96a33: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'c43f67b4e9294c63a80db29d43e96a33'
+                    }
+                    c4e6767b83c4c3105f67c9a6feaad347: {
+                        table: 'sys_ui_element'
+                        id: 'c4e6767b83c4c3105f67c9a6feaad347'
+                    }
                     c5b7bb478300c3105f67c9a6feaad3e2: {
                         table: 'sys_scope_privilege'
                         id: 'c5b7bb478300c3105f67c9a6feaad3e2'
                         deleted: true
                     }
+                    c5bf6efcf1ee4c92a7519f362cd957c7: {
+                        table: 'sys_ui_action'
+                        id: 'c5bf6efcf1ee4c92a7519f362cd957c7'
+                    }
+                    c5e3a56b834c03105f67c9a6feaad342: {
+                        table: 'sys_ux_client_script'
+                        id: 'c5e3a56b834c03105f67c9a6feaad342'
+                    }
+                    c616089fb19d445ca05e23ffad6b7ca9: {
+                        table: 'sys_ux_page_property'
+                        id: 'c616089fb19d445ca05e23ffad6b7ca9'
+                    }
+                    c69bd1a7830c03105f67c9a6feaad3b2: {
+                        table: 'sys_scope_privilege'
+                        id: 'c69bd1a7830c03105f67c9a6feaad3b2'
+                    }
                     c6e298cf838043105f67c9a6feaad3ec: {
                         table: 'sys_scope_privilege'
                         id: 'c6e298cf838043105f67c9a6feaad3ec'
                         deleted: true
+                    }
+                    c6eb4903d41e41bd9b2343bfb06f888d: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'c6eb4903d41e41bd9b2343bfb06f888d'
                     }
                     c75236cb838483105f67c9a6feaad395: {
                         table: 'sys_scope_privilege'
@@ -1354,15 +2485,47 @@ declare global {
                         id: 'c7dce78b838c83105f67c9a6feaad372'
                         deleted: true
                     }
+                    c84d277d0cdc4806b56b53374d91956b: {
+                        table: 'sys_ux_list'
+                        id: 'c84d277d0cdc4806b56b53374d91956b'
+                    }
+                    c8513f6d338942bead9bbb5bddf29ef6: {
+                        table: 'sys_security_acl'
+                        id: 'c8513f6d338942bead9bbb5bddf29ef6'
+                    }
+                    c95c592b830c03105f67c9a6feaad3c5: {
+                        table: 'sys_ui_related_list_entry'
+                        id: 'c95c592b830c03105f67c9a6feaad3c5'
+                    }
+                    c95c592b830c03105f67c9a6feaad3c6: {
+                        table: 'sys_ui_related_list_entry'
+                        id: 'c95c592b830c03105f67c9a6feaad3c6'
+                    }
+                    c9fc3c4cae4e424f9415d7ee83789774: {
+                        table: 'sys_ux_page_registry'
+                        id: 'c9fc3c4cae4e424f9415d7ee83789774'
+                    }
                     ca434523834803105f67c9a6feaad391: {
                         table: 'sys_ux_form_action'
                         id: 'ca434523834803105f67c9a6feaad391'
                         deleted: true
                     }
+                    ca6db6dfb90e4077bb23e14ac79f2cf7: {
+                        table: 'sys_security_acl'
+                        id: 'ca6db6dfb90e4077bb23e14ac79f2cf7'
+                    }
                     caa77b478300c3105f67c9a6feaad32e: {
                         table: 'sys_scope_privilege'
                         id: 'caa77b478300c3105f67c9a6feaad32e'
                         deleted: true
+                    }
+                    cad2cde79ab240bba8542f95ab8fc193: {
+                        table: 'sys_security_acl'
+                        id: 'cad2cde79ab240bba8542f95ab8fc193'
+                    }
+                    caf2a9a7834c03105f67c9a6feaad30b: {
+                        table: 'sys_uib_screen_test_values'
+                        id: 'caf2a9a7834c03105f67c9a6feaad30b'
                     }
                     cb230307834883105f67c9a6feaad32f: {
                         table: 'sys_scope_privilege'
@@ -1373,6 +2536,18 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'cb73cd23834803105f67c9a6feaad3fb'
                         deleted: true
+                    }
+                    cc359bde49ab46ed8db587c6bc54d6c9: {
+                        table: 'sys_ux_page_property'
+                        id: 'cc359bde49ab46ed8db587c6bc54d6c9'
+                    }
+                    cce6767b83c4c3105f67c9a6feaad34a: {
+                        table: 'sys_ui_element'
+                        id: 'cce6767b83c4c3105f67c9a6feaad34a'
+                    }
+                    cd5c592b830c03105f67c9a6feaad3c2: {
+                        table: 'sys_ui_related_list'
+                        id: 'cd5c592b830c03105f67c9a6feaad3c2'
                     }
                     cd738d23834803105f67c9a6feaad31c: {
                         table: 'sys_scope_privilege'
@@ -1389,10 +2564,26 @@ declare global {
                         id: 'cea77b478300c3105f67c9a6feaad300'
                         deleted: true
                     }
+                    ced0552383c803105f67c9a6feaad356: {
+                        table: 'sys_scope_privilege'
+                        id: 'ced0552383c803105f67c9a6feaad356'
+                    }
+                    cee341954662484e8e6d737341dd667c: {
+                        table: 'sys_script_include'
+                        id: 'cee341954662484e8e6d737341dd667c'
+                    }
                     cf5236cb838483105f67c9a6feaad39c: {
                         table: 'sys_scope_privilege'
                         id: 'cf5236cb838483105f67c9a6feaad39c'
                         deleted: true
+                    }
+                    cfaeb529311e48708f23f96fb3a904ad: {
+                        table: 'sys_script_include'
+                        id: 'cfaeb529311e48708f23f96fb3a904ad'
+                    }
+                    d0b1004792ef4012acf9b7246f54877b: {
+                        table: 'sys_script_include'
+                        id: 'd0b1004792ef4012acf9b7246f54877b'
                     }
                     d31cba43830883105f67c9a6feaad3ca: {
                         table: 'sys_scope_privilege'
@@ -1424,6 +2615,10 @@ declare global {
                         id: 'd439706783c403105f67c9a6feaad30a'
                         deleted: true
                     }
+                    d4e5f60718294a3b5c6d7e8f90123456: {
+                        table: 'sys_ui_action'
+                        id: 'd4e5f60718294a3b5c6d7e8f90123456'
+                    }
                     d6c737878300c3105f67c9a6feaad344: {
                         table: 'sys_scope_privilege'
                         id: 'd6c737878300c3105f67c9a6feaad344'
@@ -1444,6 +2639,10 @@ declare global {
                         id: 'd75236cb838483105f67c9a6feaad3e0'
                         deleted: true
                     }
+                    d797eea3551d4251b3517c50f8ab5302: {
+                        table: 'sys_ux_page_property'
+                        id: 'd797eea3551d4251b3517c50f8ab5302'
+                    }
                     d7a17f0783cc83105f67c9a6feaad3c4: {
                         table: 'sys_ui_element'
                         id: 'd7a17f0783cc83105f67c9a6feaad3c4'
@@ -1453,6 +2652,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'd839306783c403105f67c9a6feaad3df'
                         deleted: true
+                    }
+                    d83b8f4835f8462bb0400b27f86a8c27: {
+                        table: 'sys_ux_page_property'
+                        id: 'd83b8f4835f8462bb0400b27f86a8c27'
+                    }
+                    d94747bb8348c3105f67c9a6feaad390: {
+                        table: 'sys_ux_form_action'
+                        id: 'd94747bb8348c3105f67c9a6feaad390'
                     }
                     d9738d23834803105f67c9a6feaad39a: {
                         table: 'sys_scope_privilege'
@@ -1474,6 +2681,14 @@ declare global {
                         id: 'd992a167834c03105f67c9a6feaad3f3'
                         deleted: true
                     }
+                    d9b0d9ef838803105f67c9a6feaad3b5: {
+                        table: 'sys_scope_privilege'
+                        id: 'd9b0d9ef838803105f67c9a6feaad3b5'
+                    }
+                    d9b0d9ef838803105f67c9a6feaad3b9: {
+                        table: 'sys_scope_privilege'
+                        id: 'd9b0d9ef838803105f67c9a6feaad3b9'
+                    }
                     daa77b478300c3105f67c9a6feaad341: {
                         table: 'sys_scope_privilege'
                         id: 'daa77b478300c3105f67c9a6feaad341'
@@ -1488,6 +2703,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'db230307834883105f67c9a6feaad3c4'
                         deleted: true
+                    }
+                    db2b15a6ca8f473fae303a6df063d956: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'db2b15a6ca8f473fae303a6df063d956'
                     }
                     db5236cb838483105f67c9a6feaad3d9: {
                         table: 'sys_scope_privilege'
@@ -1509,15 +2728,31 @@ declare global {
                         id: 'dbbc238b838c83105f67c9a6feaad356'
                         deleted: true
                     }
+                    dc20b6a014c04248bf467afe343db3d8: {
+                        table: 'sys_security_acl'
+                        id: 'dc20b6a014c04248bf467afe343db3d8'
+                    }
                     dc39306783c403105f67c9a6feaad3a9: {
                         table: 'sys_scope_privilege'
                         id: 'dc39306783c403105f67c9a6feaad3a9'
                         deleted: true
                     }
+                    dd5bc8f1fa8f45dcbfe2b084d12af5bd: {
+                        table: 'sys_properties'
+                        id: 'dd5bc8f1fa8f45dcbfe2b084d12af5bd'
+                    }
                     dd63640383c043105f67c9a6feaad3ca: {
                         table: 'sys_scope_privilege'
                         id: 'dd63640383c043105f67c9a6feaad3ca'
                         deleted: true
+                    }
+                    ddb0d9ef838803105f67c9a6feaad3ab: {
+                        table: 'sys_scope_privilege'
+                        id: 'ddb0d9ef838803105f67c9a6feaad3ab'
+                    }
+                    de31d4b1072a4d058546aa02ea435047: {
+                        table: 'sys_security_acl'
+                        id: 'de31d4b1072a4d058546aa02ea435047'
                     }
                     df1cba43830883105f67c9a6feaad3cd: {
                         table: 'sys_scope_privilege'
@@ -1528,6 +2763,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'df230307834883105f67c9a6feaad3b6'
                         deleted: true
+                    }
+                    df7daadf6f5c426aa548a142e0ecd603: {
+                        table: 'par_dashboard'
+                        id: 'df7daadf6f5c426aa548a142e0ecd603'
                     }
                     dfa17f0783cc83105f67c9a6feaad3be: {
                         table: 'sys_ui_element'
@@ -1544,6 +2783,10 @@ declare global {
                         id: 'dfbc238b838c83105f67c9a6feaad380'
                         deleted: true
                     }
+                    e121dd9a35ab4711861aa46e72fdb53e: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'e121dd9a35ab4711861aa46e72fdb53e'
+                    }
                     e161370783cc83105f67c9a6feaad31a: {
                         table: 'par_dashboard_widget'
                         id: 'e161370783cc83105f67c9a6feaad31a'
@@ -1558,6 +2801,18 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'e1a73b478300c3105f67c9a6feaad386'
                         deleted: true
+                    }
+                    e220db226ef645cd92850a681ffaf725: {
+                        table: 'sys_ux_screen_type'
+                        id: 'e220db226ef645cd92850a681ffaf725'
+                    }
+                    e328f23f83c4c3105f67c9a6feaad3d1: {
+                        table: 'sys_ui_element'
+                        id: 'e328f23f83c4c3105f67c9a6feaad3d1'
+                    }
+                    e377babb83c4c3105f67c9a6feaad39f: {
+                        table: 'sys_ui_element'
+                        id: 'e377babb83c4c3105f67c9a6feaad39f'
                     }
                     e3bc238b838c83105f67c9a6feaad3bd: {
                         table: 'sys_scope_privilege'
@@ -1579,6 +2834,22 @@ declare global {
                         id: 'e5738d23834803105f67c9a6feaad3e7'
                         deleted: true
                     }
+                    e58b094be09b492b801b3c3c70307156: {
+                        table: 'sys_security_acl'
+                        id: 'e58b094be09b492b801b3c3c70307156'
+                    }
+                    e5b01def838803105f67c9a6feaad318: {
+                        table: 'sys_scope_privilege'
+                        id: 'e5b01def838803105f67c9a6feaad318'
+                    }
+                    e5b0d9ef838803105f67c9a6feaad3f8: {
+                        table: 'sys_scope_privilege'
+                        id: 'e5b0d9ef838803105f67c9a6feaad3f8'
+                    }
+                    e5f6071829304b4c6d7e8f9012345678: {
+                        table: 'sys_properties'
+                        id: 'e5f6071829304b4c6d7e8f9012345678'
+                    }
                     e71cfa43830883105f67c9a6feaad35c: {
                         table: 'sys_scope_privilege'
                         id: 'e71cfa43830883105f67c9a6feaad35c'
@@ -1588,6 +2859,30 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'e71cfa43830883105f67c9a6feaad387'
                         deleted: true
+                    }
+                    e728f23f83c4c3105f67c9a6feaad3cf: {
+                        table: 'sys_ui_element'
+                        id: 'e728f23f83c4c3105f67c9a6feaad3cf'
+                    }
+                    e73c952b830c03105f67c9a6feaad3c1: {
+                        table: 'sys_scope_privilege'
+                        id: 'e73c952b830c03105f67c9a6feaad3c1'
+                    }
+                    e777babb83c4c3105f67c9a6feaad39d: {
+                        table: 'sys_ui_element'
+                        id: 'e777babb83c4c3105f67c9a6feaad39d'
+                    }
+                    e803d0901a5a450e8fd253a516ac1c25: {
+                        table: 'sys_security_acl'
+                        id: 'e803d0901a5a450e8fd253a516ac1c25'
+                    }
+                    e8a8418254df42449421897c06947215: {
+                        table: 'sys_scope_privilege'
+                        id: 'e8a8418254df42449421897c06947215'
+                    }
+                    e9447bfedd714dd19144e220dd616c78: {
+                        table: 'sys_scope_privilege'
+                        id: 'e9447bfedd714dd19144e220dd616c78'
                     }
                     e9738d23834803105f67c9a6feaad3ee: {
                         table: 'sys_scope_privilege'
@@ -1604,25 +2899,49 @@ declare global {
                         id: 'e9a73b478300c3105f67c9a6feaad38f'
                         deleted: true
                     }
+                    e9b01def838803105f67c9a6feaad30b: {
+                        table: 'sys_scope_privilege'
+                        id: 'e9b01def838803105f67c9a6feaad30b'
+                    }
                     e9dca78b838c83105f67c9a6feaad3c7: {
                         table: 'sys_scope_privilege'
                         id: 'e9dca78b838c83105f67c9a6feaad3c7'
                         deleted: true
+                    }
+                    ea28a9f35a2841dca0ad902886ea40fc: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'ea28a9f35a2841dca0ad902886ea40fc'
                     }
                     eb1cfa43830883105f67c9a6feaad310: {
                         table: 'sys_scope_privilege'
                         id: 'eb1cfa43830883105f67c9a6feaad310'
                         deleted: true
                     }
+                    eb28f23f83c4c3105f67c9a6feaad3cd: {
+                        table: 'sys_ui_element'
+                        id: 'eb28f23f83c4c3105f67c9a6feaad3cd'
+                    }
+                    eb77babb83c4c3105f67c9a6feaad39b: {
+                        table: 'sys_ui_element'
+                        id: 'eb77babb83c4c3105f67c9a6feaad39b'
+                    }
                     ebb7bf478300c3105f67c9a6feaad3e1: {
                         table: 'sys_scope_privilege'
                         id: 'ebb7bf478300c3105f67c9a6feaad3e1'
                         deleted: true
                     }
+                    ebbd9ad93f2f4cf6adfcc62e4a3fc08d: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: 'ebbd9ad93f2f4cf6adfcc62e4a3fc08d'
+                    }
                     ebdce78b838c83105f67c9a6feaad3fc: {
                         table: 'sys_scope_privilege'
                         id: 'ebdce78b838c83105f67c9a6feaad3fc'
                         deleted: true
+                    }
+                    eca313466f9c476c83d466cf887b6c38: {
+                        table: 'par_dashboard_widget'
+                        id: 'eca313466f9c476c83d466cf887b6c38'
                     }
                     ed63e4c3834443105f67c9a6feaad360: {
                         table: 'sys_scope_privilege'
@@ -1644,6 +2963,14 @@ declare global {
                         id: 'eda777478300c3105f67c9a6feaad389'
                         deleted: true
                     }
+                    edcbee772df74d42ab4ef1caad650ff5: {
+                        table: 'par_dashboard_tab'
+                        id: 'edcbee772df74d42ab4ef1caad650ff5'
+                    }
+                    ee2d19ab830c03105f67c9a6feaad3e4: {
+                        table: 'sys_ui_section'
+                        id: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                    }
                     ef1cfa43830883105f67c9a6feaad331: {
                         table: 'sys_scope_privilege'
                         id: 'ef1cfa43830883105f67c9a6feaad331'
@@ -1653,6 +2980,22 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'ef234307834883105f67c9a6feaad304'
                         deleted: true
+                    }
+                    ef28f23f83c4c3105f67c9a6feaad3cb: {
+                        table: 'sys_ui_element'
+                        id: 'ef28f23f83c4c3105f67c9a6feaad3cb'
+                    }
+                    ef28f23f83c4c3105f67c9a6feaad3d2: {
+                        table: 'sys_ui_element'
+                        id: 'ef28f23f83c4c3105f67c9a6feaad3d2'
+                    }
+                    ef4cb6384aa1419a9335316e864ba118: {
+                        table: 'sys_ux_list'
+                        id: 'ef4cb6384aa1419a9335316e864ba118'
+                    }
+                    ef77babb83c4c3105f67c9a6feaad3a0: {
+                        table: 'sys_ui_element'
+                        id: 'ef77babb83c4c3105f67c9a6feaad3a0'
                     }
                     efbc238b838c83105f67c9a6feaad3a9: {
                         table: 'sys_scope_privilege'
@@ -1689,10 +3032,30 @@ declare global {
                         id: 'f1c7f3878300c3105f67c9a6feaad3c1'
                         deleted: true
                     }
+                    f1f269a7834c03105f67c9a6feaad392: {
+                        table: 'par_dashboard_user_metadata'
+                        id: 'f1f269a7834c03105f67c9a6feaad392'
+                    }
+                    f25c1d2b830c03105f67c9a6feaad30f: {
+                        table: 'sys_ui_element'
+                        id: 'f25c1d2b830c03105f67c9a6feaad30f'
+                    }
                     f2c777878300c3105f67c9a6feaad381: {
                         table: 'sys_scope_privilege'
                         id: 'f2c777878300c3105f67c9a6feaad381'
                         deleted: true
+                    }
+                    f2f1fff1c6164f8094d02ff8c3d7555c: {
+                        table: 'sys_ux_list_category'
+                        id: 'f2f1fff1c6164f8094d02ff8c3d7555c'
+                    }
+                    f33c952b830c03105f67c9a6feaad3fa: {
+                        table: 'sys_scope_privilege'
+                        id: 'f33c952b830c03105f67c9a6feaad3fa'
+                    }
+                    f3b3b0a98a9e4922bb641c9c3e44f8a0: {
+                        table: 'par_dashboard_widget'
+                        id: 'f3b3b0a98a9e4922bb641c9c3e44f8a0'
                     }
                     f3bc638b838c83105f67c9a6feaad32c: {
                         table: 'sys_scope_privilege'
@@ -1714,15 +3077,35 @@ declare global {
                         id: 'f4834163834803105f67c9a6feaad322'
                         deleted: true
                     }
+                    f49a7de7830043105f67c9a6feaad34b: {
+                        table: 'sys_ui_section'
+                        id: 'f49a7de7830043105f67c9a6feaad34b'
+                    }
+                    f4c09def838803105f67c9a6feaad33a: {
+                        table: 'sys_scope_privilege'
+                        id: 'f4c09def838803105f67c9a6feaad33a'
+                    }
                     f5a73b478300c3105f67c9a6feaad3be: {
                         table: 'sys_scope_privilege'
                         id: 'f5a73b478300c3105f67c9a6feaad3be'
                         deleted: true
                     }
+                    f5b2cdfc1d6140a7b443b8678f19a0fb: {
+                        table: 'sys_security_acl'
+                        id: 'f5b2cdfc1d6140a7b443b8678f19a0fb'
+                    }
                     f5c7f3878300c3105f67c9a6feaad388: {
                         table: 'sys_scope_privilege'
                         id: 'f5c7f3878300c3105f67c9a6feaad388'
                         deleted: true
+                    }
+                    f607182931405d5e6f708192a3b4c5d6: {
+                        table: 'sys_properties'
+                        id: 'f607182931405d5e6f708192a3b4c5d6'
+                    }
+                    f65c1d2b830c03105f67c9a6feaad314: {
+                        table: 'sys_ui_element'
+                        id: 'f65c1d2b830c03105f67c9a6feaad314'
                     }
                     f71cfa43830883105f67c9a6feaad3b3: {
                         table: 'sys_scope_privilege'
@@ -1733,6 +3116,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'f7bc638b838c83105f67c9a6feaad324'
                         deleted: true
+                    }
+                    f80e8adb62304a4cba327d1c3479a13b: {
+                        table: 'sys_scope_privilege'
+                        id: 'f80e8adb62304a4cba327d1c3479a13b'
                     }
                     f8734d23834803105f67c9a6feaad3c3: {
                         table: 'sys_scope_privilege'
@@ -1749,10 +3136,22 @@ declare global {
                         id: 'f8954b4b834883105f67c9a6feaad359'
                         deleted: true
                     }
+                    fa5c1d2b830c03105f67c9a6feaad312: {
+                        table: 'sys_ui_element'
+                        id: 'fa5c1d2b830c03105f67c9a6feaad312'
+                    }
                     facce38b838c83105f67c9a6feaad393: {
                         table: 'sys_scope_privilege'
                         id: 'facce38b838c83105f67c9a6feaad393'
                         deleted: true
+                    }
+                    fb2f648f8e9c4aeea28b50eb41644d14: {
+                        table: 'sys_ux_page_property'
+                        id: 'fb2f648f8e9c4aeea28b50eb41644d14'
+                    }
+                    fb3cd52b830c03105f67c9a6feaad316: {
+                        table: 'sys_scope_privilege'
+                        id: 'fb3cd52b830c03105f67c9a6feaad316'
                     }
                     fbbc638b838c83105f67c9a6feaad318: {
                         table: 'sys_scope_privilege'
@@ -1774,6 +3173,10 @@ declare global {
                         id: 'fe23cfc3834883105f67c9a6feaad3f3'
                         deleted: true
                     }
+                    fe5c1d2b830c03105f67c9a6feaad310: {
+                        table: 'sys_ui_element'
+                        id: 'fe5c1d2b830c03105f67c9a6feaad310'
+                    }
                     fecce38b838c83105f67c9a6feaad364: {
                         table: 'sys_scope_privilege'
                         id: 'fecce38b838c83105f67c9a6feaad364'
@@ -1783,6 +3186,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'fecce38b838c83105f67c9a6feaad37d'
                         deleted: true
+                    }
+                    fee451daaf1c4c6c9f04262669401cb2: {
+                        table: 'sys_ux_list_category'
+                        id: 'fee451daaf1c4c6c9f04262669401cb2'
+                    }
+                    ff1075704c38428f91cefe1679e6d73f: {
+                        table: 'sys_security_acl'
+                        id: 'ff1075704c38428f91cefe1679e6d73f'
                     }
                     ff1c270b838c83105f67c9a6feaad335: {
                         table: 'sys_ui_related_list_entry'
@@ -1996,30 +3407,37 @@ declare global {
                     maf_dash_tab_ai: {
                         table: 'par_dashboard_tab'
                         id: '819d2178bcc046d6ab68121c90730df8'
+                        deleted: true
                     }
                     maf_dash_tab_details: {
                         table: 'par_dashboard_tab'
                         id: '03e6fa2f6d02420baa5e71444052d14e'
+                        deleted: true
                     }
                     maf_dash_tab_summary: {
                         table: 'par_dashboard_tab'
                         id: '2935c9df493044f8a6580767b9ef1f3b'
+                        deleted: true
                     }
                     maf_dash_w_ai: {
                         table: 'par_dashboard_widget'
                         id: '24f9c05f9b8440b1a9f2ac2047b61c97'
+                        deleted: true
                     }
                     maf_dash_w_details: {
                         table: 'par_dashboard_widget'
                         id: 'c17fc0a8a2244370a1077299b3677309'
+                        deleted: true
                     }
                     maf_dash_w_summary: {
                         table: 'par_dashboard_widget'
                         id: '9f76aada2d7e4ad0be609923af6a0d99'
+                        deleted: true
                     }
                     maf_dashboard_overview: {
                         table: 'par_dashboard'
                         id: 'cf1ffb1fd899453fa20eb763ed9549bf'
+                        deleted: true
                     }
                     maf_mod_assessment_runs: {
                         table: 'sys_app_module'
@@ -2720,314 +4138,392 @@ declare global {
                     maf_si_ai_summary_provider: {
                         table: 'sys_script_include'
                         id: '03e6f88e8df84adfb95fe543b21f0f06'
+                        deleted: true
                     }
                     maf_si_assessment_runner: {
                         table: 'sys_script_include'
                         id: '80d7bffb7ef54009881f041217696fb6'
+                        deleted: true
                     }
                     maf_si_collector_base: {
                         table: 'sys_script_include'
                         id: 'aa8ea872639b4ab6a884d936148396f5'
+                        deleted: true
                     }
                     maf_si_collector_factory: {
                         table: 'sys_script_include'
                         id: '152b63fc86f842d3bac9b7fe7c6b4d73'
+                        deleted: true
                     }
                     maf_si_collector_test_fixtures: {
                         table: 'sys_script_include'
                         id: '48654ed29172424a81e12cf8f02741c5'
+                        deleted: true
                     }
                     maf_si_cross_table_ratio_collector: {
                         table: 'sys_script_include'
                         id: '0527a6cd7b984f1d8eadcfaa6d623cf3'
+                        deleted: true
                     }
                     maf_si_declarative_collector: {
                         table: 'sys_script_include'
                         id: '74c108fbd815415fbf2add603193242d'
+                        deleted: true
                     }
                     maf_si_drill_down_builder: {
                         table: 'sys_script_include'
                         id: '786ce1687d0343d78d0bd62e745ffa58'
+                        deleted: true
                     }
                     maf_si_duration_collector: {
                         table: 'sys_script_include'
                         id: '1befcaabd7224087a02f528a7762bffd'
+                        deleted: true
                     }
                     maf_si_grouped_average_collector: {
                         table: 'sys_script_include'
                         id: '543d66d9f5b84bdf8cc69834a94855c8'
+                        deleted: true
                     }
                     maf_si_itsm_mttr: {
                         table: 'sys_script_include'
                         id: 'dd97cb633d5345daa5d4cee37eb839ca'
+                        deleted: true
                     }
                     maf_si_itsm_recurring_problem: {
                         table: 'sys_script_include'
                         id: '39cb792e97eb4a61ae7b7591586eb9dd'
+                        deleted: true
                     }
                     maf_si_itsm_reopen_rate: {
                         table: 'sys_script_include'
                         id: '1846ba0419bb45bfad42bd8ff2900b82'
+                        deleted: true
                     }
                     maf_si_portal_metrics_collector: {
                         table: 'sys_script_include'
                         id: '1c525b1d852c4e4e94dae968cea9dee1'
+                        deleted: true
                     }
                     maf_si_portal_scope_helper: {
                         table: 'sys_script_include'
                         id: '5459de8a22934dbea6ba8f23c84a7515'
+                        deleted: true
                     }
                     maf_si_schema_introspection_collector: {
                         table: 'sys_script_include'
                         id: 'a3ebbaecf9ad49c3bf8c3a0e2b7cbe0b'
+                        deleted: true
                     }
                     maf_si_scoring_engine: {
                         table: 'sys_script_include'
                         id: 'b14f7fabfe5349be87a8050521e11cff'
+                        deleted: true
                     }
                     maf_si_windowed_ratio_collector: {
                         table: 'sys_script_include'
                         id: 'e481a598b0f24a28821553afb2586d1e'
+                        deleted: true
                     }
                     maf_ui_action_execute_run: {
                         table: 'sys_ui_action'
                         id: 'cc78b8c03b7145a180ebc650b110d422'
+                        deleted: true
                     }
                     maf_ui_action_generate_ai_summary: {
                         table: 'sys_ui_action'
                         id: '13321400d538427199106b3193c6f660'
+                        deleted: true
                     }
                     maf_ui_action_view_dashboard: {
                         table: 'sys_ui_action'
                         id: '4d6ca434e5f34cc997ba680d76452da2'
+                        deleted: true
                     }
                     maf_workspace: {
                         table: 'sys_ux_page_registry'
                         id: 'd4539f836150408e9f96085470bf0525'
+                        deleted: true
                     }
                     maf_workspace_applicability: {
                         table: 'sys_ux_applicability'
                         id: '18509269df0c42b684b16c5bf0702df1'
+                        deleted: true
                     }
                     maf_workspace_list_config: {
                         table: 'sys_ux_list_menu_config'
                         id: 'ac2ab186b85b49bfa13db3ab6b058d82'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_app_config_workspace: {
                         table: 'sys_ux_app_config'
                         id: 'e77fb30c6f9040e5bd6f705f0f6291de'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_app_route_home: {
                         table: 'sys_ux_app_route'
                         id: 'bdfc28f1b4764d409dc192d18f6f498b'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_app_route_list: {
                         table: 'sys_ux_app_route'
                         id: '0a86dd85908d46e7a966bc4d3c206033'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_app_route_record: {
                         table: 'sys_ux_app_route'
                         id: '4c52b3c5aeeb48619c6a33d07a26adf8'
+                        deleted: true
                     }
                     'maf_workspace_sys_ux_app_route_simple-list': {
                         table: 'sys_ux_app_route'
                         id: '02f1343e8b4c48e587bc125e30d28319'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_macroponent_record: {
                         table: 'sys_ux_macroponent'
                         id: 'd6411c3d37844c6f96741be4390430f2'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_chrome_footer: {
                         table: 'sys_ux_page_property'
                         id: 'd3d3947224534010921fb9dcd1710846'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_chrome_header: {
                         table: 'sys_ux_page_property'
                         id: '31eba1342845458cb6f117b51e8198f8'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_chrome_tab: {
                         table: 'sys_ux_page_property'
                         id: 'a37a31a0c456407fbc7bec5ef145c218'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_chrome_toolbar: {
                         table: 'sys_ux_page_property'
                         id: '0804065a6f594fb39276a6cda8b90a1a'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_listConfigId: {
                         table: 'sys_ux_page_property'
                         id: '6d3f909ab9c741dcb051b3d62b535a9e'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_view: {
                         table: 'sys_ux_page_property'
                         id: '7ca2a7acfc5743a49071dfc0971a72e2'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_page_property_wbApplicabilityConfigId: {
                         table: 'sys_ux_page_property'
                         id: '113cb2c672224639b12f5fcb97e0fd73'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_registry_m2m_category_unifiedNav: {
                         table: 'sys_ux_registry_m2m_category'
                         id: 'fd9d9617ebcc4545a20876bd25f69b44'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_home: {
                         table: 'sys_ux_screen'
                         id: '9cb80f20c28c40f592e981c7dfc4cfca'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_list: {
                         table: 'sys_ux_screen'
                         id: '8af96fe876514f2185a0e63c64a0155e'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_record: {
                         table: 'sys_ux_screen'
                         id: 'f2ced8e33e5d4ea1833eaa289d88164e'
+                        deleted: true
                     }
                     'maf_workspace_sys_ux_screen_simple-list': {
                         table: 'sys_ux_screen'
                         id: '175bb00b45ca4c6c8a1c9bd863defd29'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_type_home: {
                         table: 'sys_ux_screen_type'
                         id: 'b919c7ba01c5485aafdb46bb167e6b06'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_type_list: {
                         table: 'sys_ux_screen_type'
                         id: '9380f70acd7e4a289a4ed18123695961'
+                        deleted: true
                     }
                     maf_workspace_sys_ux_screen_type_record: {
                         table: 'sys_ux_screen_type'
                         id: 'bbca8d6345124e77a773eadd9ab466f1'
+                        deleted: true
                     }
                     'maf_workspace_sys_ux_screen_type_simple-list': {
                         table: 'sys_ux_screen_type'
                         id: '91eb0482a7ad4e48b192104d793ffc3a'
+                        deleted: true
                     }
                     maf_wsl_ai_summaries: {
                         table: 'sys_ux_list'
                         id: '99734289c8454a5d9857742817cd82e3'
+                        deleted: true
                     }
                     maf_wsl_ai_summaries_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'a2c3a43264574e2ea8210e0f08bc46ea'
+                        deleted: true
                     }
                     maf_wsl_cat_ai: {
                         table: 'sys_ux_list_category'
                         id: '06d1ea0c1684477f8b409086def457cb'
+                        deleted: true
                     }
                     maf_wsl_cat_config: {
                         table: 'sys_ux_list_category'
                         id: 'b67d3c909ff14cafb0fa06ad783ccf8a'
+                        deleted: true
                     }
                     maf_wsl_cat_results: {
                         table: 'sys_ux_list_category'
                         id: '308c7d064ed2414bb6e3690f23ef3c4b'
+                        deleted: true
                     }
                     maf_wsl_cat_runs: {
                         table: 'sys_ux_list_category'
                         id: '52c48d1037304135bd3a9ec5c17d5d3d'
+                        deleted: true
                     }
                     maf_wsl_cat_scores: {
                         table: 'sys_ux_list'
                         id: 'e08762daf92c4d35b9b789ddb403f247'
+                        deleted: true
                     }
                     maf_wsl_cat_scores_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '86933d5af65d40abb91afcede0c23226'
+                        deleted: true
                     }
                     maf_wsl_categories: {
                         table: 'sys_ux_list'
                         id: '25ab75484a5c4cc9ab9b0c61f58eb812'
+                        deleted: true
                     }
                     maf_wsl_categories_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '46ddda025f164d33a52cdceeea36844d'
+                        deleted: true
                     }
                     maf_wsl_metric_results_all: {
                         table: 'sys_ux_list'
                         id: '2c8d27eb56de49868a8bec0f04a8215b'
+                        deleted: true
                     }
                     maf_wsl_metric_results_all_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'ffc131c1f6d441bf938d349d3ab5633d'
+                        deleted: true
                     }
                     maf_wsl_metric_results_amber: {
                         table: 'sys_ux_list'
                         id: '46199f0d64244a94878def67c1ece47c'
+                        deleted: true
                     }
                     maf_wsl_metric_results_amber_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '1c11de3a27be4e5c8f26029c196332cb'
+                        deleted: true
                     }
                     maf_wsl_metric_results_error: {
                         table: 'sys_ux_list'
                         id: 'f3654ae75a104affa420d683c3c27e5e'
+                        deleted: true
                     }
                     maf_wsl_metric_results_error_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '1f8ae03fd29042979f1df7c9012ea1b5'
+                        deleted: true
                     }
                     maf_wsl_metric_results_red: {
                         table: 'sys_ux_list'
                         id: 'a42b1f43168b4b24baf8ebd5e73bc9f0'
+                        deleted: true
                     }
                     maf_wsl_metric_results_red_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '7c323406ca9248c285d30e8d38c0c2d5'
+                        deleted: true
                     }
                     maf_wsl_metrics_active: {
                         table: 'sys_ux_list'
                         id: '3becbdf82f164f26b211878ca0fc0589'
+                        deleted: true
                     }
                     maf_wsl_metrics_active_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '7ae532143acc49cb8e7bb09955afb8cf'
+                        deleted: true
                     }
                     maf_wsl_packs: {
                         table: 'sys_ux_list'
                         id: 'a5658b398af441378d9a3f852cbfe19e'
+                        deleted: true
                     }
                     maf_wsl_packs_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '2f5357d2efc3497d8a0c957a0c029f86'
+                        deleted: true
                     }
                     maf_wsl_runs_active: {
                         table: 'sys_ux_list'
                         id: '269655a751bf4cc4afeea3d68bcac823'
+                        deleted: true
                     }
                     maf_wsl_runs_active_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '1c610c4c845f435280ece1ce1451ccfe'
+                        deleted: true
                     }
                     maf_wsl_runs_all: {
                         table: 'sys_ux_list'
                         id: '924f8c5f8bab4c6a8f29beb673f46c86'
+                        deleted: true
                     }
                     maf_wsl_runs_all_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '24156776bdf0459a9723eb359566401b'
+                        deleted: true
                     }
                     maf_wsl_runs_complete: {
                         table: 'sys_ux_list'
                         id: 'e441cc1b74264810bedfbd6c8e4e2065'
+                        deleted: true
                     }
                     maf_wsl_runs_complete_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'd2cbaaeb9a3c441ba37df61820ae1f67'
+                        deleted: true
                     }
                     maf_wsl_subcat_scores: {
                         table: 'sys_ux_list'
                         id: '3c6b1c2920ab45d5a3822624fcb8e703'
+                        deleted: true
                     }
                     maf_wsl_subcat_scores_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '421bffb8ace2406ea32f66848ff8145b'
+                        deleted: true
                     }
                     maf_wsl_subcategories: {
                         table: 'sys_ux_list'
                         id: '384e04ed7c7d4267953fbaed415bb3be'
+                        deleted: true
                     }
                     maf_wsl_subcategories_app: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'f882a6d031d9498da57eb87553533fd0'
+                        deleted: true
                     }
                     package_json: {
                         table: 'sys_module'
@@ -3056,6 +4552,10 @@ declare global {
                     'src_server_script-includes_MAFAssessmentRunner_server_js': {
                         table: 'sys_module'
                         id: '75c096a5546141deb85fcaebd34ef9b5'
+                    }
+                    'src_server_script-includes_MAFChangeScheduleAdherenceCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'ccce317aea23479fa9678daa65548508'
                     }
                     'src_server_script-includes_MAFCollectorFactory_server_js': {
                         table: 'sys_module'
@@ -3088,6 +4588,10 @@ declare global {
                     'src_server_script-includes_MAFMetricCollectorBase_server_js': {
                         table: 'sys_module'
                         id: 'cb1c1e94794d492fa7d82be097382182'
+                    }
+                    'src_server_script-includes_MAFOOBChoiceComplianceCollector_server_js': {
+                        table: 'sys_module'
+                        id: '309aa679b4cd414b9300b148af5726db'
                     }
                     'src_server_script-includes_MAFPortalMetricsCollector_server_js': {
                         table: 'sys_module'
@@ -3127,6 +4631,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '023cb7973a5c4108865ae2ea41008ad3'
+                        deleted: true
                         key: {
                             sys_ui_action: 'cc78b8c03b7145a180ebc650b110d422'
                             sys_user_role: {
@@ -3157,6 +4662,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '043ddc4776d24890abd4620596f051b3'
+                        deleted: true
                         key: {
                             sys_ui_action: '13321400d538427199106b3193c6f660'
                             sys_user_role: {
@@ -4142,6 +5648,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '2d6999948d4c4360ae4d43bddbbcf448'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            element: 'collector_type'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2ef52e33c66041a9a859af082295a277'
                         key: {
@@ -4423,6 +5937,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '449377e921334b1fbfd30c80cd351533'
+                        key: {
+                            name: 'x_maf_core_ai_summary'
+                            element: 'provider'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '44dd9f135836458cb39f4d3aa0847350'
                         key: {
@@ -4446,6 +5968,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '45575aeb986c442ead78b84004950081'
+                        deleted: true
                         key: {
                             sys_ui_action: 'cc78b8c03b7145a180ebc650b110d422'
                             sys_user_role: {
@@ -4964,6 +6487,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '5a52d1e59ee1479fa2a6b8439d1c78a1'
+                        deleted: true
                         key: {
                             sys_ui_action: '4d6ca434e5f34cc997ba680d76452da2'
                             sys_user_role: {
@@ -5220,6 +6744,7 @@ declare global {
                     {
                         table: 'par_dashboard_canvas'
                         id: '630dffe2ee92418abe1230a7402f4b2c'
+                        deleted: true
                         key: {
                             dashboard: 'cf1ffb1fd899453fa20eb763ed9549bf'
                             dashboard_tab: '819d2178bcc046d6ab68121c90730df8'
@@ -5309,6 +6834,7 @@ declare global {
                     {
                         table: 'par_dashboard_canvas'
                         id: '64ca4604a180409b92140088cc845b4a'
+                        deleted: true
                         key: {
                             dashboard: 'cf1ffb1fd899453fa20eb763ed9549bf'
                             dashboard_tab: '2935c9df493044f8a6580767b9ef1f3b'
@@ -5462,6 +6988,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '69917831f8314b24a99765e46698e40f'
+                        deleted: true
                         key: {
                             sys_ui_action: '13321400d538427199106b3193c6f660'
                             sys_user_role: {
@@ -5630,6 +7157,7 @@ declare global {
                     {
                         table: 'par_dashboard_canvas'
                         id: '6d58a032ef2543e38c5dface05d15bfa'
+                        deleted: true
                         key: {
                             dashboard: 'cf1ffb1fd899453fa20eb763ed9549bf'
                             dashboard_tab: '03e6fa2f6d02420baa5e71444052d14e'
@@ -5794,6 +7322,7 @@ declare global {
                     {
                         table: 'sys_ui_action_role'
                         id: '730c5c77cd5441bfaf16a6dfdddd9290'
+                        deleted: true
                         key: {
                             sys_ui_action: '4d6ca434e5f34cc997ba680d76452da2'
                             sys_user_role: {
@@ -6058,6 +7587,14 @@ declare global {
                         key: {
                             name: 'x_maf_core_pack'
                             element: 'version'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '80093135129c45c984a462b89dd6bfee'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'rag_status'
                         }
                     },
                     {
@@ -6985,6 +8522,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: 'a4b4d9256e66429597fb42c10b20b2a3'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            element: 'aggregation'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'a4ebde1a963d4250842a2c89e089481c'
+                        key: {
+                            name: 'x_maf_core_assessment_run'
+                            element: 'state'
+                        }
+                    },
+                    {
                         table: 'sys_number'
                         id: 'a596fc13f7514634b082ef3f350ea66d'
                         key: {
@@ -7478,8 +9031,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: 'c4bfc5b263b949ae83f95be456224b85'
+                        key: {
+                            name: 'x_maf_core_sub_category_score'
+                            element: 'rag_status'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: 'c4d04d3d246f46d0b6baeb18a448522b'
+                        deleted: true
                         key: {
                             sys_ui_action: '4d6ca434e5f34cc997ba680d76452da2'
                             sys_user_role: {

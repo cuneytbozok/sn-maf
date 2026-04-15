@@ -2,7 +2,7 @@ import '@servicenow/sdk/global'
 import { ScriptInclude } from '@servicenow/sdk/core'
 
 export const mafPortalScopeHelper = ScriptInclude({
-    $id: Now.ID['maf_si_portal_scope_helper'],
+    $id: Now.ID['7b3d80f1a2c4356789e0d1c2b3a49587'],
     name: 'MAFPortalScopeHelper',
     description:
         'Default sp_portal, m2m_sp_portal_catalog / m2m_sp_portal_taxonomy, and sc_cat_item.sc_catalogs query helpers for MAF.',

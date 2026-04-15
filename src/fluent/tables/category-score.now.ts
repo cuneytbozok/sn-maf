@@ -1,3 +1,4 @@
+import '@servicenow/sdk/global'
 import { ChoiceColumn, DecimalColumn, IntegerColumn, ReferenceColumn, StringColumn, Table } from '@servicenow/sdk/core'
 
 export const x_maf_core_category_score = Table({

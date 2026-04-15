@@ -166,9 +166,11 @@ Record({
         title: 'Dashboards',
         active: true,
         order: 600,
-        link_type: 'LIST',
+        link_type: 'DIRECT',
         name: 'par_dashboard',
-        query: 'sysparm_query=name=Maturity Assessment Overview',
+        query: '/x/maf/maf/home/',
+        mobile_title: 'Dashboards',
+        mobile_view_name: 'Mobile',
         override_menu_roles: false,
         require_confirmation: false,
         sys_domain: 'global',
@@ -197,18 +199,24 @@ Record({
 })
 
 UiAction({
-    $id: Now.ID['maf_ui_action_execute_run'],
+    $id: Now.ID['a769c2bc90194b39b4894eb08515bda6'],
     table: 'x_maf_core_assessment_run',
     name: 'Execute Run',
     actionName: 'maf_execute_run',
     active: true,
-    showUpdate: true,
-    showInsert: true,
-    order: 100,
+    form: {
+        showButton: true,
+        style: 'primary',
+    },
+    workspace: {
+        clientScriptV2: `function onClick(g_form) {
+
+}`,
+        showFormButtonV2: true,
+        isConfigurableWorkspace: true,
+    },
+    messages: [],
     condition: "current.state == 'draft'",
-    roles: [mafAdmin, mafUser],
-    hint: 'Collect metrics, score categories, and generate AI summary in the background.',
-    form: { showButton: true, style: 'primary' },
     script: `var runner = new MAFAssessmentRunner();
 var ok = runner.run(current.getUniqueValue());
 if (ok) {
@@ -217,22 +225,32 @@ if (ok) {
   gs.addErrorMessage('Could not start the assessment run.');
 }
 action.setRedirectURL(current);`,
-    messages: [],
+    hint: 'Collect metrics, score categories, and generate AI summary in the background.',
+    showUpdate: true,
+    showInsert: true,
+    order: 100,
+    roles: ['x_maf_core.admin', 'x_maf_core.user'],
 })
 
 UiAction({
-    $id: Now.ID['maf_ui_action_generate_ai_summary'],
+    $id: Now.ID['d4e5f60718294a3b5c6d7e8f90123456'],
     table: 'x_maf_core_assessment_run',
     name: 'Generate AI Summary',
     actionName: 'maf_generate_ai_summary',
     active: true,
-    showUpdate: true,
-    showInsert: false,
-    order: 150,
+    form: {
+        showButton: true,
+        style: 'unstyled',
+    },
+    workspace: {
+        clientScriptV2: `function onClick(g_form) {
+
+}`,
+        showFormButtonV2: true,
+        isConfigurableWorkspace: true,
+    },
+    messages: [],
     condition: "current.state != 'draft' && current.state != 'running'",
-    roles: [mafAdmin, mafUser],
-    hint: 'Build or refresh the MAF AI Summary (metrics JSON + prompt) on the related MAF AI Summary record.',
-    form: { showButton: true, style: 'unstyled' },
     script: `gs.include('MAFAISummaryProvider');
 var ai = new MAFAISummaryProvider();
 ai.generate(current.getUniqueValue());
@@ -246,32 +264,39 @@ if (st == 'scored' || st == 'summarized') {
   current.update();
 }
 action.setRedirectURL(current);`,
-    messages: [],
+    hint: 'Build or refresh the MAF AI Summary (metrics JSON + prompt) on the related MAF AI Summary record.',
+    order: 150,
+    showUpdate: true,
+    showInsert: false,
+    roles: ['x_maf_core.user', 'x_maf_core.admin'],
 })
 
 UiAction({
-    $id: Now.ID['maf_ui_action_view_dashboard'],
+    $id: Now.ID['c5bf6efcf1ee4c92a7519f362cd957c7'],
     table: 'x_maf_core_assessment_run',
     name: 'View Dashboard',
     actionName: 'maf_view_dashboard',
     active: true,
-    showUpdate: true,
-    order: 200,
-    condition: "current.state == 'complete' || current.state == 'summarized' || current.state == 'scored'",
-    roles: [mafAdmin, mafUser, mafViewer],
-    hint: 'Open the Maturity Assessment Overview dashboard.',
-    form: { showButton: true, style: 'unstyled' },
-    script: `var d = new GlideRecord('par_dashboard');
-d.addQuery('name', 'Maturity Assessment Overview');
-d.query();
-if (d.next()) {
-  action.setRedirectURL('par_dashboard.do?sys_id=' + d.getUniqueValue());
-} else {
-  gs.addErrorMessage('Maturity Assessment Overview dashboard not found. Redeploy the MAF application or open Dashboards from the application menu.');
-  action.setRedirectURL(current);
+    form: {
+        showButton: true,
+        style: 'unstyled',
+    },
+    workspace: {
+        clientScriptV2: `function onClick(g_form) {
+
 }`,
+        showFormButtonV2: true,
+        isConfigurableWorkspace: true,
+    },
     messages: [],
+    condition: "current.state == 'complete' || current.state == 'summarized' || current.state == 'scored'",
+    script: `action.setRedirectURL('/x/maf/maf/home');
+`,
+    hint: 'Open the Maturity Assessment Overview dashboard.',
+    order: 200,
+    showUpdate: true,
     showInsert: true,
+    roles: ['x_maf_core.viewer', 'x_maf_core.admin', 'x_maf_core.user'],
 })
 
 Form({
