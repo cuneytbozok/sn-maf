@@ -4126,6 +4126,7 @@ Record({
         extends: '2395ddb853772110784cddeeff7b1251',
         form_factors: '{}',
         internal_event_mappings: '{}',
+        keyboard_shortcuts: '{}',
         layout: `{
     "default": {
         "children": null,

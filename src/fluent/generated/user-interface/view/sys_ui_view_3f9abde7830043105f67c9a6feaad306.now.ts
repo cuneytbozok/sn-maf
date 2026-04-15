@@ -5,7 +5,7 @@ Record({
     table: 'sys_ui_view',
     data: {
         hidden: false,
-        name: 'workspace-6fc21ed6cd3c496194fa8afdb8836da1',
+        name: 'workspace6fc21ed6cd3c496194fa8afdb8836da1',
         title: 'Workspace-6fc21ed6cd3c496194fa8afdb8836da1',
     },
 })

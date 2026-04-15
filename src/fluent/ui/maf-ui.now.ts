@@ -401,7 +401,7 @@ UiPolicy({
     global: true,
     reverseIfFalse: true,
     order: 100,
-    conditions: "current.collector_type == 'declarative'",
+    conditions: 'collector_type=declarative',
     actions: [
         { field: 'source_table', visible: true },
         { field: 'filter_condition', visible: true },
@@ -420,7 +420,7 @@ UiPolicy({
     global: true,
     reverseIfFalse: true,
     order: 200,
-    conditions: "current.collector_type == 'script_include'",
+    conditions: 'collector_type=script_include',
     actions: [
         { field: 'script_include', visible: true },
         { field: 'script_params', visible: true },

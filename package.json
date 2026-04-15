@@ -19,5 +19,8 @@
     "@servicenow/glide": "27.0.5",
     "@servicenow/sdk": "4.5.0",
     "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "dependencies": "^0.0.1"
   }
 }
