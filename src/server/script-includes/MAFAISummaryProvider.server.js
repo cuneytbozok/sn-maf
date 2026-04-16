@@ -432,14 +432,16 @@ MAFAISummaryProvider.prototype = {
         var bk = bucketKeys[bki]
         var bucket = subBuckets[bk]
         var topNames = []
+        var topLabels = []
         for (var tni = 0; tni < Math.min(bucket.metrics.length, 3); tni++) {
           topNames.push(bucket.metrics[tni].name)
+          topLabels.push(bucket.metrics[tni].label || bucket.metrics[tni].name)
         }
         recommendations.push({
           title: 'Address red metrics in ' + bk,
           rationale: bucket.metrics.length + ' red metric(s) with combined weight ' +
             bucket.totalWeight.toFixed(2) + '. Top offenders: ' +
-            topNames.join(', ') + '.',
+            topLabels.join(', ') + '.',
           effort: bucket.totalWeight > 0.2 ? 'high' : 'medium',
           impact: 'high',
           related_metrics: topNames,
@@ -544,6 +546,7 @@ MAFAISummaryProvider.prototype = {
       'You are an expert ServiceNow platform maturity advisor analyzing results from the Maturity Assessment Framework (MAF). ' +
       'You receive structured JSON containing packs, categories (with weights), sub-categories, and per-metric results including raw values, normalized scores (0-100), RAG status, thresholds, targets, weights, and descriptions.\n\n' +
       'KEY CONCEPTS:\n' +
+      '- Each metric has two identifiers: "label" (human-readable display title, e.g. "Business service governance fields populated (%)") and "name" (machine id, e.g. "svc_gov_business_service_fields").\n' +
       '- Each metric has a weight_in_category that determines its influence on the rollup score. High-weight red metrics are the biggest problems.\n' +
       '- higher_is_better=true means the raw value should be high (e.g., % populated). false means it should be low (e.g., error count, hours).\n' +
       '- The gap between current value and target quantifies the improvement needed.\n' +
@@ -555,27 +558,28 @@ MAFAISummaryProvider.prototype = {
       '- Group related findings: if multiple CI-linkage metrics are red, discuss them together as a CMDB data quality theme.\n' +
       '- Call out strengths: identify what is going well (green metrics with high weights) — stakeholders need balanced perspective.\n' +
       '- For errors: explain what failed and why it matters (blind spots in scoring).\n' +
-      '- Use the metric label and name to understand what each metric measures.\n' +
+      '- ALWAYS use the metric "label" field (not "name") for every user-facing reference in the HTML output — tables, bullet lists, prose. The "name" field is an internal id and must NEVER appear in the rendered HTML. Same rule applies to category and sub_category: use their "label" fields in the HTML.\n' +
+      '- The "name" field is reserved for the related_metrics array in the Recommendations JSON only.\n' +
       '- Do not invent metrics, scores, or data not present in the JSON.'
 
     var user =
       'Analyze the MAF assessment JSON below and produce TWO outputs:\n\n' +
       '## OUTPUT 1: Executive HTML Summary\n' +
-      'Wrap in <div class="maf-ai-llm-summary">. Structure as:\n\n' +
+      'Wrap in <div class="maf-ai-llm-summary">. Every metric, category, and sub-category mentioned in the HTML MUST be referenced by its "label" field, never its "name" field. Structure as:\n\n' +
       '1. **Overall health snapshot** — one paragraph with total metrics, RAG distribution, and overall maturity posture.\n\n' +
-      '2. **Category scorecard** — for each category, state: score, RAG, weight, and the key driver (best and worst sub-category). Use an HTML table.\n\n' +
-      '3. **Critical findings (red metrics)** — list the top 10 red metrics sorted by weight (highest impact first). For each: name, current value vs target, gap, and a one-line explanation of business impact using the metric description. Use an HTML table with columns: Metric, Value, Target, Gap, Impact.\n\n' +
-      '4. **Improvement opportunities (amber metrics)** — top 5-7 amber metrics by weight with value vs target. Brief table.\n\n' +
-      '5. **Strengths** — top 5 green metrics by weight. Recognize what the organization does well.\n\n' +
-      '6. **Collection errors** — if any metrics have rag=error, list them with the collection_error message and explain the blind spot.\n\n' +
+      '2. **Category scorecard** — for each category, state: score, RAG, weight, and the key driver (best and worst sub-category). Use an HTML table. Show category and sub-category labels, not names.\n\n' +
+      '3. **Critical findings (red metrics)** — list the top 10 red metrics sorted by weight (highest impact first). For each: the metric label, current value vs target, gap, and a one-line explanation of business impact using the metric description. Use an HTML table with columns: Metric, Value, Target, Gap, Impact. The Metric column MUST show the label (e.g. "Business service governance fields populated (%)"), not the name (e.g. "svc_gov_business_service_fields").\n\n' +
+      '4. **Improvement opportunities (amber metrics)** — top 5-7 amber metrics by weight with value vs target. Brief table. Show labels, not names.\n\n' +
+      '5. **Strengths** — top 5 green metrics by weight (show labels). Recognize what the organization does well.\n\n' +
+      '6. **Collection errors** — if any metrics have rag=error, list them (by label) with the collection_error message and explain the blind spot.\n\n' +
       '7. **Cross-cutting themes** — identify 2-3 patterns across metrics (e.g., "CMDB linkage is weak across incident, problem, and change" or "Knowledge management shows strong freshness but low attachment at resolve").\n\n' +
       '## OUTPUT 2: Recommendations JSON\n' +
       'After the HTML, output one fenced JSON code block ```json ... ``` containing:\n' +
       '{ "recommendations": [ { "title": "...", "rationale": "...", "effort": "low|medium|high", "impact": "low|medium|high", "related_metrics": ["metric_name1", ...], "related_sub_category": "sub_cat_name" } ] }\n\n' +
       'Provide 5-8 recommendations. Prioritize by (impact * weight). Each recommendation should:\n' +
-      '- Have a specific, actionable title (not "improve data quality" but "Populate CI field on incidents — currently at 45% vs 90% target")\n' +
-      '- Reference specific metric values and gaps in the rationale\n' +
-      '- Use metric "name" values from the JSON for related_metrics\n\n' +
+      '- Have a specific, actionable title that uses the metric label (not "improve data quality" but "Populate CI field on incidents — currently at 45% vs 90% target"). Never put metric "name" ids in the title or rationale.\n' +
+      '- Reference specific metric values and gaps in the rationale, using labels when mentioning metrics.\n' +
+      '- Use metric "name" values from the JSON for the related_metrics array (this is the only place names belong — it is a machine-readable id list, not display text).\n\n' +
       'Assessment JSON:\n' +
       jsonStr
 
