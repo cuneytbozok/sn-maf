@@ -311,6 +311,13 @@ Record({
     weight_in_category: 0.2,
     unit: '%',
     active: true,
+    default_likely_cause:
+      'Discovery schedules are failing, excluded ranges have drifted, or a large class of CIs is maintained only manually. MID servers may be offline or credentials expired.',
+    default_suggested_action:
+      'Audit discovery schedules and MID server health, widen credential coverage for the top non-updating classes, and retire CIs that remain stale for more than 180 days.',
+    default_owner_role: 'platform_owner',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: false,
   },
 })
 
@@ -333,6 +340,13 @@ Record({
     weight_in_category: 0.2,
     unit: '%',
     active: true,
+    default_likely_cause:
+      'Discovery is populating CIs but relationship patterns (Service Mapping or suggested relationships) are not running or not accepted. Manually created CIs rarely get relationships added back.',
+    default_suggested_action:
+      'Run Service Mapping against the top business services, enable suggested relationships, and add a monthly stewardship check that removes or archives CIs still orphaned after 60 days.',
+    default_owner_role: 'data_steward',
+    default_effort_tshirt: 'l',
+    default_quick_win_flag: false,
   },
 })
 

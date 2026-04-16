@@ -45,10 +45,17 @@ export const x_maf_core_metric_definition = Table({
                 script_include: {
                     label: 'Script include',
                 },
+                manual: {
+                    label: 'Manual',
+                },
             },
             dropdown: 'dropdown_with_none',
             label: 'Collector type',
             mandatory: true,
+        }),
+        manual_guidance_text: StringColumn({
+            label: 'Manual guidance',
+            maxLength: 4000,
         }),
         name: StringColumn({
             label: 'Name',
@@ -141,6 +148,74 @@ export const x_maf_core_metric_definition = Table({
         active: BooleanColumn({
             default: true,
             label: 'Active',
+        }),
+        default_likely_cause: StringColumn({
+            label: 'Default likely cause',
+            maxLength: 1000,
+        }),
+        default_suggested_action: StringColumn({
+            label: 'Default suggested action',
+            maxLength: 2000,
+        }),
+        default_owner_role: ChoiceColumn({
+            choices: {
+                process_owner: {
+                    label: 'Process owner',
+                },
+                platform_owner: {
+                    label: 'Platform owner',
+                },
+                developer: {
+                    label: 'Developer',
+                },
+                admin: {
+                    label: 'Administrator',
+                },
+                data_steward: {
+                    label: 'Data steward',
+                },
+                security: {
+                    label: 'Security',
+                },
+                integration_owner: {
+                    label: 'Integration owner',
+                },
+            },
+            dropdown: 'dropdown_with_none',
+            label: 'Default owner role',
+        }),
+        default_effort_tshirt: ChoiceColumn({
+            choices: {
+                xs: {
+                    label: 'XS',
+                },
+                s: {
+                    label: 'S',
+                },
+                m: {
+                    label: 'M',
+                },
+                l: {
+                    label: 'L',
+                },
+                xl: {
+                    label: 'XL',
+                },
+            },
+            dropdown: 'dropdown_with_none',
+            label: 'Default effort (t-shirt)',
+        }),
+        default_quick_win_flag: BooleanColumn({
+            default: false,
+            label: 'Default quick win',
+        }),
+        collector_capability: ReferenceColumn({
+            attributes: {
+                encode_utf8: false,
+            },
+            cascadeRule: 'clear',
+            label: 'Collector capability',
+            referenceTable: 'x_maf_core_collector_capability',
         }),
     },
 })

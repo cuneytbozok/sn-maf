@@ -76,5 +76,8 @@ export const x_maf_core_sub_category_score = Table({
         metrics_error: IntegerColumn({
             label: 'Metrics error',
         }),
+        metrics_pending: IntegerColumn({
+            label: 'Metrics pending input',
+        }),
     },
 })

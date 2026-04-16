@@ -203,6 +203,7 @@ MAFScoringEngine.prototype = {
           amber: 0,
           red: 0,
           error: 0,
+          pending: 0,
         }
       }
       var agg = subCatAggregates[subCatId]
@@ -211,6 +212,13 @@ MAFScoringEngine.prototype = {
       var rs = mr.getValue('rag_status')
       if (rs === 'error') {
         agg.error++
+        continue
+      }
+      // Manual metrics awaiting consultant input: counted for visibility but
+      // excluded from the weight denominator so a pending metric cannot drag
+      // the sub-category score toward zero before it has been answered.
+      if (rs === 'pending_input') {
+        agg.pending++
         continue
       }
       if (rs === 'green') agg.green++
@@ -256,6 +264,7 @@ MAFScoringEngine.prototype = {
       cs.setValue('metrics_amber', agg.amber)
       cs.setValue('metrics_red', agg.red)
       cs.setValue('metrics_error', agg.error)
+      cs.setValue('metrics_pending', agg.pending)
       cs.insert()
 
       if (!catAggregates[catId]) {
@@ -267,6 +276,7 @@ MAFScoringEngine.prototype = {
           amber: 0,
           red: 0,
           error: 0,
+          pending: 0,
         }
       }
       var cAgg = catAggregates[catId]
@@ -280,6 +290,7 @@ MAFScoringEngine.prototype = {
       cAgg.amber += agg.amber
       cAgg.red += agg.red
       cAgg.error += agg.error
+      cAgg.pending += agg.pending
     }
 
     var catGr = new GlideRecord('x_maf_core_category')
@@ -306,6 +317,7 @@ MAFScoringEngine.prototype = {
       cs2.setValue('metrics_amber', cAgg2.amber)
       cs2.setValue('metrics_red', cAgg2.red)
       cs2.setValue('metrics_error', cAgg2.error)
+      cs2.setValue('metrics_pending', cAgg2.pending)
       cs2.insert()
     }
   },

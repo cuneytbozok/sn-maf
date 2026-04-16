@@ -65,7 +65,12 @@ MAFAISummaryProvider.prototype = {
         amber: 'Between red threshold and target — improvement needed but not critical.',
         red: 'Below red threshold — requires urgent attention.',
         error: 'Collection failed — metric could not be measured; investigate the error.',
+        pending_input:
+          'Manual metric — awaiting consultant response in the discovery workshop. Not yet scored; excluded from the weight denominator until answered.',
       },
+      advisory_model:
+        'Metric results may carry a curated advisory snapshot (likely_cause, suggested_action, owner_role, effort_tshirt, quick_win_flag) copied from the pack seed at collection time. ' +
+        'Treat curated advisory text as authoritative — prefer the curated suggested_action verbatim unless the measured evidence directly contradicts it. Only paraphrase when rewording is needed for narrative flow.',
     }
   },
 
@@ -139,6 +144,7 @@ MAFAISummaryProvider.prototype = {
             metrics_amber: null,
             metrics_red: null,
             metrics_error: null,
+            metrics_pending: null,
             metrics: [],
           }
           var scs = new GlideRecord('x_maf_core_sub_category_score')
@@ -154,6 +160,7 @@ MAFAISummaryProvider.prototype = {
             subEntry.metrics_amber = scs.getValue('metrics_amber')
             subEntry.metrics_red = scs.getValue('metrics_red')
             subEntry.metrics_error = scs.getValue('metrics_error')
+            subEntry.metrics_pending = scs.getValue('metrics_pending')
           }
           subCategoriesById[subSysId] = subEntry
           subCategoriesOrdered.push(subEntry)
@@ -190,6 +197,19 @@ MAFAISummaryProvider.prototype = {
             rag: mr.getValue('rag_status'),
             collection_error: mr.getValue('collection_error') || null,
             drill_down_table: mr.getValue('drill_down_table') || null,
+            result_mode: mr.getValue('result_mode') || 'auto',
+            // Curated advisory snapshot (PRD §9.1) — null/empty when the pack
+            // author did not seed defaults. Consumers should show these
+            // verbatim when present; the LLM prompt is instructed to prefer
+            // curated text unless it contradicts the evidence.
+            advisory: {
+              likely_cause: mr.getValue('likely_cause') || null,
+              suggested_action: mr.getValue('suggested_action') || null,
+              owner_role: mr.getValue('owner_role') || null,
+              effort_tshirt: mr.getValue('effort_tshirt') || null,
+              quick_win_flag:
+                mr.getValue('quick_win_flag') === 'true' || mr.getValue('quick_win_flag') === '1' || mr.getValue('quick_win_flag') === true,
+            },
           }
           metrics.push(metricObj)
           if (subRef && subCategoriesById[subRef]) subCategoriesById[subRef].metrics.push(metricObj)
@@ -240,7 +260,7 @@ MAFAISummaryProvider.prototype = {
       html.push('<h3>' + esc(pack.label || pack.name) + '</h3>')
 
       // ---- Overall RAG distribution across the pack ----
-      var packTotals = { green: 0, amber: 0, red: 0, error: 0, total: 0 }
+      var packTotals = { green: 0, amber: 0, red: 0, error: 0, pending: 0, total: 0 }
       for (var ci = 0; ci < pack.categories.length; ci++) {
         var cat = pack.categories[ci]
         for (var mi2 = 0; mi2 < cat.metrics.length; mi2++) {
@@ -250,6 +270,7 @@ MAFAISummaryProvider.prototype = {
           else if (m2.rag === 'amber') packTotals.amber++
           else if (m2.rag === 'red') packTotals.red++
           else if (m2.rag === 'error') packTotals.error++
+          else if (m2.rag === 'pending_input') packTotals.pending++
         }
       }
       html.push(
@@ -258,6 +279,7 @@ MAFAISummaryProvider.prototype = {
         '<span style="color:#f57f17">' + esc(packTotals.amber) + ' amber</span>, ' +
         '<span style="color:#c62828">' + esc(packTotals.red) + ' red</span>' +
         (packTotals.error > 0 ? ', <span style="color:#757575">' + esc(packTotals.error) + ' errors</span>' : '') +
+        (packTotals.pending > 0 ? ', <span style="color:#1565c0">' + esc(packTotals.pending) + ' pending workshop input</span>' : '') +
         '</p>'
       )
 
@@ -328,12 +350,14 @@ MAFAISummaryProvider.prototype = {
       var amberMetrics = []
       var errorMetrics = []
       var greenMetrics = []
+      var pendingMetrics = []
       for (var ai = 0; ai < allMetrics.length; ai++) {
         var am = allMetrics[ai]
         if (am.rag === 'red') redMetrics.push(am)
         else if (am.rag === 'amber') amberMetrics.push(am)
         else if (am.rag === 'error') errorMetrics.push(am)
         else if (am.rag === 'green') greenMetrics.push(am)
+        else if (am.rag === 'pending_input') pendingMetrics.push(am)
       }
 
       // Sort red and amber by weight descending (highest impact first)
@@ -347,18 +371,20 @@ MAFAISummaryProvider.prototype = {
         html.push('<thead><tr style="border-bottom:2px solid #ccc;text-align:left">')
         html.push('<th style="padding:4px 8px">Metric</th><th style="padding:4px 8px">Category</th>')
         html.push('<th style="padding:4px 8px">Value</th><th style="padding:4px 8px">Target</th>')
-        html.push('<th style="padding:4px 8px">Gap</th><th style="padding:4px 8px">Weight</th>')
+        html.push('<th style="padding:4px 8px">Gap</th>')
+        html.push('<th style="padding:4px 8px">Weight</th><th style="padding:4px 8px">Action (curated)</th>')
         html.push('</tr></thead><tbody>')
         for (var ri = 0; ri < showRed; ri++) {
           var rm = redMetrics[ri]
           var gap = this._formatGap(rm)
           html.push('<tr style="border-bottom:1px solid #eee">')
-          html.push('<td style="padding:4px 8px">' + esc(rm.label || rm.name) + '</td>')
+          html.push('<td style="padding:4px 8px">' + esc(rm.label || rm.name) + (rm.advisory && rm.advisory.quick_win_flag ? ' <span style="background:#fff3cd;color:#7a5c00;padding:1px 6px;border-radius:3px;font-size:0.85em">Quick win</span>' : '') + '</td>')
           html.push('<td style="padding:4px 8px">' + esc(rm._categoryLabel) + '</td>')
           html.push('<td style="padding:4px 8px">' + esc(this._fmtVal(rm)) + '</td>')
           html.push('<td style="padding:4px 8px">' + esc(rm.target != null ? rm.target + (rm.unit || '') : '-') + '</td>')
           html.push('<td style="padding:4px 8px;color:#c62828"><strong>' + esc(gap) + '</strong></td>')
           html.push('<td style="padding:4px 8px">' + esc(rm.weight || '-') + '</td>')
+          html.push('<td style="padding:4px 8px">' + (rm.advisory && rm.advisory.suggested_action ? esc(rm.advisory.suggested_action) : '<em style="color:#999">—</em>') + '</td>')
           html.push('</tr>')
         }
         html.push('</tbody></table>')
@@ -398,6 +424,21 @@ MAFAISummaryProvider.prototype = {
         html.push('</ul>')
       }
 
+      // ---- Discovery workshop topics (pending manual metrics) ----
+      // These are excluded from scoring and framed as workshop questions,
+      // not risks. See PRD §9.4 — manual MVP.
+      if (pendingMetrics.length > 0) {
+        html.push('<h4>Discovery workshop topics (' + esc(pendingMetrics.length) + ' pending manual metrics)</h4>')
+        html.push('<p class="text-muted" style="color:#555;margin:4px 0 8px 0">These qualitative signals are captured with the consultant during the discovery workshop. They do not affect scoring until answered.</p>')
+        html.push('<ul>')
+        for (var pmi = 0; pmi < pendingMetrics.length; pmi++) {
+          var pmet = pendingMetrics[pmi]
+          var desc = pmet.description ? ' — ' + String(pmet.description).substring(0, 300) : ''
+          html.push('<li><strong>' + esc(pmet.label || pmet.name) + '</strong>' + esc(desc) + '</li>')
+        }
+        html.push('</ul>')
+      }
+
       // ---- Strengths (top green by weight) ----
       greenMetrics.sort(function (a, b) { return parseFloat(b.weight || 0) - parseFloat(a.weight || 0) })
       if (greenMetrics.length > 0) {
@@ -415,10 +456,44 @@ MAFAISummaryProvider.prototype = {
         html.push('</ul>')
       }
 
-      // ---- Build recommendations from red metrics grouped by sub-category ----
+      // ---- Recommendations ----
+      // Two-tier strategy:
+      //   1. Curated per-metric recommendations for the top red metrics whose
+      //      metric_definition has advisory.suggested_action seeded — these
+      //      are authoritative and carry owner_role / effort / quick_win.
+      //   2. A fallback grouped-by-category recommendation for any remaining
+      //      red metrics without advisory text, so nothing falls through.
+      var curatedCap = 5 // cap on per-metric curated recs before falling back
+      var curatedCount = 0
+      var coveredNames = {}
+      for (var cri = 0; cri < redMetrics.length && curatedCount < curatedCap; cri++) {
+        var crm = redMetrics[cri]
+        if (!crm.advisory || !crm.advisory.suggested_action) continue
+        var quickWin = !!crm.advisory.quick_win_flag
+        var titlePrefix = quickWin ? 'Quick win: ' : ''
+        var effort = crm.advisory.effort_tshirt || (parseFloat(crm.weight || 0) > 0.1 ? 'm' : 's')
+        var rec = {
+          title: titlePrefix + (crm.label || crm.name) + ' — ' + this._fmtVal(crm) + ' vs target ' + (crm.target != null ? crm.target + (crm.unit || '') : 'n/a'),
+          rationale: crm.advisory.suggested_action +
+            (crm.advisory.likely_cause ? ' Likely cause: ' + crm.advisory.likely_cause : ''),
+          effort: effort,
+          impact: 'high',
+          related_metrics: [crm.name],
+          related_sub_category: crm._categoryLabel,
+        }
+        if (crm.advisory.owner_role) rec.owner_role = crm.advisory.owner_role
+        if (quickWin) rec.quick_win = true
+        recommendations.push(rec)
+        coveredNames[crm.name] = true
+        curatedCount++
+      }
+
+      // Fallback: group remaining (uncurated) red metrics by category so
+      // high-impact gaps without curated text still surface a recommendation.
       var subBuckets = {}
       for (var rri = 0; rri < redMetrics.length; rri++) {
         var rrm = redMetrics[rri]
+        if (coveredNames[rrm.name]) continue
         var bucketKey = rrm._categoryLabel
         if (!subBuckets[bucketKey]) subBuckets[bucketKey] = { metrics: [], totalWeight: 0 }
         subBuckets[bucketKey].metrics.push(rrm)
@@ -427,7 +502,8 @@ MAFAISummaryProvider.prototype = {
 
       var bucketKeys = Object.keys(subBuckets)
       bucketKeys.sort(function (a, b) { return subBuckets[b].totalWeight - subBuckets[a].totalWeight })
-      var recCount = Math.min(bucketKeys.length, 5)
+      var remainingSlots = Math.max(0, 8 - recommendations.length)
+      var recCount = Math.min(bucketKeys.length, remainingSlots)
       for (var bki = 0; bki < recCount; bki++) {
         var bk = bucketKeys[bki]
         var bucket = subBuckets[bk]
@@ -525,18 +601,42 @@ MAFAISummaryProvider.prototype = {
             weight: mx.weight,
             higher_is_better: mx.higher_is_better,
             normalized: mx.normalized,
+            result_mode: mx.result_mode,
           }
           if (mx.collection_error) cm.collection_error = mx.collection_error
+          // Only emit advisory / pending flags when there is
+          // actually content — keeps the LLM payload lean and avoids teaching
+          // the model on null fields.
+          if (mx.advisory && (mx.advisory.likely_cause || mx.advisory.suggested_action || mx.advisory.owner_role || mx.advisory.effort_tshirt || mx.advisory.quick_win_flag)) {
+            cm.advisory = {}
+            if (mx.advisory.likely_cause) cm.advisory.likely_cause = mx.advisory.likely_cause
+            if (mx.advisory.suggested_action) cm.advisory.suggested_action = mx.advisory.suggested_action
+            if (mx.advisory.owner_role) cm.advisory.owner_role = mx.advisory.owner_role
+            if (mx.advisory.effort_tshirt) cm.advisory.effort_tshirt = mx.advisory.effort_tshirt
+            if (mx.advisory.quick_win_flag) cm.advisory.quick_win_flag = true
+          }
           compactMetrics.push(cm)
         }
-        compactCats.push({
+        // Surface pending-manual counts per sub-category so the model can
+        // treat them as discovery topics, not as risks.
+        var compactSubs = []
+        var subsSrc = ct.sub_categories || []
+        for (var sci = 0; sci < subsSrc.length; sci++) {
+          var sc = subsSrc[sci]
+          var pend = parseInt(sc.metrics_pending, 10)
+          if (isNaN(pend) || pend === 0) continue
+          compactSubs.push({ name: sc.name, label: sc.label, metrics_pending: pend, metrics_total: sc.metrics_total })
+        }
+        var compactCat = {
           name: ct.name,
           label: ct.label,
           weight: ct.weight,
           score: ct.score,
           rag: ct.rag,
           metrics: compactMetrics,
-        })
+        }
+        if (compactSubs.length > 0) compactCat.sub_categories_with_pending = compactSubs
+        compactCats.push(compactCat)
       }
       compact.packs.push({ name: pk2.name, label: pk2.label, categories: compactCats })
     }
@@ -560,7 +660,17 @@ MAFAISummaryProvider.prototype = {
       '- For errors: explain what failed and why it matters (blind spots in scoring).\n' +
       '- ALWAYS use the metric "label" field (not "name") for every user-facing reference in the HTML output — tables, bullet lists, prose. The "name" field is an internal id and must NEVER appear in the rendered HTML. Same rule applies to category and sub_category: use their "label" fields in the HTML.\n' +
       '- The "name" field is reserved for the related_metrics array in the Recommendations JSON only.\n' +
-      '- Do not invent metrics, scores, or data not present in the JSON.'
+      '- Do not invent metrics, scores, or data not present in the JSON.\n\n' +
+      'CURATED ADVISORY (authoritative):\n' +
+      '- Many metrics carry an "advisory" object with curated likely_cause, suggested_action, owner_role, effort_tshirt, and quick_win_flag. These were written by the pack author and are authoritative.\n' +
+      '- When advisory.suggested_action is present, quote it verbatim in the recommendation "title" or "rationale" unless the measured value directly contradicts it. Do not paraphrase curated text just to reword.\n' +
+      '- advisory.owner_role and advisory.effort_tshirt should populate the recommendation "owner_role" and "effort" fields when present.\n' +
+      '- advisory.quick_win_flag=true means the metric is a known quick win — surface it visibly in the recommendation title (prefix "Quick win: ").\n\n' +
+      'PENDING MANUAL METRICS (discovery topics, not risks):\n' +
+      '- Metrics with rag="pending_input" and/or result_mode="manual" are qualitative signals the consultant has not yet answered. They are excluded from scoring until answered.\n' +
+      '- Do NOT treat pending_input metrics as red risks. Do NOT quantify them in the RAG totals or weight-driven prioritization.\n' +
+      '- Instead, list them in a dedicated "Discovery workshop topics" section: one bullet per pending metric (by label) with a one-line prompt drawn from its description.\n' +
+      '- sub_categories_with_pending gives the count per sub-category — mention these as workshop areas that will sharpen the assessment once answered.'
 
     var user =
       'Analyze the MAF assessment JSON below and produce TWO outputs:\n\n' +
@@ -568,17 +678,22 @@ MAFAISummaryProvider.prototype = {
       'Wrap in <div class="maf-ai-llm-summary">. Every metric, category, and sub-category mentioned in the HTML MUST be referenced by its "label" field, never its "name" field. Structure as:\n\n' +
       '1. **Overall health snapshot** — one paragraph with total metrics, RAG distribution, and overall maturity posture.\n\n' +
       '2. **Category scorecard** — for each category, state: score, RAG, weight, and the key driver (best and worst sub-category). Use an HTML table. Show category and sub-category labels, not names.\n\n' +
-      '3. **Critical findings (red metrics)** — list the top 10 red metrics sorted by weight (highest impact first). For each: the metric label, current value vs target, gap, and a one-line explanation of business impact using the metric description. Use an HTML table with columns: Metric, Value, Target, Gap, Impact. The Metric column MUST show the label (e.g. "Business service governance fields populated (%)"), not the name (e.g. "svc_gov_business_service_fields").\n\n' +
+      '3. **Critical findings (red metrics)** — list the top 10 red metrics sorted by weight (highest impact first). For each: the metric label, current value vs target, gap, and a one-line explanation of business impact. Use an HTML table with columns: Metric, Value, Target, Gap, Impact. The Metric column MUST show the label (e.g. "Business service governance fields populated (%)"), not the name.\n\n' +
       '4. **Improvement opportunities (amber metrics)** — top 5-7 amber metrics by weight with value vs target. Brief table. Show labels, not names.\n\n' +
-      '5. **Strengths** — top 5 green metrics by weight (show labels). Recognize what the organization does well.\n\n' +
+      '5. **Strengths** — top 5 green metrics by weight (show labels). Recognize what the organization does well. When a green metric has advisory.suggested_action, include it as a "keep doing" note.\n\n' +
       '6. **Collection errors** — if any metrics have rag=error, list them (by label) with the collection_error message and explain the blind spot.\n\n' +
-      '7. **Cross-cutting themes** — identify 2-3 patterns across metrics (e.g., "CMDB linkage is weak across incident, problem, and change" or "Knowledge management shows strong freshness but low attachment at resolve").\n\n' +
+      '7. **Discovery workshop topics (pending manual)** — if any metrics have rag=pending_input or result_mode=manual, list them in a dedicated section. For each, show label and description. Frame them as workshop questions, not as gaps.\n\n' +
+      '8. **Cross-cutting themes** — identify 2-3 patterns across metrics (e.g., "CMDB linkage is weak across incident, problem, and change" or "Knowledge management shows strong freshness but low attachment at resolve").\n\n' +
       '## OUTPUT 2: Recommendations JSON\n' +
       'After the HTML, output one fenced JSON code block ```json ... ``` containing:\n' +
-      '{ "recommendations": [ { "title": "...", "rationale": "...", "effort": "low|medium|high", "impact": "low|medium|high", "related_metrics": ["metric_name1", ...], "related_sub_category": "sub_cat_name" } ] }\n\n' +
+      '{ "recommendations": [ { "title": "...", "rationale": "...", "effort": "low|medium|high|xs|s|m|l|xl", "impact": "low|medium|high", "owner_role": "...", "quick_win": true|false, "related_metrics": ["metric_name1", ...], "related_sub_category": "sub_cat_name" } ] }\n\n' +
       'Provide 5-8 recommendations. Prioritize by (impact * weight). Each recommendation should:\n' +
-      '- Have a specific, actionable title that uses the metric label (not "improve data quality" but "Populate CI field on incidents — currently at 45% vs 90% target"). Never put metric "name" ids in the title or rationale.\n' +
+      '- Have a specific, actionable title that uses the metric label. If advisory.suggested_action exists for the related metric, quote or closely paraphrase it in the title or first sentence of rationale. Never put metric "name" ids in the title or rationale.\n' +
+      '- Use advisory.owner_role as the recommendation "owner_role" when present.\n' +
+      '- Use advisory.effort_tshirt (xs/s/m/l/xl) as "effort" when present; otherwise map to low/medium/high.\n' +
+      '- Set "quick_win": true when advisory.quick_win_flag is true for any of the related metrics. Prefix such recommendations with "Quick win: " in the title.\n' +
       '- Reference specific metric values and gaps in the rationale, using labels when mentioning metrics.\n' +
+      '- Do NOT create recommendations for pending_input / manual metrics — list those in the Discovery workshop section instead.\n' +
       '- Use metric "name" values from the JSON for the related_metrics array (this is the only place names belong — it is a machine-readable id list, not display text).\n\n' +
       'Assessment JSON:\n' +
       jsonStr

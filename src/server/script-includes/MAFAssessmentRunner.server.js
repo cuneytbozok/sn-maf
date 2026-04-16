@@ -167,12 +167,27 @@ MAFAssessmentRunner.prototype = {
     var metricDefGR = new GlideRecord('x_maf_core_metric_definition')
     if (!metricDefGR.get(metricDefSysId)) return
 
+    var ct = metricDefGR.getValue('collector_type')
+
+    // Manual metrics get a pending_input placeholder; no collector invoked (plan phase 4).
+    if (ct === 'manual') {
+      var mrManual = new GlideRecord('x_maf_core_metric_result')
+      mrManual.initialize()
+      mrManual.setValue('assessment_run', runSysId)
+      mrManual.setValue('metric_definition', metricDefGR.getUniqueValue())
+      mrManual.setValue('collected_at', new GlideDateTime())
+      mrManual.setValue('rag_status', 'pending_input')
+      mrManual.setValue('result_mode', 'manual')
+      this._copyAdvisoryDefaults(metricDefGR, mrManual)
+      mrManual.insert()
+      return
+    }
+
     var raw
     var errMsg = null
     var drillTable = null
     var drillQuery = null
     try {
-      var ct = metricDefGR.getValue('collector_type')
       var collector
       if (ct === 'declarative') {
         collector = new MAFDeclarativeCollector(metricDefGR, runGR)
@@ -196,6 +211,7 @@ MAFAssessmentRunner.prototype = {
     mr.setValue('assessment_run', runSysId)
     mr.setValue('metric_definition', metricDefGR.getUniqueValue())
     mr.setValue('collected_at', new GlideDateTime())
+    mr.setValue('result_mode', 'auto')
     if (errMsg) {
       mr.setValue('rag_status', 'error')
       mr.setValue('collection_error', String(errMsg).substring(0, 4000))
@@ -209,8 +225,33 @@ MAFAssessmentRunner.prototype = {
       mr.setValue('rag_status', norm.rag)
       if (drillTable) mr.setValue('drill_down_table', drillTable)
       if (drillQuery) mr.setValue('drill_down_query', drillQuery)
+      this._copyAdvisoryDefaults(metricDefGR, mr)
     }
     mr.insert()
+  },
+
+  /**
+   * Copy curated advisory defaults from metric_definition onto the metric_result
+   * as a point-in-time snapshot. Skipped for error results (they carry their own
+   * message via collection_error). PRD §9.1 — curated first, AI second.
+   */
+  _copyAdvisoryDefaults: function (metricDefGR, mr) {
+    var fields = [
+      ['default_likely_cause', 'likely_cause'],
+      ['default_suggested_action', 'suggested_action'],
+      ['default_owner_role', 'owner_role'],
+      ['default_effort_tshirt', 'effort_tshirt'],
+    ]
+    for (var i = 0; i < fields.length; i++) {
+      var src = fields[i][0]
+      var dst = fields[i][1]
+      var v = metricDefGR.getValue(src)
+      if (v !== null && typeof v !== 'undefined' && String(v) !== '') {
+        mr.setValue(dst, v)
+      }
+    }
+    // quick_win is a boolean — always carry it across
+    mr.setValue('quick_win_flag', metricDefGR.getValue('default_quick_win_flag') === '1' || metricDefGR.getValue('default_quick_win_flag') === 'true' ? true : false)
   },
 
   type: 'MAFAssessmentRunner',

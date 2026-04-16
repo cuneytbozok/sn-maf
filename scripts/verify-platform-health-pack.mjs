@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 /**
- * Platform Health pack (PRD §6.1): one category weight 1.0; nine sub-category weights sum to 1.0;
- * 61 active metrics; per-sub-category weight_in_category sums to 1.0.
+ * Platform Health pack (PRD §6.1 + §9.4 manual MVP): one category weight 1.0;
+ * ten sub-category weights sum to 1.0; 64 active metrics; per-sub-category
+ * weight_in_category sums to 1.0.
+ *
+ * Sub-categories 1-9 are the PRD §6.1 platform-signal groups. Sub-category
+ * 10 (governance_manual) hosts the manual discovery metrics added in PRD §9.4
+ * (MVP manual collector). Weight for governance_manual (0.05) is taken from
+ * Security hygiene (now 0.15) so category totals remain 1.0.
  */
 import fs from 'fs'
 import path from 'path'
@@ -20,6 +26,7 @@ const SUB_IDS = [
   'maf_plathealth_sub_email_integration',
   'maf_plathealth_sub_security',
   'maf_plathealth_sub_logging_errors',
+  'maf_plathealth_sub_governance_manual',
 ]
 
 function extractRecordBlocksForTable(source, tableLiteral) {
@@ -53,8 +60,8 @@ function main() {
   }
 
   const subBlocks = extractRecordBlocksForTable(source, 'x_maf_core_sub_category')
-  if (subBlocks.length !== 9) {
-    console.error(`verify-platform-health-pack: expected 9 sub-categories, found ${subBlocks.length}`)
+  if (subBlocks.length !== 10) {
+    console.error(`verify-platform-health-pack: expected 10 sub-categories, found ${subBlocks.length}`)
     process.exit(1)
   }
   let subSum = 0
@@ -100,8 +107,8 @@ function main() {
     perSub[subId] += parseFloat(w[1], 10)
   }
 
-  if (active !== 61) {
-    console.error(`verify-platform-health-pack: expected 61 active metrics, found ${active}`)
+  if (active !== 64) {
+    console.error(`verify-platform-health-pack: expected 64 active metrics (61 platform signals + 3 manual MVP), found ${active}`)
     process.exit(1)
   }
 
@@ -114,7 +121,7 @@ function main() {
     }
   }
 
-  console.log('verify-platform-health-pack: OK (9 sub-categories, 61 active metrics, weights balanced)')
+  console.log('verify-platform-health-pack: OK (10 sub-categories, 64 active metrics, weights balanced)')
 }
 
 main()

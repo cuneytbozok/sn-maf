@@ -81,6 +81,11 @@ export const x_maf_core_category_score = Table({
             readOnly: true,
             readOnlyOption: 'instance_configured',
         }),
+        metrics_pending: IntegerColumn({
+            label: 'Metrics pending input',
+            readOnly: true,
+            readOnlyOption: 'instance_configured',
+        }),
         number: StringColumn({
             attributes: {
                 ignore_filter_on_new: true,

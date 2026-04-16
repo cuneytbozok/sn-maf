@@ -272,6 +272,13 @@ Record({
     weight_in_category: 0.13,
     unit: '%',
     active: true,
+    default_likely_cause:
+      'Category is not mandatory on incident, or the available categories do not match how agents actually triage. Templates and portal producers may bypass the field entirely.',
+    default_suggested_action:
+      'Review the incident category taxonomy with the service desk leads, make Category mandatory at Assignment state via data policy or UI policy, and backfill historical incidents via targeted fix scripts so reporting becomes trustworthy.',
+    default_owner_role: 'process_owner',
+    default_effort_tshirt: 's',
+    default_quick_win_flag: true,
   },
 })
 
@@ -297,6 +304,13 @@ Record({
     weight_in_category: 0.12,
     unit: '%',
     active: true,
+    default_likely_cause:
+      'CMDB coverage is thin for the services that incidents are raised against, or the CI lookup on the incident form is slow/unusable so agents skip it. Event-generated incidents may land with blank CI when the integration cannot resolve one.',
+    default_suggested_action:
+      'Review CI class coverage for the top 10 affected services, wire the incident form to default CI from caller/affected service, and tighten event integrations to enforce CI resolution before creating an incident.',
+    default_owner_role: 'data_steward',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: false,
   },
 })
 
@@ -665,6 +679,13 @@ Record({
     weight_in_category: 0.16,
     unit: '%',
     active: true,
+    default_likely_cause:
+      'Close codes are used loosely: "successful" is selected by default even when the change backed out, rolled forward with defects, or hit post-implementation issues. Alternatively, weak technical reviews are letting risky changes through.',
+    default_suggested_action:
+      'Require a close-code reason on unsuccessful closures, audit the last 90 days of closed changes for miscoded outcomes, and strengthen the CAB/peer-review gate for normal changes with high-risk CIs.',
+    default_owner_role: 'process_owner',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: false,
   },
 })
 

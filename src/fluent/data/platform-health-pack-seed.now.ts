@@ -327,8 +327,27 @@ Record({
     name: 'platform_security',
     label: 'Security hygiene',
     description: 'Admins, role expiry, ACL scope, open ACLs, OOTB ACL edits, and inactive users (PRD §6.3.8).',
-    weight_in_category: 0.2,
+    weight_in_category: 0.15,
     order: 8,
+    active: true,
+  },
+})
+
+// New sub-category to host manual / discovery-workshop metrics. Weight 0.05
+// was taken from Security hygiene (0.20 → 0.15) so category weights still
+// sum to 1.0. Kept intentionally small because manual metrics are qualitative
+// signals gathered from the consultant, not platform-derived evidence.
+Record({
+  $id: Now.ID['maf_plathealth_sub_governance_manual'],
+  table: 'x_maf_core_sub_category',
+  data: {
+    category: Now.ref('x_maf_core_category', 'maf_plathealth_cat'),
+    name: 'platform_governance_manual',
+    label: 'Governance & adoption (manual)',
+    description:
+      'Qualitative governance and adoption signals captured by the consultant during the discovery workshop (PRD §9.4 manual collector).',
+    weight_in_category: 0.05,
+    order: 10,
     active: true,
   },
 })
@@ -367,6 +386,13 @@ Record({
     weight_in_category: 0.2432,
     unit: 'count',
     active: true,
+    default_likely_cause:
+      'A few heavy transactions (list queries without indexes, rogue scripts, or unbounded workflows) are dominating response time. Database query stats or the slow-query log will usually identify the top offenders.',
+    default_suggested_action:
+      'Pull the top 10 slow transaction patterns, index the underlying queries or refactor the scripts, and add a performance regression check to the deployment pipeline for any change touching those tables.',
+    default_owner_role: 'platform_owner',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: false,
   },
 })
 
@@ -390,6 +416,13 @@ Record({
     weight_in_category: 0.2052,
     unit: 'count',
     active: true,
+    default_likely_cause:
+      'Scheduled jobs that were fine at one data volume are now processing much larger sets without batching, or a job is waiting on a remote call with no timeout. Stuck workers can also keep duration climbing across restarts.',
+    default_suggested_action:
+      'Review the top offending sys_trigger entries, add batching and cancellation guards to their scripts, and move the genuinely long workloads to dedicated nodes with explicit progress logging.',
+    default_owner_role: 'platform_owner',
+    default_effort_tshirt: 'l',
+    default_quick_win_flag: false,
   },
 })
 
@@ -1803,5 +1836,106 @@ Record({
     weight_in_category: 0.05,
     unit: 'count',
     active: true,
+  },
+})
+
+// ---------------------------------------------------------------------------
+// Manual / discovery metrics (PRD §9.4 — MVP manual collector)
+//
+// Each metric is a qualitative signal the consultant answers during the
+// discovery workshop. raw_value is entered on the form as a 0/1 (boolean) or
+// 0..5 Likert; thresholds below map that answer into RAG. Weights within the
+// new sub-category sum to 1.0. Advisory defaults are populated so the AI
+// summary provider has curated text to anchor on even before the consultant
+// has responded.
+// ---------------------------------------------------------------------------
+
+Record({
+  $id: Now.ID['maf_plathealth_m_manual_governance_board'],
+  table: 'x_maf_core_metric_definition',
+  data: {
+    category: Now.ref('x_maf_core_category', 'maf_plathealth_cat'),
+    sub_category: Now.ref('x_maf_core_sub_category', 'maf_plathealth_sub_governance_manual'),
+    name: 'manual_governance_board_in_place',
+    label: 'Platform governance board in place',
+    description:
+      'Does the customer have a regular platform governance board (demand intake, prioritization, change oversight)? Answer 1 if yes, 0 if no.',
+    collector_type: 'manual',
+    manual_guidance_text:
+      'Ask: "Is there a standing platform governance board that meets at least monthly to review demand, roadmap, and major change?" Enter 1 for yes, 0 for no. Capture attendee roles and cadence in manual_response_notes.',
+    target_value: 1,
+    threshold_red: 0,
+    threshold_amber: 0,
+    higher_is_better: true,
+    weight_in_category: 0.4,
+    unit: 'bool',
+    active: true,
+    default_likely_cause:
+      'No standing governance forum means demand, change, and roadmap decisions happen ad-hoc, causing conflicting priorities and unsanctioned customizations.',
+    default_suggested_action:
+      'Stand up a monthly platform governance board with Process Owner, Platform Owner, Security, and a business sponsor. Charter: demand intake, roadmap, major change approval, and OOTB-deviation reviews.',
+    default_owner_role: 'platform_owner',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: false,
+  },
+})
+
+Record({
+  $id: Now.ID['maf_plathealth_m_manual_upgrade_cadence'],
+  table: 'x_maf_core_metric_definition',
+  data: {
+    category: Now.ref('x_maf_core_category', 'maf_plathealth_cat'),
+    sub_category: Now.ref('x_maf_core_sub_category', 'maf_plathealth_sub_governance_manual'),
+    name: 'manual_upgrade_cadence',
+    label: 'Upgrade cadence maturity',
+    description:
+      'How predictable and timely is the N-1 upgrade cadence? 0=never upgraded, 1=>12mo drift, 2=on N-1 but reactive, 3=scheduled with regression plan.',
+    collector_type: 'manual',
+    manual_guidance_text:
+      'Score 0–3 based on: are upgrades planned on a calendar, is there a regression test plan, is the instance within N-1 of latest family? Capture last upgrade date and family in manual_response_notes.',
+    target_value: 3,
+    threshold_red: 0,
+    threshold_amber: 2,
+    higher_is_better: true,
+    weight_in_category: 0.3,
+    unit: 'score',
+    active: true,
+    default_likely_cause:
+      'Drifted upgrade cadence accumulates security patches skipped, OOTB improvements missed, and builds up regression debt that makes eventual upgrade high-risk.',
+    default_suggested_action:
+      'Commit to N-1 cadence: lock upgrade dates at the start of each ServiceNow family, build an automated regression pack, and publish the schedule in the governance board.',
+    default_owner_role: 'platform_owner',
+    default_effort_tshirt: 'l',
+    default_quick_win_flag: false,
+  },
+})
+
+Record({
+  $id: Now.ID['maf_plathealth_m_manual_non_prod_refresh'],
+  table: 'x_maf_core_metric_definition',
+  data: {
+    category: Now.ref('x_maf_core_category', 'maf_plathealth_cat'),
+    sub_category: Now.ref('x_maf_core_sub_category', 'maf_plathealth_sub_governance_manual'),
+    name: 'manual_non_prod_refresh_discipline',
+    label: 'Non-prod refresh discipline',
+    description:
+      'Is there a documented, masked non-prod refresh schedule? 0=no schedule, 1=ad-hoc, 2=scheduled but no masking, 3=scheduled with masking and clone exclusions.',
+    collector_type: 'manual',
+    manual_guidance_text:
+      'Score 0–3 based on: clone frequency, masking of PII/PHI, exclusion sets applied, and sub-prod smoke tests after clone. Note the last clone date in manual_response_notes.',
+    target_value: 3,
+    threshold_red: 0,
+    threshold_amber: 2,
+    higher_is_better: true,
+    weight_in_category: 0.3,
+    unit: 'score',
+    active: true,
+    default_likely_cause:
+      'Uncontrolled non-prod refreshes either leak production PII into sub-prod, or leave sub-prod so stale that release testing happens against unrepresentative data.',
+    default_suggested_action:
+      'Document a quarterly clone schedule with a data-masking exclusion set, a smoke-test runbook, and a named clone owner. Log every clone in the governance board minutes.',
+    default_owner_role: 'admin',
+    default_effort_tshirt: 'm',
+    default_quick_win_flag: true,
   },
 })
