@@ -28,18 +28,6 @@ declare global {
                         table: 'sys_security_acl'
                         id: '033489a8558d40e68d86bdfb43476a09'
                     }
-                    '0364fdf783cc83105f67c9a6feaad346': {
-                        table: 'sys_ui_element'
-                        id: '0364fdf783cc83105f67c9a6feaad346'
-                    }
-                    '0364fdf783cc83105f67c9a6feaad34d': {
-                        table: 'sys_ui_element'
-                        id: '0364fdf783cc83105f67c9a6feaad34d'
-                    }
-                    '0364fdf783cc83105f67c9a6feaad354': {
-                        table: 'sys_ui_element'
-                        id: '0364fdf783cc83105f67c9a6feaad354'
-                    }
                     '042cfa43830883105f67c9a6feaad3e4': {
                         table: 'sys_scope_privilege'
                         id: '042cfa43830883105f67c9a6feaad3e4'
@@ -49,10 +37,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '0439306783c403105f67c9a6feaad330'
                         deleted: true
-                    }
-                    '04e6767b83c4c3105f67c9a6feaad339': {
-                        table: 'sys_ui_element'
-                        id: '04e6767b83c4c3105f67c9a6feaad339'
                     }
                     '05c09def838803105f67c9a6feaad37d': {
                         table: 'sys_scope_privilege'
@@ -99,26 +83,10 @@ declare global {
                         id: '075236cb838483105f67c9a6feaad3b1'
                         deleted: true
                     }
-                    '0764fdf783cc83105f67c9a6feaad344': {
-                        table: 'sys_ui_element'
-                        id: '0764fdf783cc83105f67c9a6feaad344'
-                    }
-                    '0764fdf783cc83105f67c9a6feaad34b': {
-                        table: 'sys_ui_element'
-                        id: '0764fdf783cc83105f67c9a6feaad34b'
-                    }
-                    '0764fdf783cc83105f67c9a6feaad352': {
-                        table: 'sys_ui_element'
-                        id: '0764fdf783cc83105f67c9a6feaad352'
-                    }
                     '07dce78b838c83105f67c9a6feaad36d': {
                         table: 'sys_scope_privilege'
                         id: '07dce78b838c83105f67c9a6feaad36d'
                         deleted: true
-                    }
-                    '08e6767b83c4c3105f67c9a6feaad337': {
-                        table: 'sys_ui_element'
-                        id: '08e6767b83c4c3105f67c9a6feaad337'
                     }
                     '09738d23834803105f67c9a6feaad351': {
                         table: 'sys_scope_privilege'
@@ -142,18 +110,6 @@ declare global {
                         table: 'sys_properties'
                         id: '0b49c10d43bb4ce69525f41ac1e38e82'
                     }
-                    '0b64fdf783cc83105f67c9a6feaad342': {
-                        table: 'sys_ui_element'
-                        id: '0b64fdf783cc83105f67c9a6feaad342'
-                    }
-                    '0b64fdf783cc83105f67c9a6feaad349': {
-                        table: 'sys_ui_element'
-                        id: '0b64fdf783cc83105f67c9a6feaad349'
-                    }
-                    '0b64fdf783cc83105f67c9a6feaad350': {
-                        table: 'sys_ui_element'
-                        id: '0b64fdf783cc83105f67c9a6feaad350'
-                    }
                     '0c39306783c403105f67c9a6feaad313': {
                         table: 'sys_scope_privilege'
                         id: '0c39306783c403105f67c9a6feaad313'
@@ -163,10 +119,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '0c39306783c403105f67c9a6feaad374'
                         deleted: true
-                    }
-                    '0ce6767b83c4c3105f67c9a6feaad335': {
-                        table: 'sys_ui_element'
-                        id: '0ce6767b83c4c3105f67c9a6feaad335'
                     }
                     '0db7bb478300c3105f67c9a6feaad389': {
                         table: 'sys_scope_privilege'
@@ -192,22 +144,6 @@ declare global {
                         table: 'sys_ux_screen_type'
                         id: '0ef269a7834c03105f67c9a6feaad3a9'
                     }
-                    '0f64fdf783cc83105f67c9a6feaad340': {
-                        table: 'sys_ui_element'
-                        id: '0f64fdf783cc83105f67c9a6feaad340'
-                    }
-                    '0f64fdf783cc83105f67c9a6feaad347': {
-                        table: 'sys_ui_element'
-                        id: '0f64fdf783cc83105f67c9a6feaad347'
-                    }
-                    '0f64fdf783cc83105f67c9a6feaad34e': {
-                        table: 'sys_ui_element'
-                        id: '0f64fdf783cc83105f67c9a6feaad34e'
-                    }
-                    '0f64fdf783cc83105f67c9a6feaad355': {
-                        table: 'sys_ui_element'
-                        id: '0f64fdf783cc83105f67c9a6feaad355'
-                    }
                     '0fabd9a7830c03105f67c9a6feaad31a': {
                         table: 'sys_scope_privilege'
                         id: '0fabd9a7830c03105f67c9a6feaad31a'
@@ -221,6 +157,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '0fdce78b838c83105f67c9a6feaad39e'
                         deleted: true
+                    }
+                    '10950e8353854618989b226f5a1c858c': {
+                        table: 'sys_script_include'
+                        id: '10950e8353854618989b226f5a1c858c'
                     }
                     '11738d23834803105f67c9a6feaad375': {
                         table: 'sys_scope_privilege'
@@ -263,10 +203,6 @@ declare global {
                     '15f9bd204dac4b94a8cac1a2fcd444dc': {
                         table: 'sys_security_acl'
                         id: '15f9bd204dac4b94a8cac1a2fcd444dc'
-                    }
-                    '1687fabb83c4c3105f67c9a6feaad3e5': {
-                        table: 'sys_ui_section'
-                        id: '1687fabb83c4c3105f67c9a6feaad3e5'
                     }
                     '16b336b904a247b7b067c42b756c8973': {
                         table: 'sys_app_module'
@@ -390,10 +326,6 @@ declare global {
                         table: 'sys_ux_screen'
                         id: '2117b1905b6d45eb9c6a4bf1b0d37b22'
                     }
-                    '21236ab38344c3105f67c9a6feaad324': {
-                        table: 'sys_ui_element'
-                        id: '21236ab38344c3105f67c9a6feaad324'
-                    }
                     '2163a4c3834443105f67c9a6feaad3f9': {
                         table: 'sys_scope_privilege'
                         id: '2163a4c3834443105f67c9a6feaad3f9'
@@ -413,10 +345,6 @@ declare global {
                         id: '21dca78b838c83105f67c9a6feaad3cc'
                         deleted: true
                     }
-                    '2227fe7b83c4c3105f67c9a6feaad342': {
-                        table: 'sys_ui_element'
-                        id: '2227fe7b83c4c3105f67c9a6feaad342'
-                    }
                     '233c952b830c03105f67c9a6feaad3e0': {
                         table: 'sys_scope_privilege'
                         id: '233c952b830c03105f67c9a6feaad3e0'
@@ -430,10 +358,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '23bc238b838c83105f67c9a6feaad3ce'
                         deleted: true
-                    }
-                    '25236ab38344c3105f67c9a6feaad322': {
-                        table: 'sys_ui_element'
-                        id: '25236ab38344c3105f67c9a6feaad322'
                     }
                     '2563a4c3834443105f67c9a6feaad3eb': {
                         table: 'sys_scope_privilege'
@@ -467,14 +391,6 @@ declare global {
                         table: 'sys_security_acl'
                         id: '2627189397814be4a0318212825b125c'
                     }
-                    '2627fe7b83c4c3105f67c9a6feaad340': {
-                        table: 'sys_ui_element'
-                        id: '2627fe7b83c4c3105f67c9a6feaad340'
-                    }
-                    '2627fe7b83c4c3105f67c9a6feaad347': {
-                        table: 'sys_ui_element'
-                        id: '2627fe7b83c4c3105f67c9a6feaad347'
-                    }
                     '271cfa43830883105f67c9a6feaad37f': {
                         table: 'sys_scope_privilege'
                         id: '271cfa43830883105f67c9a6feaad37f'
@@ -498,14 +414,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '2839706783c403105f67c9a6feaad336'
                         deleted: true
-                    }
-                    '29232ab38344c3105f67c9a6feaad3af': {
-                        table: 'sys_ui_section'
-                        id: '29232ab38344c3105f67c9a6feaad3af'
-                    }
-                    '29236ab38344c3105f67c9a6feaad320': {
-                        table: 'sys_ui_element'
-                        id: '29236ab38344c3105f67c9a6feaad320'
                     }
                     '2963e4c3834443105f67c9a6feaad313': {
                         table: 'sys_scope_privilege'
@@ -542,14 +450,6 @@ declare global {
                     '29d0152383c803105f67c9a6feaad3b5': {
                         table: 'sys_scope_privilege'
                         id: '29d0152383c803105f67c9a6feaad3b5'
-                    }
-                    '2a27fe7b83c4c3105f67c9a6feaad33e': {
-                        table: 'sys_ui_element'
-                        id: '2a27fe7b83c4c3105f67c9a6feaad33e'
-                    }
-                    '2a27fe7b83c4c3105f67c9a6feaad345': {
-                        table: 'sys_ui_element'
-                        id: '2a27fe7b83c4c3105f67c9a6feaad345'
                     }
                     '2b1cfa43830883105f67c9a6feaad323': {
                         table: 'sys_scope_privilege'
@@ -607,10 +507,6 @@ declare global {
                         id: '2cb0a1e826014bd287378c1b11da7565'
                         deleted: true
                     }
-                    '2d236ab38344c3105f67c9a6feaad325': {
-                        table: 'sys_ui_element'
-                        id: '2d236ab38344c3105f67c9a6feaad325'
-                    }
                     '2d6327496e15449d973c219d88fd8031': {
                         table: 'sys_ux_list'
                         id: '2d6327496e15449d973c219d88fd8031'
@@ -632,10 +528,6 @@ declare global {
                     '2de7a75daf8f4292b9bf79ee6aa876a8': {
                         table: 'sys_script_include'
                         id: '2de7a75daf8f4292b9bf79ee6aa876a8'
-                    }
-                    '2e27fe7b83c4c3105f67c9a6feaad343': {
-                        table: 'sys_ui_element'
-                        id: '2e27fe7b83c4c3105f67c9a6feaad343'
                     }
                     '2e543e5493c948c9b67893ecea62ba86': {
                         table: 'sys_script_include'
@@ -682,10 +574,6 @@ declare global {
                         id: '31a73b478300c3105f67c9a6feaad3a7'
                         deleted: true
                     }
-                    '31c83e7f83c4c3105f67c9a6feaad369': {
-                        table: 'sys_ui_element'
-                        id: '31c83e7f83c4c3105f67c9a6feaad369'
-                    }
                     '321a3ce783c403105f67c9a6feaad349': {
                         table: 'sys_scope_privilege'
                         id: '321a3ce783c403105f67c9a6feaad349'
@@ -716,10 +604,6 @@ declare global {
                         id: '35a73b478300c3105f67c9a6feaad3cf'
                         deleted: true
                     }
-                    '35c83e7f83c4c3105f67c9a6feaad367': {
-                        table: 'sys_ui_element'
-                        id: '35c83e7f83c4c3105f67c9a6feaad367'
-                    }
                     '361a3ce783c403105f67c9a6feaad345': {
                         table: 'sys_scope_privilege'
                         id: '361a3ce783c403105f67c9a6feaad345'
@@ -748,13 +632,10 @@ declare global {
                         table: 'par_dashboard_widget'
                         id: '383c67d6f0c644d8899de6d7aa4ed25a'
                     }
-                    '39c83e7f83c4c3105f67c9a6feaad365': {
-                        table: 'sys_ui_element'
-                        id: '39c83e7f83c4c3105f67c9a6feaad365'
-                    }
-                    '39c83e7f83c4c3105f67c9a6feaad36c': {
-                        table: 'sys_ui_element'
-                        id: '39c83e7f83c4c3105f67c9a6feaad36c'
+                    '399a87b51e3f4d4db143c66af800d2d4': {
+                        table: 'sys_script_client'
+                        id: '399a87b51e3f4d4db143c66af800d2d4'
+                        deleted: true
                     }
                     '3a1a3ce783c403105f67c9a6feaad338': {
                         table: 'sys_scope_privilege'
@@ -821,14 +702,6 @@ declare global {
                         id: '3dc7f3878300c3105f67c9a6feaad3a5'
                         deleted: true
                     }
-                    '3dc83e7f83c4c3105f67c9a6feaad363': {
-                        table: 'sys_ui_element'
-                        id: '3dc83e7f83c4c3105f67c9a6feaad363'
-                    }
-                    '3dc83e7f83c4c3105f67c9a6feaad36a': {
-                        table: 'sys_ui_element'
-                        id: '3dc83e7f83c4c3105f67c9a6feaad36a'
-                    }
                     '3dd0552383c803105f67c9a6feaad317': {
                         table: 'sys_scope_privilege'
                         id: '3dd0552383c803105f67c9a6feaad317'
@@ -838,21 +711,9 @@ declare global {
                         id: '3e23cfc3834883105f67c9a6feaad3f8'
                         deleted: true
                     }
-                    '3e47c3bb8348c3105f67c9a6feaad3c6': {
-                        table: 'sys_ux_form_action'
-                        id: '3e47c3bb8348c3105f67c9a6feaad3c6'
-                    }
                     '3e58ee6901bc4d6a893c2ceea214597f': {
                         table: 'sys_ux_screen'
                         id: '3e58ee6901bc4d6a893c2ceea214597f'
-                    }
-                    '3e5c1d2b830c03105f67c9a6feaad321': {
-                        table: 'sys_ui_element'
-                        id: '3e5c1d2b830c03105f67c9a6feaad321'
-                    }
-                    '3e5cd92b830c03105f67c9a6feaad321': {
-                        table: 'sys_ui_section'
-                        id: '3e5cd92b830c03105f67c9a6feaad321'
                     }
                     '3f7808c9f59e4cf3aa6543d02abb2c3c': {
                         table: 'sys_security_acl'
@@ -871,10 +732,6 @@ declare global {
                     '40e20c2420c848b4b36e73d40dd2c050': {
                         table: 'sys_ux_page_property'
                         id: '40e20c2420c848b4b36e73d40dd2c050'
-                    }
-                    '40e6767b83c4c3105f67c9a6feaad34a': {
-                        table: 'sys_ui_element'
-                        id: '40e6767b83c4c3105f67c9a6feaad34a'
                     }
                     '4104babc7b0d410c805d5d1a02db4422': {
                         table: 'sys_script_include'
@@ -941,10 +798,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '44d0152383c803105f67c9a6feaad306'
                     }
-                    '44e6767b83c4c3105f67c9a6feaad348': {
-                        table: 'sys_ui_element'
-                        id: '44e6767b83c4c3105f67c9a6feaad348'
-                    }
                     '4569195dfafa43baa5447d65722ed706': {
                         table: 'par_dashboard_tab'
                         id: '4569195dfafa43baa5447d65722ed706'
@@ -989,10 +842,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '475236cb838483105f67c9a6feaad399'
                         deleted: true
-                    }
-                    '4764fdf783cc83105f67c9a6feaad33f': {
-                        table: 'sys_ui_element'
-                        id: '4764fdf783cc83105f67c9a6feaad33f'
                     }
                     '482cfa43830883105f67c9a6feaad3ed': {
                         table: 'sys_scope_privilege'
@@ -1089,10 +938,6 @@ declare global {
                     '52e7c071299c40ba8a1528f7c284fdf5': {
                         table: 'sys_ux_list'
                         id: '52e7c071299c40ba8a1528f7c284fdf5'
-                    }
-                    '52f63e3b83c4c3105f67c9a6feaad345': {
-                        table: 'sys_ui_section'
-                        id: '52f63e3b83c4c3105f67c9a6feaad345'
                     }
                     '531cba43830883105f67c9a6feaad3fd': {
                         table: 'sys_scope_privilege'
@@ -1261,25 +1106,9 @@ declare global {
                         table: 'sys_security_acl'
                         id: '61ea022c0d6a48fbb16dc672ada1edfb'
                     }
-                    '629095ef838803105f67c9a6feaad3c6': {
-                        table: 'sys_ui_section'
-                        id: '629095ef838803105f67c9a6feaad3c6'
-                    }
-                    '6328f23f83c4c3105f67c9a6feaad3cb': {
-                        table: 'sys_ui_element'
-                        id: '6328f23f83c4c3105f67c9a6feaad3cb'
-                    }
-                    '6328f23f83c4c3105f67c9a6feaad3d2': {
-                        table: 'sys_ui_element'
-                        id: '6328f23f83c4c3105f67c9a6feaad3d2'
-                    }
                     '633c952b830c03105f67c9a6feaad3f0': {
                         table: 'sys_scope_privilege'
                         id: '633c952b830c03105f67c9a6feaad3f0'
-                    }
-                    '6377babb83c4c3105f67c9a6feaad3a0': {
-                        table: 'sys_ui_element'
-                        id: '6377babb83c4c3105f67c9a6feaad3a0'
                     }
                     '6439706783c403105f67c9a6feaad36d': {
                         table: 'sys_scope_privilege'
@@ -1326,14 +1155,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '67234307834883105f67c9a6feaad30e'
                         deleted: true
-                    }
-                    '6728f23f83c4c3105f67c9a6feaad3d0': {
-                        table: 'sys_ui_element'
-                        id: '6728f23f83c4c3105f67c9a6feaad3d0'
-                    }
-                    '6777babb83c4c3105f67c9a6feaad39e': {
-                        table: 'sys_ui_element'
-                        id: '6777babb83c4c3105f67c9a6feaad39e'
                     }
                     '679aa66e3c5d4719ae06ebe45a9ac5c0': {
                         table: 'sys_security_acl'
@@ -1382,17 +1203,13 @@ declare global {
                         id: '6b1cfa43830883105f67c9a6feaad32c'
                         deleted: true
                     }
-                    '6b28f23f83c4c3105f67c9a6feaad3ce': {
-                        table: 'sys_ui_element'
-                        id: '6b28f23f83c4c3105f67c9a6feaad3ce'
-                    }
                     '6b3c952b830c03105f67c9a6feaad3c8': {
                         table: 'sys_scope_privilege'
                         id: '6b3c952b830c03105f67c9a6feaad3c8'
                     }
-                    '6b77babb83c4c3105f67c9a6feaad39c': {
-                        table: 'sys_ui_element'
-                        id: '6b77babb83c4c3105f67c9a6feaad39c'
+                    '6c492953283c472881f18e62c4da0f8f': {
+                        table: 'sys_script_include'
+                        id: '6c492953283c472881f18e62c4da0f8f'
                     }
                     '6d92e567834c03105f67c9a6feaad3a3': {
                         table: 'par_dashboard_tab'
@@ -1410,18 +1227,6 @@ declare global {
                     '6dd0152383c803105f67c9a6feaad3c1': {
                         table: 'sys_scope_privilege'
                         id: '6dd0152383c803105f67c9a6feaad3c1'
-                    }
-                    '6f28f23f83c4c3105f67c9a6feaad3cc': {
-                        table: 'sys_ui_element'
-                        id: '6f28f23f83c4c3105f67c9a6feaad3cc'
-                    }
-                    '6f28f23f83c4c3105f67c9a6feaad3d3': {
-                        table: 'sys_ui_element'
-                        id: '6f28f23f83c4c3105f67c9a6feaad3d3'
-                    }
-                    '6f77babb83c4c3105f67c9a6feaad3a1': {
-                        table: 'sys_ui_element'
-                        id: '6f77babb83c4c3105f67c9a6feaad3a1'
                     }
                     '6fc21ed6cd3c496194fa8afdb8836da1': {
                         table: 'sys_ux_app_config'
@@ -1445,10 +1250,6 @@ declare global {
                         table: 'sys_ux_list'
                         id: '72382ce55b6c4093935c54c6546c19fe'
                     }
-                    '725c1d2b830c03105f67c9a6feaad310': {
-                        table: 'sys_ui_element'
-                        id: '725c1d2b830c03105f67c9a6feaad310'
-                    }
                     '72cc846f353746c080710568afaa1fec': {
                         table: 'sys_security_acl'
                         id: '72cc846f353746c080710568afaa1fec'
@@ -1470,10 +1271,6 @@ declare global {
                     '75f269a7834c03105f67c9a6feaad38a': {
                         table: 'par_dashboard'
                         id: '75f269a7834c03105f67c9a6feaad38a'
-                    }
-                    '765c1d2b830c03105f67c9a6feaad30d': {
-                        table: 'sys_ui_element'
-                        id: '765c1d2b830c03105f67c9a6feaad30d'
                     }
                     '7691f1bb834c83105f67c9a6feaad3fd': {
                         table: 'sys_script_include'
@@ -1526,10 +1323,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '7a173057d08a4f7c92d212c5ddd75e56'
                     }
-                    '7a5c1d2b830c03105f67c9a6feaad313': {
-                        table: 'sys_ui_element'
-                        id: '7a5c1d2b830c03105f67c9a6feaad313'
-                    }
                     '7ac737878300c3105f67c9a6feaad3b6': {
                         table: 'sys_scope_privilege'
                         id: '7ac737878300c3105f67c9a6feaad3b6'
@@ -1564,10 +1357,6 @@ declare global {
                         id: '7bbc638b838c83105f67c9a6feaad30c'
                         deleted: true
                     }
-                    '7c574bbb8348c3105f67c9a6feaad3c4': {
-                        table: 'sys_ux_form_action'
-                        id: '7c574bbb8348c3105f67c9a6feaad3c4'
-                    }
                     '7c72d25db29d4309ae62a40abe12016c': {
                         table: 'sys_ux_list_category'
                         id: '7c72d25db29d4309ae62a40abe12016c'
@@ -1587,10 +1376,6 @@ declare global {
                         id: '7e23cfc3834883105f67c9a6feaad393'
                         deleted: true
                     }
-                    '7e5c1d2b830c03105f67c9a6feaad311': {
-                        table: 'sys_ui_element'
-                        id: '7e5c1d2b830c03105f67c9a6feaad311'
-                    }
                     '7eb56d7246554598ae1d9619cb5b4671': {
                         table: 'sys_scope_privilege'
                         id: '7eb56d7246554598ae1d9619cb5b4671'
@@ -1599,10 +1384,6 @@ declare global {
                         table: 'sys_ui_related_list'
                         id: '7f1c270b838c83105f67c9a6feaad334'
                         deleted: true
-                    }
-                    '80e6767b83c4c3105f67c9a6feaad33a': {
-                        table: 'sys_ui_element'
-                        id: '80e6767b83c4c3105f67c9a6feaad33a'
                     }
                     '81738d23834803105f67c9a6feaad318': {
                         table: 'sys_scope_privilege'
@@ -1624,26 +1405,10 @@ declare global {
                         id: '83230307834883105f67c9a6feaad38b'
                         deleted: true
                     }
-                    '8364fdf783cc83105f67c9a6feaad345': {
-                        table: 'sys_ui_element'
-                        id: '8364fdf783cc83105f67c9a6feaad345'
-                    }
-                    '8364fdf783cc83105f67c9a6feaad34c': {
-                        table: 'sys_ui_element'
-                        id: '8364fdf783cc83105f67c9a6feaad34c'
-                    }
-                    '8364fdf783cc83105f67c9a6feaad353': {
-                        table: 'sys_ui_element'
-                        id: '8364fdf783cc83105f67c9a6feaad353'
-                    }
                     '8439306783c403105f67c9a6feaad365': {
                         table: 'sys_scope_privilege'
                         id: '8439306783c403105f67c9a6feaad365'
                         deleted: true
-                    }
-                    '84e6767b83c4c3105f67c9a6feaad338': {
-                        table: 'sys_ui_element'
-                        id: '84e6767b83c4c3105f67c9a6feaad338'
                     }
                     '85738d23834803105f67c9a6feaad334': {
                         table: 'sys_scope_privilege'
@@ -1658,18 +1423,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '86c7f3878300c3105f67c9a6feaad3f7'
                         deleted: true
-                    }
-                    '8764fdf783cc83105f67c9a6feaad343': {
-                        table: 'sys_ui_element'
-                        id: '8764fdf783cc83105f67c9a6feaad343'
-                    }
-                    '8764fdf783cc83105f67c9a6feaad34a': {
-                        table: 'sys_ui_element'
-                        id: '8764fdf783cc83105f67c9a6feaad34a'
-                    }
-                    '8764fdf783cc83105f67c9a6feaad351': {
-                        table: 'sys_ui_element'
-                        id: '8764fdf783cc83105f67c9a6feaad351'
                     }
                     '87dce78b838c83105f67c9a6feaad38a': {
                         table: 'sys_scope_privilege'
@@ -1686,14 +1439,14 @@ declare global {
                         id: '8839306783c403105f67c9a6feaad33a'
                         deleted: true
                     }
-                    '88e6767b83c4c3105f67c9a6feaad336': {
-                        table: 'sys_ui_element'
-                        id: '88e6767b83c4c3105f67c9a6feaad336'
-                    }
                     '89738d23834803105f67c9a6feaad369': {
                         table: 'sys_scope_privilege'
                         id: '89738d23834803105f67c9a6feaad369'
                         deleted: true
+                    }
+                    '8984440b5b9f4fccaf6d5a6c7ce29a20': {
+                        table: 'sys_script_include'
+                        id: '8984440b5b9f4fccaf6d5a6c7ce29a20'
                     }
                     '8a434523834803105f67c9a6feaad395': {
                         table: 'sys_ux_form_action_layout_item'
@@ -1728,22 +1481,6 @@ declare global {
                         id: '8b230307834883105f67c9a6feaad394'
                         deleted: true
                     }
-                    '8b64fdf783cc83105f67c9a6feaad341': {
-                        table: 'sys_ui_element'
-                        id: '8b64fdf783cc83105f67c9a6feaad341'
-                    }
-                    '8b64fdf783cc83105f67c9a6feaad348': {
-                        table: 'sys_ui_element'
-                        id: '8b64fdf783cc83105f67c9a6feaad348'
-                    }
-                    '8b64fdf783cc83105f67c9a6feaad34f': {
-                        table: 'sys_ui_element'
-                        id: '8b64fdf783cc83105f67c9a6feaad34f'
-                    }
-                    '8b64fdf783cc83105f67c9a6feaad356': {
-                        table: 'sys_ui_element'
-                        id: '8b64fdf783cc83105f67c9a6feaad356'
-                    }
                     '8bcce38b838c83105f67c9a6feaad3b6': {
                         table: 'sys_scope_privilege'
                         id: '8bcce38b838c83105f67c9a6feaad3b6'
@@ -1765,10 +1502,6 @@ declare global {
                     '8c98ab44e2ce47eab440f127710cec72': {
                         table: 'sys_security_acl'
                         id: '8c98ab44e2ce47eab440f127710cec72'
-                    }
-                    '8ce6767b83c4c3105f67c9a6feaad334': {
-                        table: 'sys_ui_element'
-                        id: '8ce6767b83c4c3105f67c9a6feaad334'
                     }
                     '8d738d23834803105f67c9a6feaad320': {
                         table: 'sys_scope_privilege'
@@ -1805,18 +1538,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '8f230307834883105f67c9a6feaad338'
                         deleted: true
-                    }
-                    '8f64fdf783cc83105f67c9a6feaad346': {
-                        table: 'sys_ui_element'
-                        id: '8f64fdf783cc83105f67c9a6feaad346'
-                    }
-                    '8f64fdf783cc83105f67c9a6feaad34d': {
-                        table: 'sys_ui_element'
-                        id: '8f64fdf783cc83105f67c9a6feaad34d'
-                    }
-                    '8f64fdf783cc83105f67c9a6feaad354': {
-                        table: 'sys_ui_element'
-                        id: '8f64fdf783cc83105f67c9a6feaad354'
                     }
                     '8fe9ba07e61f4d5a8abb5bb0a99a38b1': {
                         table: 'sys_ux_list_menu_config'
@@ -1921,6 +1642,10 @@ declare global {
                         id: '9c39306783c403105f67c9a6feaad382'
                         deleted: true
                     }
+                    '9d1c5b38c5df4c9ca9b7012e8ed278ee': {
+                        table: 'sys_script_include'
+                        id: '9d1c5b38c5df4c9ca9b7012e8ed278ee'
+                    }
                     '9ec737878300c3105f67c9a6feaad39f': {
                         table: 'sys_scope_privilege'
                         id: '9ec737878300c3105f67c9a6feaad39f'
@@ -1963,14 +1688,6 @@ declare global {
                         id: 'a04197cf22d84efdadc1fdab263f1cdd'
                         deleted: true
                     }
-                    a1236ab38344c3105f67c9a6feaad31e: {
-                        table: 'sys_ui_element'
-                        id: 'a1236ab38344c3105f67c9a6feaad31e'
-                    }
-                    a1236ab38344c3105f67c9a6feaad323: {
-                        table: 'sys_ui_element'
-                        id: 'a1236ab38344c3105f67c9a6feaad323'
-                    }
                     a163a4c3834443105f67c9a6feaad3ef: {
                         table: 'sys_scope_privilege'
                         id: 'a163a4c3834443105f67c9a6feaad3ef'
@@ -1980,14 +1697,54 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'a191de8d835043105f67c9a6feaad38f'
                     }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f601: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f601'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f602: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f602'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f603: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f603'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f604: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f604'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f605: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f605'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f606: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f606'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f607: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f607'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f608: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f608'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f609: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f609'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f60a: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f60a'
+                    }
+                    a1b2c3d4e5f6478990a1b2c3d4e5f60b: {
+                        table: 'sys_script_include'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f60b'
+                    }
                     a1c7f3878300c3105f67c9a6feaad383: {
                         table: 'sys_scope_privilege'
                         id: 'a1c7f3878300c3105f67c9a6feaad383'
                         deleted: true
-                    }
-                    a227fe7b83c4c3105f67c9a6feaad341: {
-                        table: 'sys_ui_element'
-                        id: 'a227fe7b83c4c3105f67c9a6feaad341'
                     }
                     a31cfa43830883105f67c9a6feaad318: {
                         table: 'sys_scope_privilege'
@@ -2007,10 +1764,6 @@ declare global {
                         id: 'a439706783c403105f67c9a6feaad314'
                         deleted: true
                     }
-                    a5236ab38344c3105f67c9a6feaad321: {
-                        table: 'sys_ui_element'
-                        id: 'a5236ab38344c3105f67c9a6feaad321'
-                    }
                     a563e4c3834443105f67c9a6feaad317: {
                         table: 'sys_scope_privilege'
                         id: 'a563e4c3834443105f67c9a6feaad317'
@@ -2029,29 +1782,13 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'a6254f357e634495afbe40aa8b00a879'
                     }
-                    a627fe7b83c4c3105f67c9a6feaad33f: {
-                        table: 'sys_ui_element'
-                        id: 'a627fe7b83c4c3105f67c9a6feaad33f'
-                    }
-                    a627fe7b83c4c3105f67c9a6feaad346: {
-                        table: 'sys_ui_element'
-                        id: 'a627fe7b83c4c3105f67c9a6feaad346'
-                    }
                     a769c2bc90194b39b4894eb08515bda6: {
                         table: 'sys_ui_action'
                         id: 'a769c2bc90194b39b4894eb08515bda6'
                     }
-                    a777babb83c4c3105f67c9a6feaad38e: {
-                        table: 'sys_ui_element'
-                        id: 'a777babb83c4c3105f67c9a6feaad38e'
-                    }
                     a78dbc47ecd9438084fc4e7ddc3b1e6c: {
                         table: 'sys_ux_screen'
                         id: 'a78dbc47ecd9438084fc4e7ddc3b1e6c'
-                    }
-                    a9236ab38344c3105f67c9a6feaad31f: {
-                        table: 'sys_ui_element'
-                        id: 'a9236ab38344c3105f67c9a6feaad31f'
                     }
                     a930ac0e25ce4bb3a6822a2f720adba1: {
                         table: 'sys_properties'
@@ -2076,10 +1813,6 @@ declare global {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'aa0b0feb4e744a2f871e688b85f81bff'
                     }
-                    aa27fe7b83c4c3105f67c9a6feaad344: {
-                        table: 'sys_ui_element'
-                        id: 'aa27fe7b83c4c3105f67c9a6feaad344'
-                    }
                     ab1cfa43830883105f67c9a6feaad377: {
                         table: 'sys_scope_privilege'
                         id: 'ab1cfa43830883105f67c9a6feaad377'
@@ -2098,10 +1831,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'ac39706783c403105f67c9a6feaad37c'
                         deleted: true
-                    }
-                    ad236ab38344c3105f67c9a6feaad324: {
-                        table: 'sys_ui_element'
-                        id: 'ad236ab38344c3105f67c9a6feaad324'
                     }
                     ada73b478300c3105f67c9a6feaad38a: {
                         table: 'sys_scope_privilege'
@@ -2123,10 +1852,6 @@ declare global {
                     ae0ea84cc91a49f9b99bc82d61b5ecfe: {
                         table: 'sys_script_include'
                         id: 'ae0ea84cc91a49f9b99bc82d61b5ecfe'
-                    }
-                    ae27fe7b83c4c3105f67c9a6feaad342: {
-                        table: 'sys_ui_element'
-                        id: 'ae27fe7b83c4c3105f67c9a6feaad342'
                     }
                     afbc238b838c83105f67c9a6feaad3b5: {
                         table: 'sys_scope_privilege'
@@ -2162,10 +1887,6 @@ declare global {
                         id: 'b1a73b478300c3105f67c9a6feaad3b7'
                         deleted: true
                     }
-                    b1c83e7f83c4c3105f67c9a6feaad368: {
-                        table: 'sys_ui_element'
-                        id: 'b1c83e7f83c4c3105f67c9a6feaad368'
-                    }
                     b1ed394ae5d54e94b43bc5d9cbb3f51f: {
                         table: 'sys_security_acl'
                         id: 'b1ed394ae5d54e94b43bc5d9cbb3f51f'
@@ -2179,10 +1900,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'b31cfa43830883105f67c9a6feaad39f'
                         deleted: true
-                    }
-                    b33772bb83c4c3105f67c9a6feaad335: {
-                        table: 'sys_ui_section'
-                        id: 'b33772bb83c4c3105f67c9a6feaad335'
                     }
                     b37a782b83c403105f67c9a6feaad3d2: {
                         table: 'sys_scope_privilege'
@@ -2211,10 +1928,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'b5c7f3878300c3105f67c9a6feaad3a0'
                         deleted: true
-                    }
-                    b5c83e7f83c4c3105f67c9a6feaad366: {
-                        table: 'sys_ui_element'
-                        id: 'b5c83e7f83c4c3105f67c9a6feaad366'
                     }
                     b5d0152383c803105f67c9a6feaad3f9: {
                         table: 'sys_scope_privilege'
@@ -2310,14 +2023,6 @@ declare global {
                         id: 'b9a73b478300c3105f67c9a6feaad393'
                         deleted: true
                     }
-                    b9c83e7f83c4c3105f67c9a6feaad364: {
-                        table: 'sys_ui_element'
-                        id: 'b9c83e7f83c4c3105f67c9a6feaad364'
-                    }
-                    b9c83e7f83c4c3105f67c9a6feaad36b: {
-                        table: 'sys_ui_element'
-                        id: 'b9c83e7f83c4c3105f67c9a6feaad36b'
-                    }
                     ba1a3ce783c403105f67c9a6feaad341: {
                         table: 'sys_scope_privilege'
                         id: 'ba1a3ce783c403105f67c9a6feaad341'
@@ -2332,10 +2037,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'ba23cfc3834883105f67c9a6feaad3fc'
                         deleted: true
-                    }
-                    ba5c1d2b830c03105f67c9a6feaad322: {
-                        table: 'sys_ui_element'
-                        id: 'ba5c1d2b830c03105f67c9a6feaad322'
                     }
                     bbbc638b838c83105f67c9a6feaad339: {
                         table: 'sys_scope_privilege'
@@ -2359,10 +2060,6 @@ declare global {
                         table: 'sys_app_module'
                         id: 'bdb332d878554a82b20a2ced53ac6ca2'
                         deleted: true
-                    }
-                    bdc83e7f83c4c3105f67c9a6feaad369: {
-                        table: 'sys_ui_element'
-                        id: 'bdc83e7f83c4c3105f67c9a6feaad369'
                     }
                     be517f7b57c44b90ba0a7a76ee36055f: {
                         table: 'sys_security_acl'
@@ -2395,10 +2092,6 @@ declare global {
                     c042289efc5f400db8069e466e54760d: {
                         table: 'sys_ux_list'
                         id: 'c042289efc5f400db8069e466e54760d'
-                    }
-                    c0e6767b83c4c3105f67c9a6feaad349: {
-                        table: 'sys_ui_element'
-                        id: 'c0e6767b83c4c3105f67c9a6feaad349'
                     }
                     c1b7bb478300c3105f67c9a6feaad3d1: {
                         table: 'sys_scope_privilege'
@@ -2435,10 +2128,6 @@ declare global {
                     c43f67b4e9294c63a80db29d43e96a33: {
                         table: 'sys_ux_applicability_m2m_list'
                         id: 'c43f67b4e9294c63a80db29d43e96a33'
-                    }
-                    c4e6767b83c4c3105f67c9a6feaad347: {
-                        table: 'sys_ui_element'
-                        id: 'c4e6767b83c4c3105f67c9a6feaad347'
                     }
                     c5b7bb478300c3105f67c9a6feaad3e2: {
                         table: 'sys_scope_privilege'
@@ -2540,10 +2229,6 @@ declare global {
                     cc359bde49ab46ed8db587c6bc54d6c9: {
                         table: 'sys_ux_page_property'
                         id: 'cc359bde49ab46ed8db587c6bc54d6c9'
-                    }
-                    cce6767b83c4c3105f67c9a6feaad34a: {
-                        table: 'sys_ui_element'
-                        id: 'cce6767b83c4c3105f67c9a6feaad34a'
                     }
                     cd5c592b830c03105f67c9a6feaad3c2: {
                         table: 'sys_ui_related_list'
@@ -2656,10 +2341,6 @@ declare global {
                     d83b8f4835f8462bb0400b27f86a8c27: {
                         table: 'sys_ux_page_property'
                         id: 'd83b8f4835f8462bb0400b27f86a8c27'
-                    }
-                    d94747bb8348c3105f67c9a6feaad390: {
-                        table: 'sys_ux_form_action'
-                        id: 'd94747bb8348c3105f67c9a6feaad390'
                     }
                     d9738d23834803105f67c9a6feaad39a: {
                         table: 'sys_scope_privilege'
@@ -2806,14 +2487,6 @@ declare global {
                         table: 'sys_ux_screen_type'
                         id: 'e220db226ef645cd92850a681ffaf725'
                     }
-                    e328f23f83c4c3105f67c9a6feaad3d1: {
-                        table: 'sys_ui_element'
-                        id: 'e328f23f83c4c3105f67c9a6feaad3d1'
-                    }
-                    e377babb83c4c3105f67c9a6feaad39f: {
-                        table: 'sys_ui_element'
-                        id: 'e377babb83c4c3105f67c9a6feaad39f'
-                    }
                     e3bc238b838c83105f67c9a6feaad3bd: {
                         table: 'sys_scope_privilege'
                         id: 'e3bc238b838c83105f67c9a6feaad3bd'
@@ -2850,6 +2523,10 @@ declare global {
                         table: 'sys_properties'
                         id: 'e5f6071829304b4c6d7e8f9012345678'
                     }
+                    e6ce3dc05d8b4543972647b798d4a53f: {
+                        table: 'sys_script_include'
+                        id: 'e6ce3dc05d8b4543972647b798d4a53f'
+                    }
                     e71cfa43830883105f67c9a6feaad35c: {
                         table: 'sys_scope_privilege'
                         id: 'e71cfa43830883105f67c9a6feaad35c'
@@ -2860,17 +2537,9 @@ declare global {
                         id: 'e71cfa43830883105f67c9a6feaad387'
                         deleted: true
                     }
-                    e728f23f83c4c3105f67c9a6feaad3cf: {
-                        table: 'sys_ui_element'
-                        id: 'e728f23f83c4c3105f67c9a6feaad3cf'
-                    }
                     e73c952b830c03105f67c9a6feaad3c1: {
                         table: 'sys_scope_privilege'
                         id: 'e73c952b830c03105f67c9a6feaad3c1'
-                    }
-                    e777babb83c4c3105f67c9a6feaad39d: {
-                        table: 'sys_ui_element'
-                        id: 'e777babb83c4c3105f67c9a6feaad39d'
                     }
                     e803d0901a5a450e8fd253a516ac1c25: {
                         table: 'sys_security_acl'
@@ -2917,14 +2586,6 @@ declare global {
                         id: 'eb1cfa43830883105f67c9a6feaad310'
                         deleted: true
                     }
-                    eb28f23f83c4c3105f67c9a6feaad3cd: {
-                        table: 'sys_ui_element'
-                        id: 'eb28f23f83c4c3105f67c9a6feaad3cd'
-                    }
-                    eb77babb83c4c3105f67c9a6feaad39b: {
-                        table: 'sys_ui_element'
-                        id: 'eb77babb83c4c3105f67c9a6feaad39b'
-                    }
                     ebb7bf478300c3105f67c9a6feaad3e1: {
                         table: 'sys_scope_privilege'
                         id: 'ebb7bf478300c3105f67c9a6feaad3e1'
@@ -2967,10 +2628,6 @@ declare global {
                         table: 'par_dashboard_tab'
                         id: 'edcbee772df74d42ab4ef1caad650ff5'
                     }
-                    ee2d19ab830c03105f67c9a6feaad3e4: {
-                        table: 'sys_ui_section'
-                        id: 'ee2d19ab830c03105f67c9a6feaad3e4'
-                    }
                     ef1cfa43830883105f67c9a6feaad331: {
                         table: 'sys_scope_privilege'
                         id: 'ef1cfa43830883105f67c9a6feaad331'
@@ -2981,21 +2638,9 @@ declare global {
                         id: 'ef234307834883105f67c9a6feaad304'
                         deleted: true
                     }
-                    ef28f23f83c4c3105f67c9a6feaad3cb: {
-                        table: 'sys_ui_element'
-                        id: 'ef28f23f83c4c3105f67c9a6feaad3cb'
-                    }
-                    ef28f23f83c4c3105f67c9a6feaad3d2: {
-                        table: 'sys_ui_element'
-                        id: 'ef28f23f83c4c3105f67c9a6feaad3d2'
-                    }
                     ef4cb6384aa1419a9335316e864ba118: {
                         table: 'sys_ux_list'
                         id: 'ef4cb6384aa1419a9335316e864ba118'
-                    }
-                    ef77babb83c4c3105f67c9a6feaad3a0: {
-                        table: 'sys_ui_element'
-                        id: 'ef77babb83c4c3105f67c9a6feaad3a0'
                     }
                     efbc238b838c83105f67c9a6feaad3a9: {
                         table: 'sys_scope_privilege'
@@ -3036,10 +2681,6 @@ declare global {
                         table: 'par_dashboard_user_metadata'
                         id: 'f1f269a7834c03105f67c9a6feaad392'
                     }
-                    f25c1d2b830c03105f67c9a6feaad30f: {
-                        table: 'sys_ui_element'
-                        id: 'f25c1d2b830c03105f67c9a6feaad30f'
-                    }
                     f2c777878300c3105f67c9a6feaad381: {
                         table: 'sys_scope_privilege'
                         id: 'f2c777878300c3105f67c9a6feaad381'
@@ -3077,10 +2718,6 @@ declare global {
                         id: 'f4834163834803105f67c9a6feaad322'
                         deleted: true
                     }
-                    f49a7de7830043105f67c9a6feaad34b: {
-                        table: 'sys_ui_section'
-                        id: 'f49a7de7830043105f67c9a6feaad34b'
-                    }
                     f4c09def838803105f67c9a6feaad33a: {
                         table: 'sys_scope_privilege'
                         id: 'f4c09def838803105f67c9a6feaad33a'
@@ -3102,10 +2739,6 @@ declare global {
                     f607182931405d5e6f708192a3b4c5d6: {
                         table: 'sys_properties'
                         id: 'f607182931405d5e6f708192a3b4c5d6'
-                    }
-                    f65c1d2b830c03105f67c9a6feaad314: {
-                        table: 'sys_ui_element'
-                        id: 'f65c1d2b830c03105f67c9a6feaad314'
                     }
                     f71cfa43830883105f67c9a6feaad3b3: {
                         table: 'sys_scope_privilege'
@@ -3135,10 +2768,6 @@ declare global {
                         table: 'par_dashboard_widget'
                         id: 'f8954b4b834883105f67c9a6feaad359'
                         deleted: true
-                    }
-                    fa5c1d2b830c03105f67c9a6feaad312: {
-                        table: 'sys_ui_element'
-                        id: 'fa5c1d2b830c03105f67c9a6feaad312'
                     }
                     facce38b838c83105f67c9a6feaad393: {
                         table: 'sys_scope_privilege'
@@ -3172,10 +2801,6 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'fe23cfc3834883105f67c9a6feaad3f3'
                         deleted: true
-                    }
-                    fe5c1d2b830c03105f67c9a6feaad310: {
-                        table: 'sys_ui_element'
-                        id: 'fe5c1d2b830c03105f67c9a6feaad310'
                     }
                     fecce38b838c83105f67c9a6feaad364: {
                         table: 'sys_scope_privilege'
@@ -3367,6 +2992,158 @@ declare global {
                     maf_br_metric_weight_validator: {
                         table: 'sys_script'
                         id: 'bf5851bed83c480ca1cbc34a90bd0f30'
+                    }
+                    maf_cmdb_cat_ci_completeness: {
+                        table: 'x_maf_core_category'
+                        id: '10dd46c9a55e4157b96ef0ca502bcabf'
+                    }
+                    maf_cmdb_cat_cmdb_data_quality: {
+                        table: 'x_maf_core_category'
+                        id: '0b3edbc23d004f22b62a29c193861862'
+                    }
+                    maf_cmdb_cat_cmdb_health_dash: {
+                        table: 'x_maf_core_category'
+                        id: '61f7b20bdf9d444c8e6fdb9c70321c14'
+                    }
+                    maf_cmdb_cat_cmdb_relationships: {
+                        table: 'x_maf_core_category'
+                        id: 'ce9f9d182bf7447fa2b0c960e7981565'
+                    }
+                    maf_cmdb_cat_csdm_alignment: {
+                        table: 'x_maf_core_category'
+                        id: '314efe5da8ba44a8883afdebb04ba2e6'
+                    }
+                    maf_cmdb_cat_discovery_ingestion: {
+                        table: 'x_maf_core_category'
+                        id: 'b9f2e01ef2bc4a45b16b2cf6f4a1ae57'
+                    }
+                    maf_cmdb_cat_svc_governance: {
+                        table: 'x_maf_core_category'
+                        id: '3a8f7e6d5b4c41329a1ef2cdb3a45678'
+                    }
+                    maf_cmdb_m_app_linked_biz: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'e469dc749f6b496c9c36edb667f7e5a3'
+                    }
+                    maf_cmdb_m_avg_rel: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '057b92d1924c4ad38df678e974f1de70'
+                    }
+                    maf_cmdb_m_business_svc_count: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'ccc5baf1f24940979611eb918d0d1298'
+                    }
+                    maf_cmdb_m_ci_svc_mapping_rate: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '84dc58c93a41457bb58f65490ea5394a'
+                    }
+                    maf_cmdb_m_class_coverage: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '531f681a8a5f4118a3dddf75fb0b2bed'
+                    }
+                    maf_cmdb_m_discovery_last_run: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'e7bd451caecb463db69e635e763d4d4c'
+                    }
+                    maf_cmdb_m_discovery_schedule: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'ba6408b04cda454ca456e81d00e6ac38'
+                    }
+                    maf_cmdb_m_discovery_source: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '59ec8105bd8d43a3a234b50970d7976d'
+                    }
+                    maf_cmdb_m_duplicate_rate: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'e059edd7876c4d529655a5575595ff17'
+                    }
+                    maf_cmdb_m_health_integration: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '3ea0d64daf66498f8b2622ed0e8c7d59'
+                    }
+                    maf_cmdb_m_no_owner: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '34bf53e65ba14ce6a50ccb8fd5244310'
+                    }
+                    maf_cmdb_m_no_support_group: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '8445b7a4feeb4053bdddef33ed511b80'
+                    }
+                    maf_cmdb_m_operational_status: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'af887c64823645b3bf1885eee339f2d9'
+                    }
+                    maf_cmdb_m_orphan_rate: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'd03e6c23332d43cb9922136d80a11d1a'
+                    }
+                    maf_cmdb_m_rel_type_diversity: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'e0335d5523d5481ebcae6c320f3a71d1'
+                    }
+                    maf_cmdb_m_service_mapping: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'c8ceb38631694c4880fb0cfce6b8eaaf'
+                    }
+                    maf_cmdb_m_service_offering_count: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '4b489ff6cdf74bf38416527153403c0a'
+                    }
+                    maf_cmdb_m_staleness_90d: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'f146f13fc35a469b9dfdd8cd92cc6a2b'
+                    }
+                    maf_cmdb_m_svc_gov_biz_svc: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'c6d1e0bf2a3489678def234f5b3456cd'
+                    }
+                    maf_cmdb_m_svc_gov_offering: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '7e2d12a2f806756d3e523041f7e89abc'
+                    }
+                    maf_cmdb_m_svc_gov_portfolio: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '8f3e23b30917867e4f63415208f9abcd'
+                    }
+                    maf_cmdb_m_svc_gov_tech_svc: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'd5c0f9ae1b23789567ef345a4c4567de'
+                    }
+                    maf_cmdb_m_technical_svc_count: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '005a0d54347646659db48728300d6ce5'
+                    }
+                    maf_cmdb_pack: {
+                        table: 'x_maf_core_pack'
+                        id: 'fb6a194ace8649d2aec7409cb316c260'
+                    }
+                    maf_cmdb_sub_ci_completeness: {
+                        table: 'x_maf_core_sub_category'
+                        id: 'd8bbf975e9bd43a18a0d7b2c5f2f59a2'
+                    }
+                    maf_cmdb_sub_cmdb_data_quality: {
+                        table: 'x_maf_core_sub_category'
+                        id: '1c720b45b6454dc3af33d85cd6f44f95'
+                    }
+                    maf_cmdb_sub_cmdb_health_dash: {
+                        table: 'x_maf_core_sub_category'
+                        id: '2b3b18d21c4a43879c8883df3d536d47'
+                    }
+                    maf_cmdb_sub_cmdb_relationships: {
+                        table: 'x_maf_core_sub_category'
+                        id: 'd74d7504308446689bf9738687bd0fc8'
+                    }
+                    maf_cmdb_sub_csdm_alignment: {
+                        table: 'x_maf_core_sub_category'
+                        id: 'c41dcf69a4534cac8ea31b03f30c9964'
+                    }
+                    maf_cmdb_sub_discovery_ingestion: {
+                        table: 'x_maf_core_sub_category'
+                        id: '86cc9d7a2e5c45beb6fe011d922ec103'
+                    }
+                    maf_cmdb_sub_svc_governance: {
+                        table: 'x_maf_core_sub_category'
+                        id: '4b9a8f7e6c5d423a0b2f0d1ec4b56789'
                     }
                     maf_csp_read_kb_use: {
                         table: 'sys_scope_privilege'
@@ -3578,6 +3355,38 @@ declare global {
                     maf_plathealth_m_pfoot07: {
                         table: 'x_maf_core_metric_definition'
                         id: 'f53847c4b03c45e19b35badb990e78f0'
+                    }
+                    maf_plathealth_m_ph_change_blackout: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '2233bea73dc84b7aa78b58f5c497f537'
+                    }
+                    maf_plathealth_m_ph_clone_safe: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '052cbc323fd341dc81c238e02aa718bb'
+                    }
+                    maf_plathealth_m_ph_global_br: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'd91a14d42dae4163a8bbc5e76e5392cb'
+                    }
+                    maf_plathealth_m_ph_global_cs: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'c1a73836fbbb4e33844a7a7b898fe307'
+                    }
+                    maf_plathealth_m_ph_high_sec_plugin: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '7524c87ac6b641e48bd066ef6029dda9'
+                    }
+                    maf_plathealth_m_ph_sec_mgr_deny: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '4dbe390aba0541afbbdd5c0f36234bca'
+                    }
+                    maf_plathealth_m_ph_sow_itsm: {
+                        table: 'x_maf_core_metric_definition'
+                        id: '483139d6c7ab43e7b170695209cf5f0e'
+                    }
+                    maf_plathealth_m_ph_us_500: {
+                        table: 'x_maf_core_metric_definition'
+                        id: 'f5bdc6ade3ba4ce4bb0b46e207717840'
                     }
                     maf_plathealth_m_pjob01: {
                         table: 'x_maf_core_metric_definition'
@@ -4601,9 +4410,41 @@ declare global {
                         table: 'sys_module'
                         id: '75c096a5546141deb85fcaebd34ef9b5'
                     }
+                    'src_server_script-includes_MAFChangeBlackoutCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'f180da6081b34df4bca22fbb869b01b5'
+                    }
                     'src_server_script-includes_MAFChangeScheduleAdherenceCollector_server_js': {
                         table: 'sys_module'
                         id: 'ccce317aea23479fa9678daa65548508'
+                    }
+                    'src_server_script-includes_MAFCiServiceMappingRateCollector_server_js': {
+                        table: 'sys_module'
+                        id: '9c76bd34d8d4491895b6e0624d16aa71'
+                    }
+                    'src_server_script-includes_MAFCmdbAvgRelPerCiCollector_server_js': {
+                        table: 'sys_module'
+                        id: '1a1b915c4fb54de2bff52ca2eb63c1fc'
+                    }
+                    'src_server_script-includes_MAFCmdbDuplicateRateCollector_server_js': {
+                        table: 'sys_module'
+                        id: '31feb053ae394056a8deca489bcd69d5'
+                    }
+                    'src_server_script-includes_MAFCmdbHealthIntegrationCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'e970a0430e3e4c5bbeaaebd4e0f63e24'
+                    }
+                    'src_server_script-includes_MAFCmdbNoOwnerCollector_server_js': {
+                        table: 'sys_module'
+                        id: '5714caf32867409d9f523d1a62451f65'
+                    }
+                    'src_server_script-includes_MAFCmdbOrphanRateCollector_server_js': {
+                        table: 'sys_module'
+                        id: '7bc3c0022d6b431eadd81b1c2a13aace'
+                    }
+                    'src_server_script-includes_MAFCmdbRelTypeDistinctCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'bf9f5cf8e6b7470f8c2664cc2b5da7b4'
                     }
                     'src_server_script-includes_MAFCollectorFactory_server_js': {
                         table: 'sys_module'
@@ -4617,9 +4458,17 @@ declare global {
                         table: 'sys_module'
                         id: '787fa070bcb44a869c40175e886d8086'
                     }
+                    'src_server_script-includes_MAFCsdmAppToBizLinkCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'aefc98fc746d49b2ad12f406f2c7ffc5'
+                    }
                     'src_server_script-includes_MAFDeclarativeCollector_server_js': {
                         table: 'sys_module'
                         id: '8eb715a39c8c46f0bc678bd51a273128'
+                    }
+                    'src_server_script-includes_MAFDiscoveryLastRunAgeCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'b83e82dd7cc24537b80ed16ee7c30e05'
                     }
                     'src_server_script-includes_MAFDrillDownBuilder_server_js': {
                         table: 'sys_module'
@@ -4641,6 +4490,10 @@ declare global {
                         table: 'sys_module'
                         id: '309aa679b4cd414b9300b148af5726db'
                     }
+                    'src_server_script-includes_MAFPluginPresenceCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'cfafbb2fc48045d49f200b9e509a19ac'
+                    }
                     'src_server_script-includes_MAFPortalMetricsCollector_server_js': {
                         table: 'sys_module'
                         id: 'd18586e31e734e2ab5388256e6b868da'
@@ -4649,6 +4502,10 @@ declare global {
                         table: 'sys_module'
                         id: 'f0fd8757127747a981b663d4aba297af'
                     }
+                    'src_server_script-includes_MAFProductionCloneSafetyCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'bf25c27635e3413298c5889dd050a49e'
+                    }
                     'src_server_script-includes_MAFSchemaIntrospectionCollector_server_js': {
                         table: 'sys_module'
                         id: 'e07aa9a7461b4984b74f8ab7659fee23'
@@ -4656,6 +4513,22 @@ declare global {
                     'src_server_script-includes_MAFScoringEngine_server_js': {
                         table: 'sys_module'
                         id: '8bd560d15d5848699d3261bb20cea2a2'
+                    }
+                    'src_server_script-includes_MAFSecurityManagerDenyCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'd4526d91f14a453085e225c3826ab281'
+                    }
+                    'src_server_script-includes_MAFServiceGovernanceFieldsCollector_server_js': {
+                        table: 'sys_module'
+                        id: 'c67a9ebcd3034d21b992edef569c3bbf'
+                    }
+                    'src_server_script-includes_MAFServiceMappingActiveCollector_server_js': {
+                        table: 'sys_module'
+                        id: '307e653ba1b6415693b32bf0c9dae840'
+                    }
+                    'src_server_script-includes_MAFUpdateSetSizeViolationCollector_server_js': {
+                        table: 'sys_module'
+                        id: '723cb2fa6cd743478d6825943d011ef0'
                     }
                     'src_server_script-includes_MAFWindowedRatioCollector_server_js': {
                         table: 'sys_module'
@@ -4700,6 +4573,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad346'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.end_split'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad34d'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'denominator_filter'
+                            position: '15'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0364fdf783cc83105f67c9a6feaad354'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.split'
+                            position: '23'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '041a013a1bd54d5abad6ba8d9c0742e6'
                         key: {
@@ -4722,6 +4622,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '044c12fad7f64f6f9dbb73813519dca5'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: '89db7d659bf44d3192d84821d6bda1eb'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0473dfd1634348ad838bb197007fa789'
                         key: {
@@ -4738,11 +4660,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '04e6767b83c4c3105f67c9a6feaad339'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: '.end_split'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '050383576d5540f5bbf00c9f66b3e716'
                         key: {
                             name: 'x_maf_core_category_score'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form'
+                        id: '0531267766a54102b637bcfc85f3c224'
+                        key: {
+                            name: 'x_maf_core_assessment_run'
+                            view: {
+                                id: '50828d04b9324913998b7df1c30512bf'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -4771,6 +4716,15 @@ declare global {
                         key: {
                             name: 'x_maf_core_sub_category_score'
                             element: 'assessment_run'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '063ecb05210940cd905788fd9f0669ed'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'delta_percent'
                             language: 'en'
                         }
                     },
@@ -4827,6 +4781,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad344'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'sub_category'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad34b'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.split'
+                            position: '13'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0764fdf783cc83105f67c9a6feaad352'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'threshold_red'
+                            position: '21'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0767eb04ca0c4a81a6dc82dd24645848'
                         key: {
@@ -4845,6 +4826,15 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '08e6767b83c4c3105f67c9a6feaad337'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'state'
+                            position: '3'
                         }
                     },
                     {
@@ -4931,6 +4921,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad342'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.split'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad349'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'source_table'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0b64fdf783cc83105f67c9a6feaad350'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.begin_split'
+                            position: '19'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0ba7602cdbd643209b2ffcbb92f09a89'
                         key: {
@@ -4953,6 +4970,15 @@ declare global {
                         key: {
                             ui_policy: 'd66c702f21334a35a8ac24dda15fd7be'
                             field: 'script_include'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0ce6767b83c4c3105f67c9a6feaad335'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'name'
+                            position: '1'
                         }
                     },
                     {
@@ -5009,6 +5035,42 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad340'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'category'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad347'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'aggregation_field'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad34e'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'script_include'
+                            position: '17'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0f64fdf783cc83105f67c9a6feaad355'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'threshold_amber'
+                            position: '25'
                         }
                     },
                     {
@@ -5093,6 +5155,50 @@ declare global {
                                 }
                             }
                             field: 'source_table'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '13fd08c939d541a79471b49082961cbe'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'f1246aee23cf4f438f3cdb87dd86bbdf'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'triggered_by'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '13fe3acf19d645cd8ee92f9027ef6f24'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: '691365e1ea99493abc2c90a9230e3bf3'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'delta'
+                            position: '4'
                         }
                     },
                     {
@@ -5210,6 +5316,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '1687fabb83c4c3105f67c9a6feaad3e5'
+                        key: {
+                            name: 'x_maf_core_category_score'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '169290e2e7c24202a34e0ef67288183d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c66d318616cd46b8b32d4531072fd59e'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Results'
+                                    view: {
+                                        id: 'b014195c113249c6815ad188d05893e9'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '12M.x_maf_core_assessment_run.x_maf_core_metric_result.assessment_run'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '16989785248e48468acdcb8b5a0cf3e6'
                         key: {
@@ -5318,6 +5456,28 @@ declare global {
                         key: {
                             name: 'x_maf_core_metric_result'
                             element: 'metric_definition'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1afa2273a17e4aadaf83e2a549931872'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: '4fb94dd656c149be85b74ff41957c3fa'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '6'
                         }
                     },
                     {
@@ -5461,6 +5621,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '21236ab38344c3105f67c9a6feaad324'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '2187d876a6944a80bd0efdb8153f20f4'
                         key: {
@@ -5480,6 +5649,15 @@ declare global {
                             name: 'x_maf_core_category_score'
                             element: 'metrics_amber'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2227fe7b83c4c3105f67c9a6feaad342'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'order'
+                            position: '4'
                         }
                     },
                     {
@@ -5512,6 +5690,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '240ab9ddfb724a79a79f33512aaa06f2'
+                        key: {
+                            sys_ui_section: {
+                                id: '8abf6f1fff7c4c958633e996d282f51d'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Script collector'
+                                    view: {
+                                        id: '041155209de248f08113288ce01ac63c'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'script_params'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '2451556383c803105f67c9a6feaad344'
                         key: {
@@ -5527,6 +5727,15 @@ declare global {
                                 }
                             }
                             element: 'metric_definition'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '25236ab38344c3105f67c9a6feaad322'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'weight'
+                            position: '4'
                         }
                     },
                     {
@@ -5561,6 +5770,46 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2627fe7b83c4c3105f67c9a6feaad340'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: '.split'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2627fe7b83c4c3105f67c9a6feaad347'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'version'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '265d815c506e4129a8f69b7a79ee0007'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'de2616d952c543c293ff1da031069b5a'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
                         }
                     },
                     {
@@ -5633,6 +5882,47 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '29232ab38344c3105f67c9a6feaad3af'
+                        key: {
+                            name: 'x_maf_core_category'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '29236ab38344c3105f67c9a6feaad320'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'description'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '293d9cec063f419f8d25fada84f34bfa'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: 'ef17ca49d49b4081a7803d9114a0b930'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'filter_condition'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'par_dashboard_canvas'
                         id: '2992e567834c03105f67c9a6feaad3b5'
                         deleted: true
@@ -5647,6 +5937,24 @@ declare global {
                         key: {
                             name: 'x_maf_core_ai_summary'
                             element: 'assessment_run'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2a27fe7b83c4c3105f67c9a6feaad33e'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2a27fe7b83c4c3105f67c9a6feaad345'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'vendor'
+                            position: '8'
                         }
                     },
                     {
@@ -5688,6 +5996,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2d236ab38344c3105f67c9a6feaad325'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: '.end_split'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2d583961286a4972afc2e412b0f374e4'
                         key: {
@@ -5704,11 +6021,95 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2d7e60d5105b4390870e9d88175226e0'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '1201c59a79fd4323b2a832ad072949ec'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'rag_status'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2e27fe7b83c4c3105f67c9a6feaad343'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'description'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2ef52e33c66041a9a859af082295a277'
                         key: {
                             name: 'x_maf_core_category'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2fe6f409dbc64315b321f909fbd17f57'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: '49506f60ce2a418d8e96e2873ae9af97'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'started_at'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '30a7fc48334b47428e64475684863cbe'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '96ae3a496c624629a7bbb93f6f7d8ca7'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '31c83e7f83c4c3105f67c9a6feaad369'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'metric_definition'
+                            position: '6'
                         }
                     },
                     {
@@ -5734,6 +6135,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '33038d5f62ea4135932af1e70565819f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: '2ff9555224524446a9fd4d72c0baa4d7'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '33690839e3f5492aa1e52a9739a8e48f'
                         key: {
@@ -5753,6 +6176,28 @@ declare global {
                             name: 'x_maf_core_metric_definition'
                             element: 'denominator_filter'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '345aff519b6940718446c62da31ffca5'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'aea9324f46d2442eba1c5c3f10588507'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'drill_down_query'
+                            position: '10'
                         }
                     },
                     {
@@ -5786,6 +6231,15 @@ declare global {
                         key: {
                             name: 'x_maf_core_assessment_run'
                             element: 'triggered_by'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '35c83e7f83c4c3105f67c9a6feaad367'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'drill_down_query'
+                            position: '4'
                         }
                     },
                     {
@@ -5853,11 +6307,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '39c83e7f83c4c3105f67c9a6feaad365'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'raw_value'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '39c83e7f83c4c3105f67c9a6feaad36c'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'drill_down_table'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3ac5eaba58804e13aba1a6c2abaccab0'
                         key: {
                             name: 'x_maf_core_metric_definition'
                             element: 'description'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form'
+                        id: '3c124bd19f5f48f383b8dd66e9ef8d29'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            view: {
+                                id: '61807ae91b484892915ae72a02735b3c'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -5911,6 +6397,135 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '3dc386a754394bc299eac777166904f9'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '0018a2992b744c32832734c8bae3277a'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3dc83e7f83c4c3105f67c9a6feaad363'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'number'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3dc83e7f83c4c3105f67c9a6feaad36a'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'normalized_score'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_form_action'
+                        id: '3e47c3bb8348c3105f67c9a6feaad3c6'
+                        key: {
+                            ui_action: 'd4e5f60718294a3b5c6d7e8f90123456'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3e5c1d2b830c03105f67c9a6feaad321'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'error'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '3e5cd92b830c03105f67c9a6feaad321'
+                        key: {
+                            name: 'x_maf_core_ai_summary'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '3ea466088f834c9e8d5908609d84cc5f'
+                        key: {
+                            sys_ui_form: {
+                                id: '0531267766a54102b637bcfc85f3c224'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    view: {
+                                        id: 'a4799b99f4444da584a9cff94b5ca77c'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'e5026e65cbec481987052e2b8e4e2d00'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3efb851a9c9c42dfa98fdbed4e2e52a8'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'delta'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3f2ee482eb5f498fb986ededbed6b0fe'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: 'a9347f52228242db9fd9341d6df6409d'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'collector_type'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_ui_view'
                         id: '3f9abde7830043105f67c9a6feaad306'
                         key: {
@@ -5940,6 +6555,37 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4030e5eda3514347b5238a9f7bcb1b00'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'b36b7b2d5b484196986fe8f7d52f9827'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'completed_at'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '40e6767b83c4c3105f67c9a6feaad34a'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'completed_at'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '418768ca84e54f66b405853c2bfe11be'
                         key: {
@@ -5950,6 +6596,54 @@ declare global {
                                     name: 'x_maf_core.viewer'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '42000605bb7c46c28f41b9f757832e67'
+                        key: {
+                            sys_ui_form: {
+                                id: '3c124bd19f5f48f383b8dd66e9ef8d29'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    view: {
+                                        id: '409cda1924414d0c9862238e5093236f'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '0d76fdab518941a8a5c278ebe16f4965'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '429a288ff8e74d13a515f8650ba93882'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            caption: 'Result'
+                            view: {
+                                id: '3967e5cf2c8442ddb2396e3dae3cf042'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -5993,6 +6687,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '449a267b29e047d6abf2014a3ba61be9'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'delta'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '44dd9f135836458cb39f4d3aa0847350'
                         key: {
@@ -6003,6 +6706,15 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '44e6767b83c4c3105f67c9a6feaad348'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'error_message'
+                            position: '8'
                         }
                     },
                     {
@@ -6048,6 +6760,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '465c3c98ef8441c7bc0e7d53edd01f4d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd7feba1e928e4e5ba83a27d2f04e611c'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Targets and thresholds'
+                                    view: {
+                                        id: '62e64741b8ff461ab1f4f5b3af589c28'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'target_value'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '46907a0b891e41b188ab5541eb6456f9'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: 'ad779e4824b54b189cb52b488d92e3fb'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'previous_assessment_run'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_ui_policy_action'
                         id: '46a0fbb178a9462b8c0308e71e8e6cd2'
                         key: {
@@ -6059,6 +6815,15 @@ declare global {
                                 }
                             }
                             field: 'script_params'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4764fdf783cc83105f67c9a6feaad33f'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'name'
+                            position: '0'
                         }
                     },
                     {
@@ -6103,6 +6868,50 @@ declare global {
                                 }
                             }
                             field: 'filter_condition'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4a0cc629b2564283810c6717ce377cdd'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: '1246ea39810247628775c744b320c87e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4acc5b7a513b493bb300700d2d0e2365'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: '25d0a43623a24a03bf66131c00e20996'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'packs'
+                            position: '4'
                         }
                     },
                     {
@@ -6161,6 +6970,28 @@ declare global {
                         id: '4e290123838803105f67c9a6feaad379'
                         key: {
                             name: 'x_maf_core_metric_definition'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4ecaf49b6982452c81754b1cfe89794d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'ee66433a8027435583326d1236e55622'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'overall_notes'
+                            position: '11'
                         }
                     },
                     {
@@ -6272,6 +7103,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '52ec2facd20347cba4722ccb569535ff'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd7feba1e928e4e5ba83a27d2f04e611c'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Targets and thresholds'
+                                    view: {
+                                        id: '3c0f2ad84f654fef951709977def6b98'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'threshold_red'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '52f63e3b83c4c3105f67c9a6feaad345'
+                        key: {
+                            name: 'x_maf_core_pack'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '53201fe0b4a445198767f70158b62645'
                         key: {
@@ -6371,6 +7234,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '55112078622f49f386924b28ccb7109c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c66d318616cd46b8b32d4531072fd59e'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Results'
+                                    view: {
+                                        id: '4d61d09dfc534181ae8bfa3a0e434fe4'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '12M.x_maf_core_assessment_run.x_maf_core_category_score.assessment_run'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '555c992b830c03105f67c9a6feaad386'
                         key: {
@@ -6389,6 +7274,61 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '557292724b2a4c55ab0fcad152b5a7ab'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: 'b3171f1c8d1b46809d99f1e4064ad7a4'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'aggregation'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '55b7e615ff554886bbeef004af254d40'
+                        key: {
+                            sys_ui_form: {
+                                id: '3c124bd19f5f48f383b8dd66e9ef8d29'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    view: {
+                                        id: '4fc1013ccc1b44ddb0692af8e238cee6'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: 'e1d74f2d344440d3ba51cb635701e579'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '5686f63b83c4c3105f67c9a6feaad39b'
                         key: {
@@ -6404,6 +7344,28 @@ declare global {
                                 }
                             }
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '56ade29849b24c1e944de9b4f4c226c2'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '24356c5708574996b75fdf3713820d78'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
                         }
                     },
                     {
@@ -6574,6 +7536,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '5b3bd3f95eac4ac8a77fab93d5491046'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd7feba1e928e4e5ba83a27d2f04e611c'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Targets and thresholds'
+                                    view: {
+                                        id: '6fcee28bd29d40e2ac4646d4bda97800'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'threshold_amber'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '5bcc5264337f4876b3f4a37e91577292'
                         key: {
@@ -6602,6 +7586,28 @@ declare global {
                                 }
                             }
                             element: 'metrics_red'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5c465d33541e41b98cc40dac79f7cfa2'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'd59a2cec97474ea588faf70f3d014c37'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '9'
                         }
                     },
                     {
@@ -6645,6 +7651,28 @@ declare global {
                                     name: 'x_maf_core.user'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5dfb084fcc4e477990ff0d59cfb7dbe2'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '34fc6274d99b43c79f97fdff8115eaa7'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'unit'
+                            position: '9'
                         }
                     },
                     {
@@ -6790,6 +7818,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '628fe7813c0142a2936c446d00584822'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '59c481fd6f6843a09047e94b72ba51d5'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '629095ef838803105f67c9a6feaad3c6'
+                        key: {
+                            name: 'x_maf_core_assessment_run'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'par_dashboard_canvas'
                         id: '630dffe2ee92418abe1230a7402f4b2c'
                         deleted: true
@@ -6799,10 +7859,59 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6328f23f83c4c3105f67c9a6feaad3cb'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'number'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6328f23f83c4c3105f67c9a6feaad3d2'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'metrics_total'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '634621c72fdb48a99a42498caa0ddbb9'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'a7b6379bd7b241d2899630d0794fba38'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'normalized_score'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '6365838d1c434070b3e82acc4992208b'
                         key: {
                             name: 'x_maf_core_category'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6377babb83c4c3105f67c9a6feaad3a0'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'weight_in_category'
+                            position: '6'
                         }
                     },
                     {
@@ -6886,6 +7995,28 @@ declare global {
                         key: {
                             dashboard: 'cf1ffb1fd899453fa20eb763ed9549bf'
                             dashboard_tab: '2935c9df493044f8a6580767b9ef1f3b'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '64e1de55190b4913a5c09bd565059612'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: 'b9040dd7556d42068c87a3cc8c46346e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'higher_is_better'
+                            position: '11'
                         }
                     },
                     {
@@ -6995,6 +8126,24 @@ declare global {
                         key: {
                             name: 'x_maf_core_category_score'
                             element: 'rag_status'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6728f23f83c4c3105f67c9a6feaad3d0'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'category'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6777babb83c4c3105f67c9a6feaad39e'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'label'
+                            position: '4'
                         }
                     },
                     {
@@ -7141,6 +8290,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6ac8afb099be4e21b9c514693d960e99'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: 'e29b8831e8094f6e8743ce5cc7d330bf'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'weight_in_category'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '6af3d9fea58b47509b45d0c5dc32420d'
                         key: {
@@ -7154,6 +8325,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6b28f23f83c4c3105f67c9a6feaad3ce'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'metrics_amber'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '6b5849c7e91b48c58e7363ea60026e02'
                         key: {
@@ -7164,6 +8344,15 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6b77babb83c4c3105f67c9a6feaad39c'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'category'
+                            position: '2'
                         }
                     },
                     {
@@ -7295,6 +8484,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6f28f23f83c4c3105f67c9a6feaad3cc'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'score'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6f28f23f83c4c3105f67c9a6feaad3d3'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'metrics_error'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6f77babb83c4c3105f67c9a6feaad3a1'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'description'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '6fc3a53c51e444ef87ea66e50fc263b8'
                         key: {
@@ -7368,6 +8584,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '725c1d2b830c03105f67c9a6feaad310'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'generated_at'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '730c5c77cd5441bfaf16a6dfdddd9290'
                         deleted: true
@@ -7422,6 +8647,20 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form'
+                        id: '745fb19b0b1f4632bf519b5361cd6c68'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            view: {
+                                id: '5f211b9e143a4b95a6e04e8c78ad3b7b'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -7501,12 +8740,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '765c1d2b830c03105f67c9a6feaad30d'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '76df5f491b824eaa816e9966e88aecf1'
                         key: {
                             name: 'x_maf_core_metric_definition'
                             element: 'collector_type'
                             value: 'script_include'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '77523ad996854337b57772b4badf9661'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '9e1d5e6868b54eceb7a69b4150e58073'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'label'
+                            position: '4'
                         }
                     },
                     {
@@ -7578,6 +8848,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '7a5c1d2b830c03105f67c9a6feaad313'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: '.end_split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7a89d3e9da1744dea39fa89f6b750b5a'
                         key: {
@@ -7593,6 +8872,35 @@ declare global {
                             name: 'x_maf_core_ai_summary'
                             element: 'provider'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '7bfd2888039f4abf89b9557820d5fba7'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '8ff501464532409db277ac6e3e66a704'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_form_action'
+                        id: '7c574bbb8348c3105f67c9a6feaad3c4'
+                        key: {
+                            ui_action: 'a769c2bc90194b39b4894eb08515bda6'
                         }
                     },
                     {
@@ -7627,6 +8935,15 @@ declare global {
                         id: '7e298123838803105f67c9a6feaad34b'
                         key: {
                             name: 'x_maf_core_category'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '7e5c1d2b830c03105f67c9a6feaad311'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'token_count'
+                            position: '4'
                         }
                     },
                     {
@@ -7680,6 +8997,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '80e6767b83c4c3105f67c9a6feaad33a'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: '.begin_split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '81114c71fe1d46d7aa0ba237f6693b7a'
                         key: {
@@ -7723,6 +9049,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad345'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'collector_type'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad34c'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'aggregation'
+                            position: '14'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8364fdf783cc83105f67c9a6feaad353'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'weight_in_category'
+                            position: '22'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list'
                         id: '83a099ef838803105f67c9a6feaad34c'
                         key: {
@@ -7753,6 +9106,15 @@ declare global {
                         id: '84c7fdf263cd4ea7910084249ac0b38c'
                         key: {
                             name: 'x_maf_core_metric_definition'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '84e6767b83c4c3105f67c9a6feaad338'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'packs'
+                            position: '4'
                         }
                     },
                     {
@@ -7796,6 +9158,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad343'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'label'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad34a'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'filter_condition'
+                            position: '12'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8764fdf783cc83105f67c9a6feaad351'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'target_value'
+                            position: '20'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '87a099ef838803105f67c9a6feaad34d'
                         key: {
@@ -7827,6 +9216,78 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '88320c66b94845dbbcaf9d01140e617a'
+                        key: {
+                            sys_ui_form: {
+                                id: '745fb19b0b1f4632bf519b5361cd6c68'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    view: {
+                                        id: 'abfa8865349c40ac9276bc388f4c5c5e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: '4f226bee911345daa65c65d82e3d4431'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '889485fd6a9d4c62956213b2003010b2'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'delta_percent'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '88b92b5fe3d8454fae21459b9989dde3'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: 'eab357197c3e47349acad0e3dc2dbe4e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'source_table'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '88e6767b83c4c3105f67c9a6feaad336'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: '.split'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '88f1cd0c128a45db816da0b7b246a33c'
                         key: {
@@ -7837,6 +9298,28 @@ declare global {
                                     name: 'x_maf_core.user'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '89ed2f0c2982473cbbc511b66fa5261f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: '407152723c7f43b4b25e0e2b6b7292b3'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '3'
                         }
                     },
                     {
@@ -7853,6 +9336,57 @@ declare global {
                         key: {
                             category: 'x_maf_core_metric_result'
                             prefix: 'MAFMR'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '8abf6f1fff7c4c958633e996d282f51d'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            caption: 'Script collector'
+                            view: {
+                                id: '5d707083b7b04f15bbf206d896e8f9e0'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad341'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'active'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad348'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.begin_split'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad34f'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'script_params'
+                            position: '18'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b64fdf783cc83105f67c9a6feaad356'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'unit'
+                            position: '26'
                         }
                     },
                     {
@@ -7883,6 +9417,37 @@ declare global {
                             name: 'x_maf_core_assessment_run'
                             element: 'state'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8ce6767b83c4c3105f67c9a6feaad334'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'number'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8d8ff0d2182842ad8859ce7333106549'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'ca682acb0dbf4061b4207ae02613d5e9'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'raw_value'
+                            position: '4'
                         }
                     },
                     {
@@ -7948,6 +9513,33 @@ declare global {
                                 }
                             }
                             field: 'script_include'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad346'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'description'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad34d'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: '.end_split'
+                            position: '16'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8f64fdf783cc83105f67c9a6feaad354'
+                        key: {
+                            sys_ui_section: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                            element: 'higher_is_better'
+                            position: '24'
                         }
                     },
                     {
@@ -8227,10 +9819,52 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '95ebfd25993142acb507317a4a8e3463'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'previous_assessment_run'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '9729c123838803105f67c9a6feaad32d'
                         key: {
                             name: 'x_maf_core_assessment_run'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '9736641aa81343aa9922aa1a9d4f4e88'
+                        key: {
+                            sys_ui_form: {
+                                id: '745fb19b0b1f4632bf519b5361cd6c68'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    view: {
+                                        id: '4907c719a7f8483b9281cd9593dad23a'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '0c4ec847956e4ef899dd3f34ed49bbc8'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -8285,6 +9919,37 @@ declare global {
                             name: 'x_maf_core_metric_result'
                             element: 'rag_status'
                             value: 'green'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '98d06a41d7de47bba7a104edba6961d1'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'previous_raw_value'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '98f2b5aacf3447049b2b12f9c485c387'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '9807d3d1660b41da8c01594d03af3440'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '7'
                         }
                     },
                     {
@@ -8352,6 +10017,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '9c09284f79e94a518ae5574c34326fa3'
+                        key: {
+                            sys_ui_form: {
+                                id: '745fb19b0b1f4632bf519b5361cd6c68'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    view: {
+                                        id: '18b5ed9b715c499eafdc10d4d72a9f1d'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'd7feba1e928e4e5ba83a27d2f04e611c'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Targets and thresholds'
+                                    view: {
+                                        id: 'ca4064a1d933414c8dd9878f72bd7f32'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '9c525bd262594a0bbc98a9c546866356'
                         key: {
@@ -8385,6 +10083,28 @@ declare global {
                             name: 'x_maf_core_assessment_run'
                             element: 'overall_notes'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9d3a6b0dbcd94ef5bf67157f32d697b4'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '3beeb12bb2a2462aa8b88e39ca9f7241'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'collected_at'
+                            position: '8'
                         }
                     },
                     {
@@ -8474,10 +10194,83 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a1236ab38344c3105f67c9a6feaad31e'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a1236ab38344c3105f67c9a6feaad323'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'pack'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a1245722cc6840358db0b9a9b9c98e64'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '49b9b39da4cc44228ee98f5741119274'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'metric_definition'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_user_role'
                         id: 'a14e5e33d1fd453bacd7b4a17c82f572'
                         key: {
                             name: 'x_maf_core.viewer'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: 'a18eb274a25b4e2fb66fbed57cea846f'
+                        key: {
+                            sys_ui_form: {
+                                id: '745fb19b0b1f4632bf519b5361cd6c68'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    view: {
+                                        id: 'a49a079b68ec42c4807803c23e633785'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '8abf6f1fff7c4c958633e996d282f51d'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Script collector'
+                                    view: {
+                                        id: 'b547acb0fd214900bbd5799a8390bc8d'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -8504,6 +10297,15 @@ declare global {
                                     name: 'x_maf_core.user'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a227fe7b83c4c3105f67c9a6feaad341'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'label'
+                            position: '3'
                         }
                     },
                     {
@@ -8554,6 +10356,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a3988c3d36c04af1b1a5e487daa11c58'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'd919a0219d1247e785f8235298e3f709'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'error_message'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'a3b78b02568341c58eae303f03bc12ae'
                         key: {
@@ -8586,6 +10410,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a5236ab38344c3105f67c9a6feaad321'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: '.begin_split'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'a57a7034001343df9828cf33a89c3f57'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            caption: 'Declarative collector'
+                            view: {
+                                id: 'e837def6e5ba4500a69874e7cb26bac0'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_number'
                         id: 'a596fc13f7514634b082ef3f350ea66d'
                         key: {
@@ -8594,11 +10442,82 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a627fe7b83c4c3105f67c9a6feaad33f'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: 'active'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a627fe7b83c4c3105f67c9a6feaad346'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: '.split'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a71222200afa4a63802f0ec8c7d8b8c9'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '7093db25b5b94195978ba6efba4f7a33'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assessment_run'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a777babb83c4c3105f67c9a6feaad38e'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'a77d1514ab4147229391ee00eb26888f'
                         key: {
                             name: 'x_maf_core_pack'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a7ac1794a9a146e4b0247414e085130b'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: '0a664731339f47d6a6572e5a9b1cb5df'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'drill_down_table'
+                            position: '9'
                         }
                     },
                     {
@@ -8619,6 +10538,21 @@ declare global {
                         id: 'a8222d63335b4f8bab6cd402663d86aa'
                         key: {
                             name: 'x_maf_core_pack'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            caption: 'Definition'
+                            view: {
+                                id: '92ea1fff58d7412d9a9758d020c766d5'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -8675,6 +10609,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a9236ab38344c3105f67c9a6feaad31f'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'label'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_user_role_contains'
                         id: 'a9d9edc983d083105f67c9a6feaad3f4'
                         key: {
@@ -8698,6 +10641,15 @@ declare global {
                         key: {
                             logical_table_name: 'x_maf_core_category_score'
                             col_name_string: 'assessment_run,category'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'aa27fe7b83c4c3105f67c9a6feaad344'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: '.begin_split'
+                            position: '7'
                         }
                     },
                     {
@@ -8766,11 +10718,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'ad236ab38344c3105f67c9a6feaad324'
+                        key: {
+                            sys_ui_section: '29232ab38344c3105f67c9a6feaad3af'
+                            element: 'order'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'ad40a9f143ec461cabfbca2d133a7eb4'
                         key: {
                             name: 'x_maf_core_sub_category_score'
                             element: 'assessment_run'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ae27fe7b83c4c3105f67c9a6feaad342'
+                        key: {
+                            sys_ui_section: '52f63e3b83c4c3105f67c9a6feaad345'
+                            element: '.end_split'
+                            position: '5'
                         }
                     },
                     {
@@ -8782,11 +10752,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'b0a3af843f404ac9b54d91b01fe14535'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'd91c9f9c4c5f4e42983ac3263f4918fb'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'state'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b1b9456797684b63b9fb2d5c01be33f8'
                         key: {
                             name: 'x_maf_core_category_score'
                             element: 'rag_status'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b1c83e7f83c4c3105f67c9a6feaad368'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: '.split'
+                            position: '5'
                         }
                     },
                     {
@@ -8812,6 +10813,16 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'b33772bb83c4c3105f67c9a6feaad335'
+                        key: {
+                            name: 'x_maf_core_sub_category'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b38fa538733b419ebb1346e8214b8bc9'
                         key: {
@@ -8830,6 +10841,15 @@ declare global {
                                     name: 'x_maf_core.user'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b5c83e7f83c4c3105f67c9a6feaad366'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'rag_status'
+                            position: '3'
                         }
                     },
                     {
@@ -8907,11 +10927,104 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'b9c241e6b9ee4bb3a6f75f1805746d1e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '47873073a5a446978b9c4f7cdf19ce74'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b9c83e7f83c4c3105f67c9a6feaad364'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'assessment_run'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b9c83e7f83c4c3105f67c9a6feaad36b'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'collection_error'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ba5c1d2b830c03105f67c9a6feaad322'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'top_recommendations'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'ba76cf10a74044119ee28f9ed590adf6'
                         key: {
                             name: 'x_maf_core_ai_summary'
                             element: 'token_count'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'bab93a2c770e459d9b10682c0be5543a'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c66d318616cd46b8b32d4531072fd59e'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Results'
+                                    view: {
+                                        id: 'a296d19d6a474d30afc180e71e7a0090'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '12M.x_maf_core_assessment_run.x_maf_core_ai_summary.assessment_run'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'baecabd3c9e6419b99a2affefb9b319c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: 'd7ae21bae2ae4872ab88ec24a9b1408c'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'previous_raw_value'
+                            position: '2'
                         }
                     },
                     {
@@ -8986,12 +11099,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'bcda45905aa54cfba39899d431605b6f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: '1e8fbb358d6244bbb9c28a14f01ebf21'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'bd4c29e0017241c286054decb5b3ec79'
                         key: {
                             name: 'x_maf_core_sub_category'
                             element: 'active'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'bdc83e7f83c4c3105f67c9a6feaad369'
+                        key: {
+                            sys_ui_section: 'f49a7de7830043105f67c9a6feaad34b'
+                            element: 'collected_at'
+                            position: '7'
                         }
                     },
                     {
@@ -9058,11 +11202,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'c04d99ed620647c790503ce49cd844d2'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: '37b07026db024f148fbca7fc47160c21'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'denominator_filter'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'c0c54e4ad8bc40d4a710d19fbc8d5652'
                         key: {
                             name: 'x_maf_core_pack'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c0e6767b83c4c3105f67c9a6feaad349'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: '.split'
+                            position: '9'
                         }
                     },
                     {
@@ -9101,11 +11276,35 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'c4e6767b83c4c3105f67c9a6feaad347'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'started_at'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'par_dashboard_visibility'
                         id: 'c52c7f3f12ac438a90c0f6554811a0df'
                         key: {
                             dashboard: 'cf1ffb1fd899453fa20eb763ed9549bf'
                             experience: '08c73d60537101100834ddeeff7b1287'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'c5619830893f43b984f6a14f9522ac39'
+                        key: {
+                            name: 'x_maf_core_assessment_run'
+                            caption: 'Assessment run'
+                            view: {
+                                id: '15ae411a7dcf40ffbdc48682e6cbb507'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -9126,6 +11325,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'c66d318616cd46b8b32d4531072fd59e'
+                        key: {
+                            name: 'x_maf_core_assessment_run'
+                            caption: 'Results'
+                            view: {
+                                id: '93b136ae77ea42a7aa9d216f5b15fc7a'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_ui_policy_action'
                         id: 'c6d44d24c7ce4bba9552042aa3c10110'
                         key: {
@@ -9137,6 +11351,28 @@ declare global {
                                 }
                             }
                             field: 'aggregation_field'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c71517e6f3d7451786b6ff71d518b733'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: 'dc18a025c55142aeb0c536e5aec52af3'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'active'
+                            position: '8'
                         }
                     },
                     {
@@ -9219,6 +11455,15 @@ declare global {
                             name: 'x_maf_core_sub_category_score'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'cce6767b83c4c3105f67c9a6feaad34a'
+                        key: {
+                            sys_ui_section: '629095ef838803105f67c9a6feaad3c6'
+                            element: 'overall_notes'
+                            position: '11'
                         }
                     },
                     {
@@ -9317,6 +11562,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'd042b4c91bf2440a9dd2de77ad6f1936'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c5619830893f43b984f6a14f9522ac39'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Assessment run'
+                                    view: {
+                                        id: 'a08a69f58a504ead980f27522c3699f4'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'd0c90e5ae9794d309b869a2de9eddb4d'
                         key: {
@@ -9381,6 +11648,28 @@ declare global {
                                     name: 'x_maf_core.viewer'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd233cfb574f240739eaf6dfb6ec69e58'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a84ed3a9ad8f4434968b6dde0a7e92be'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Definition'
+                                    view: {
+                                        id: 'c7ac58b1840344cab5564d57042d4482'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'sub_category'
+                            position: '2'
                         }
                     },
                     {
@@ -9459,6 +11748,36 @@ declare global {
                                 }
                             }
                             element: 'metrics_green'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd4a23d096ad8432687f0b6f2d56aedbe'
+                        key: {
+                            sys_ui_section: {
+                                id: '8abf6f1fff7c4c958633e996d282f51d'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Script collector'
+                                    view: {
+                                        id: '351b11002b384eaab1b29c160b02d6be'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'script_include'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd4aa9f9d1dcc4a3bb92c3403eb7b6c75'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'previous_assessment_run'
                         }
                     },
                     {
@@ -9564,6 +11883,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'd7feba1e928e4e5ba83a27d2f04e611c'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            caption: 'Targets and thresholds'
+                            view: {
+                                id: 'dfd357dd9ef94d0690f2cf421e05e3b4'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list'
                         id: 'd826cb8b834883105f67c9a6feaad3e2'
                         deleted: true
@@ -9666,6 +12000,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_form_action'
+                        id: 'd94747bb8348c3105f67c9a6feaad390'
+                        key: {
+                            ui_action: 'c5bf6efcf1ee4c92a7519f362cd957c7'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'd95c992b830c03105f67c9a6feaad386'
                         key: {
@@ -9728,6 +12069,28 @@ declare global {
                         id: 'db29c123838803105f67c9a6feaad35b'
                         key: {
                             name: 'x_maf_core_collector_eval'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'db557b8854bc452089828bd6ae354220'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Trend vs previous run'
+                                    view: {
+                                        id: 'eb0a8005307a4620b1f5ce7c4f15cfc8'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'delta_percent'
+                            position: '5'
                         }
                     },
                     {
@@ -9865,6 +12228,29 @@ declare global {
                                 }
                             }
                             element: 'assessment_run'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'dd83f94d4f3349e5ab36a1e24473f2ca'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            element: 'previous_raw_value'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'ddcc9d6038fa44d7bf35976a9877e2fd'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            caption: 'Trend vs previous run'
+                            view: {
+                                id: '7ffa464fddb8402db07e44bd37f3f7f4'
+                                key: {
+                                    name: 'default_view'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -10011,6 +12397,46 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'e328f23f83c4c3105f67c9a6feaad3d1'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'rag_status'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e377babb83c4c3105f67c9a6feaad39f'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'order'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e4218aaf0d814de0926e1c97cf8a7520'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'e89847d3f74d4472bc6798d74d22bb10'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'e4232ab38344c3105f67c9a6feaad359'
                         key: {
@@ -10144,6 +12570,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'e728f23f83c4c3105f67c9a6feaad3cf'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e777babb83c4c3105f67c9a6feaad39d'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: '.split'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: 'e77b3dd824934e73b2fe991cda9573ba'
                         key: {
@@ -10163,6 +12607,28 @@ declare global {
                             name: 'x_maf_core_metric_result'
                             element: 'drill_down_table'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e809612ce3334cf7813699f15734df64'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a57a7034001343df9828cf33a89c3f57'
+                                key: {
+                                    name: 'x_maf_core_metric_definition'
+                                    caption: 'Declarative collector'
+                                    view: {
+                                        id: 'de78938b096343ef927e016b55f1a50e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'aggregation_field'
+                            position: '3'
                         }
                     },
                     {
@@ -10268,6 +12734,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'eb28f23f83c4c3105f67c9a6feaad3cd'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'metrics_green'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'eb2b10fd4fbc441a9b1c487d3978144b'
                         key: {
@@ -10282,6 +12757,15 @@ declare global {
                             name: 'x_maf_core_category'
                             element: 'pack'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'eb77babb83c4c3105f67c9a6feaad39b'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: 'active'
+                            position: '1'
                         }
                     },
                     {
@@ -10307,6 +12791,28 @@ declare global {
                         key: {
                             name: 'x_maf_core_sub_category_score'
                             element: 'sub_category'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ecb13845eb4640559ff8c800fa81983c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'c66d318616cd46b8b32d4531072fd59e'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Results'
+                                    view: {
+                                        id: '295e2a3be19b4bd192441f36e19c02c4'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '12M.x_maf_core_assessment_run.x_maf_core_sub_category_score.assessment_run'
+                            position: '2'
                         }
                     },
                     {
@@ -10403,6 +12909,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'ee0ce4d6897341b6b2576ce1c122df58'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'a5f15c66ceff446aa480e98ece01b285'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'ee2d19ab830c03105f67c9a6feaad3e4'
+                        key: {
+                            name: 'x_maf_core_metric_definition'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'ee4b1bf80f874b9c970a5ba26c517f24'
                         key: {
@@ -10434,6 +12972,33 @@ declare global {
                         key: {
                             name: 'x_maf_core_metric_result'
                             element: 'collected_at'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ef28f23f83c4c3105f67c9a6feaad3cb'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'assessment_run'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ef28f23f83c4c3105f67c9a6feaad3d2'
+                        key: {
+                            sys_ui_section: '1687fabb83c4c3105f67c9a6feaad3e5'
+                            element: 'metrics_red'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ef77babb83c4c3105f67c9a6feaad3a0'
+                        key: {
+                            sys_ui_section: 'b33772bb83c4c3105f67c9a6feaad335'
+                            element: '.end_split'
+                            position: '7'
                         }
                     },
                     {
@@ -10519,6 +13084,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'f25c1d2b830c03105f67c9a6feaad30f'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'assessment_run'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'f2ee2aaac41b404aa2a4cadf41b70ec2'
                         key: {
@@ -10550,6 +13124,16 @@ declare global {
                                     name: 'x_maf_core.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'f49a7de7830043105f67c9a6feaad34b'
+                        key: {
+                            name: 'x_maf_core_metric_result'
+                            caption: 'NULL'
+                            view: 'Default view'
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -10610,6 +13194,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'f5658bae0a4a4abab6f3c9f5d86ab1e3'
+                        key: {
+                            sys_ui_section: {
+                                id: '429a288ff8e74d13a515f8650ba93882'
+                                key: {
+                                    name: 'x_maf_core_metric_result'
+                                    caption: 'Result'
+                                    view: {
+                                        id: 'e13a875a86af44ee9f327c38b3fdf3f4'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'collection_error'
+                            position: '11'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'f6298123838803105f67c9a6feaad317'
                         key: {
@@ -10625,6 +13231,15 @@ declare global {
                             name: 'x_maf_core_pack'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'f65c1d2b830c03105f67c9a6feaad314'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'executive_summary'
+                            position: '7'
                         }
                     },
                     {
@@ -10719,6 +13334,48 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: 'fa38fb52183e482489a2d6e2fd5e5990'
+                        key: {
+                            sys_ui_form: {
+                                id: '0531267766a54102b637bcfc85f3c224'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    view: {
+                                        id: 'e8be6f179864412d9508036a8f05fffa'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'c66d318616cd46b8b32d4531072fd59e'
+                                key: {
+                                    name: 'x_maf_core_assessment_run'
+                                    caption: 'Results'
+                                    view: {
+                                        id: '8ef34012da1c4c658901ee56487d159e'
+                                        key: {
+                                            name: 'default_view'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fa5c1d2b830c03105f67c9a6feaad312'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: 'provider'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'fafbadc3d8fb4c4296c25eb7653e4c98'
                         key: {
@@ -10760,6 +13417,15 @@ declare global {
                             element: 'NULL'
                             relationship: 'NULL'
                             parent: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fe5c1d2b830c03105f67c9a6feaad310'
+                        key: {
+                            sys_ui_section: '3e5cd92b830c03105f67c9a6feaad321'
+                            element: '.split'
+                            position: '3'
                         }
                     },
                     {

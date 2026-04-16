@@ -64,6 +64,75 @@ function mafNormalizeMetricScore(raw, thresholdRed, thresholdAmber, targetValue,
 var MAFScoringEngine = Class.create()
 MAFScoringEngine.prototype = {
   /**
+   * Populates previous run comparison fields on metric results (same metric_definition, overlapping packs).
+   * @param {string} runSysId
+   */
+  applyTrendDeltas: function (runSysId) {
+    var cur = new GlideRecord('x_maf_core_assessment_run')
+    if (!cur.get(runSysId)) return
+    var curPacks = cur.getValue('packs')
+    var started = cur.getValue('started_at')
+    var prev = new GlideRecord('x_maf_core_assessment_run')
+    prev.addQuery('state', 'complete')
+    prev.addQuery('sys_id', '!=', runSysId)
+    if (started) prev.addQuery('completed_at', '<', started)
+    prev.orderByDesc('completed_at')
+    prev.setLimit(20)
+    prev.query()
+    var prevId = null
+    while (prev.next()) {
+      if (this._packsOverlap(curPacks, prev.getValue('packs'))) {
+        prevId = prev.getUniqueValue()
+        break
+      }
+    }
+    if (!prevId) return
+
+    var mr = new GlideRecord('x_maf_core_metric_result')
+    mr.addQuery('assessment_run', runSysId)
+    mr.query()
+    while (mr.next()) {
+      if (mr.getValue('rag_status') === 'error') continue
+      var md = mr.getValue('metric_definition')
+      var pr = new GlideRecord('x_maf_core_metric_result')
+      pr.addQuery('assessment_run', prevId)
+      pr.addQuery('metric_definition', md)
+      pr.addQuery('rag_status', '!=', 'error')
+      pr.query()
+      if (!pr.next()) continue
+      var prevRaw = parseFloat(pr.getValue('raw_value'))
+      var curRaw = parseFloat(mr.getValue('raw_value'))
+      if (isNaN(prevRaw) || isNaN(curRaw)) continue
+      mr.setValue('previous_assessment_run', prevId)
+      mr.setValue('previous_raw_value', prevRaw)
+      var delta = curRaw - prevRaw
+      mr.setValue('delta', delta)
+      if (prevRaw !== 0) {
+        mr.setValue('delta_percent', ((curRaw - prevRaw) / Math.abs(prevRaw)) * 100)
+      }
+      mr.update()
+    }
+  },
+
+  _packsOverlap: function (packsA, packsB) {
+    var a = String(packsA || '')
+      .split(',')
+      .map(function (s) {
+        return String(s).trim()
+      })
+      .filter(Boolean)
+    if (a.length === 0) return false
+    var set = {}
+    for (var i = 0; i < a.length; i++) set[a[i]] = true
+    var parts = String(packsB || '').split(',')
+    for (var j = 0; j < parts.length; j++) {
+      var p = String(parts[j]).trim()
+      if (p && set[p]) return true
+    }
+    return false
+  },
+
+  /**
    * @param {number|string} raw
    * @param {GlideRecord} metricDefGR x_maf_core_metric_definition
    * @returns {{ score: number, rag: string }}

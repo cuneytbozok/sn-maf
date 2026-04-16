@@ -7,7 +7,7 @@
     "#now:*": "./@types/servicenow/fluent/*/index.js"
   },
   "scripts": {
-    "test": "node --test test/*.test.mjs && node scripts/verify-metric-weights.mjs && node scripts/verify-platform-health-pack.mjs",
+    "test": "node --test test/*.test.mjs && node scripts/verify-metric-weights.mjs && node scripts/verify-platform-health-pack.mjs && node scripts/verify-cmdb-csdm-pack.mjs",
     "build": "npx now-sdk build",
     "deploy": "npx now-sdk install --async",
     "deploy:full": "npx now-sdk clean && npx now-sdk build && npx now-sdk install --reinstall --async",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@servicenow/glide": "27.0.5",
-    "@servicenow/sdk": "4.5.0",
+    "@servicenow/sdk": "4.6.0",
     "typescript": "5.5.4"
   },
   "dependencies": {

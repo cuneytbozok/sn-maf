@@ -258,6 +258,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_data_quality_fields'),
     name: 'incident_category_populated',
     label: 'Incident category populated',
+    description:
+      'Percentage of active incidents with the Category field populated for consistent reporting and analytics.',
     collector_type: 'declarative',
     source_table: 'incident',
     filter_condition: 'active=true^categoryISNOTEMPTY',
@@ -281,6 +283,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_data_quality_fields'),
     name: 'incident_ci_linked',
     label: 'Incident CI linked',
+    description:
+      'Percentage of active incidents with a configuration item (`cmdb_ci`) linked. Higher linkage improves impact analysis and CMDB-driven routing. Denominator: active incidents; numerator: active incidents with CI populated.',
     collector_type: 'declarative',
     source_table: 'incident',
     filter_condition: 'active=true^cmdb_ciISNOTEMPTY',
@@ -331,7 +335,7 @@ Record({
     name: 'assignment_group_at_resolve',
     label: 'Assignment group set at resolve',
     description:
-      'OOTB incident state: 1 New, 2 In Progress, 3 On Hold, 6 Resolved, 7 Closed, 8 Canceled. Uses stateIN6,7 so closed incidents are included.',
+      'Percentage of resolved or closed incidents with an assignment group set, validating ownership at closure. OOTB: stateIN6,7 includes resolved and closed.',
     collector_type: 'declarative',
     source_table: 'incident',
     filter_condition: 'stateIN6,7^assignment_groupISNOTEMPTY',
@@ -647,6 +651,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_ops_backlog_volume'),
     name: 'change_success_rate',
     label: 'Change success rate (%)',
+    description:
+      'Percentage of closed changes with close code “successful.” Reflects change execution quality.',
     collector_type: 'declarative',
     source_table: 'change_request',
     filter_condition: 'state=3^close_code=successful',
@@ -670,6 +676,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_process_governance'),
     name: 'change_emergency_ratio',
     label: 'Emergency change ratio (%)',
+    description:
+      'Percentage of closed changes (`state=3`) that were logged as emergency type. Lower is usually better; high ratios may indicate bypassing standard change governance. Denominator: closed changes; numerator: emergency-type closed changes.',
     collector_type: 'declarative',
     source_table: 'change_request',
     filter_condition: 'type=emergency',
@@ -746,6 +754,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_data_quality_fields'),
     name: 'change_backout_completed',
     label: 'Changes with backout plan documented (%)',
+    description:
+      'Percentage of active changes that have a non-empty backout plan documented. Measures operational readiness for rollback before implementation. Denominator: all active changes; numerator: active changes with `backout_plan` populated.',
     collector_type: 'declarative',
     source_table: 'change_request',
     filter_condition: 'active=true^backout_planISNOTEMPTY',
@@ -769,6 +779,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_process_governance'),
     name: 'change_cab_required_approved',
     label: 'Normal changes with CAB approval recorded (%)',
+    description:
+      'Percentage of closed normal changes with CAB approval recorded, for governance adherence.',
     collector_type: 'declarative',
     source_table: 'change_request',
     filter_condition: 'type=normal^state=3^approval=approved',
@@ -792,6 +804,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_process_governance'),
     name: 'sla_attainment_ritm',
     label: 'SLA attainment (RITM task SLAs)',
+    description:
+      'Percentage of RITM task SLAs that have not breached (`has_breached=false`), measuring request fulfillment timeliness.',
     collector_type: 'declarative',
     source_table: 'task_sla',
     filter_condition: 'has_breached=false^task.sys_class_name=sc_req_item',
@@ -877,6 +891,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_data_quality_fields'),
     name: 'kb_article_freshness',
     label: 'KB articles reviewed in last 12 months (%)',
+    description:
+      'Percentage of published knowledge articles updated or reviewed within the last 12 months (`sys_updated_on`). Stale articles reduce trust in self-service and search.',
     collector_type: 'declarative',
     source_table: 'kb_knowledge',
     filter_condition:
@@ -1180,7 +1196,8 @@ Record({
     sub_category: Now.ref('x_maf_core_sub_category', 'maf_seed_sub_itsm_ops_backlog_volume'),
     name: 'major_incident_rate',
     label: 'Major incident count (last 90 days)',
-    description: 'Raw count of promoted major incidents in the last 90 days (PRD §7.1 MI4).',
+    description:
+      'Raw count of major incidents promoted in the last 90 days (volume signal; interpret with process maturity). PRD §7.1 MI4.',
     collector_type: 'declarative',
     source_table: 'incident',
     filter_condition:

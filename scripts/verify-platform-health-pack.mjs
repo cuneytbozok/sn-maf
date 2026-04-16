@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Platform Health pack (PRD §6.1): one category weight 1.0; nine sub-category weights sum to 1.0;
- * 46 active metrics; per-sub-category weight_in_category sums to 1.0.
+ * 61 active metrics; per-sub-category weight_in_category sums to 1.0.
  */
 import fs from 'fs'
 import path from 'path'
@@ -100,8 +100,8 @@ function main() {
     perSub[subId] += parseFloat(w[1], 10)
   }
 
-  if (active !== 45) {
-    console.error(`verify-platform-health-pack: expected 45 active metrics, found ${active}`)
+  if (active !== 61) {
+    console.error(`verify-platform-health-pack: expected 61 active metrics, found ${active}`)
     process.exit(1)
   }
 
@@ -114,7 +114,7 @@ function main() {
     }
   }
 
-  console.log('verify-platform-health-pack: OK (9 sub-categories, 45 active metrics, weights balanced)')
+  console.log('verify-platform-health-pack: OK (9 sub-categories, 61 active metrics, weights balanced)')
 }
 
 main()

@@ -204,59 +204,32 @@ UiAction({
     name: 'Execute Run',
     actionName: 'maf_execute_run',
     active: true,
-    client: {
-        isClient: true,
-        isUi11Compatible: true,
-        isUi16Compatible: true,
-        onClick: 'maf_execute_run_client',
-    },
     form: {
         showButton: true,
         style: 'primary',
     },
     workspace: {
         clientScriptV2: `function onClick(g_form) {
-  if (!g_form.isNewRecord()) {
-    return;
+  if (g_form.isNewRecord()) {
+    return false;
   }
-  var actionName = 'maf_execute_run';
-  function runServerAction() {
-    g_form.submit(actionName);
-  }
-  var saveResult = g_form.save();
-  if (saveResult && typeof saveResult.then === 'function') {
-    saveResult.then(runServerAction);
-  } else {
-    runServerAction();
-  }
-  return false;
 }`,
         showFormButtonV2: true,
         isConfigurableWorkspace: true,
     },
     messages: [],
     condition: "current.state == 'draft'",
-    script: `function maf_execute_run_client() {
-  if (!g_form.isNewRecord()) {
-    return true;
-  }
-  gsftSubmit(null, g_form.getFormElement(), 'maf_execute_run');
-  return false;
+    script: `var runner = new MAFAssessmentRunner();
+var ok = runner.run(current.getUniqueValue());
+if (ok) {
+  gs.addInfoMessage('Run started');
+} else {
+  gs.addErrorMessage('Could not start the assessment run.');
 }
-
-if (typeof window === 'undefined') {
-  var runner = new MAFAssessmentRunner();
-  var ok = runner.run(current.getUniqueValue());
-  if (ok) {
-    gs.addInfoMessage('Run started');
-  } else {
-    gs.addErrorMessage('Could not start the assessment run.');
-  }
-  action.setRedirectURL(current);
-}`,
+action.setRedirectURL(current);`,
     hint: 'Collect metrics, score categories, and generate AI summary in the background.',
     showUpdate: true,
-    showInsert: true,
+    showInsert: false,
     order: 100,
     roles: ['x_maf_core.admin', 'x_maf_core.user'],
 })
@@ -331,7 +304,7 @@ UiAction({
 Form({
     $id: Now.ID['maf_form_assessment_run'],
     table: 'x_maf_core_assessment_run',
-    view: 'Default view',
+    view: 'default_view',
     sections: [
         {
             caption: 'Assessment run',
@@ -377,9 +350,55 @@ Form({
 } as any)
 
 Form({
+    $id: Now.ID['maf_form_metric_result'],
+    table: 'x_maf_core_metric_result',
+    view: 'default_view',
+    sections: [
+        {
+            caption: 'Result',
+            content: [
+                {
+                    layout: 'two-column',
+                    leftElements: [
+                        { type: 'table_field', field: 'number' },
+                        { type: 'table_field', field: 'assessment_run' },
+                        { type: 'table_field', field: 'metric_definition' },
+                        { type: 'table_field', field: 'raw_value' },
+                        { type: 'table_field', field: 'normalized_score' },
+                        { type: 'table_field', field: 'rag_status' },
+                    ],
+                    rightElements: [
+                        { type: 'table_field', field: 'collected_at' },
+                        { type: 'table_field', field: 'drill_down_table' },
+                        { type: 'table_field', field: 'drill_down_query' },
+                        { type: 'table_field', field: 'collection_error' },
+                    ],
+                },
+            ],
+        },
+        {
+            caption: 'Trend vs previous run',
+            content: [
+                {
+                    layout: 'two-column',
+                    leftElements: [
+                        { type: 'table_field', field: 'previous_assessment_run' },
+                        { type: 'table_field', field: 'previous_raw_value' },
+                    ],
+                    rightElements: [
+                        { type: 'table_field', field: 'delta' },
+                        { type: 'table_field', field: 'delta_percent' },
+                    ],
+                },
+            ],
+        },
+    ],
+} as any)
+
+Form({
     $id: Now.ID['maf_form_metric_definition'],
     table: 'x_maf_core_metric_definition',
-    view: 'Default view',
+    view: 'default_view',
     sections: [
         {
             caption: 'Definition',

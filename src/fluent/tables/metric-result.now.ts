@@ -119,5 +119,33 @@ export const x_maf_core_metric_result = Table({
             readOnlyOption: 'instance_configured',
             referenceTable: 'x_maf_core_assessment_run',
         }),
+        previous_raw_value: DecimalColumn({
+            scale: 4,
+            label: 'Previous raw value',
+            readOnly: true,
+            readOnlyOption: 'instance_configured',
+        }),
+        delta: DecimalColumn({
+            scale: 4,
+            label: 'Delta (raw)',
+            readOnly: true,
+            readOnlyOption: 'instance_configured',
+        }),
+        delta_percent: DecimalColumn({
+            scale: 2,
+            label: 'Delta %',
+            readOnly: true,
+            readOnlyOption: 'instance_configured',
+        }),
+        previous_assessment_run: ReferenceColumn({
+            attributes: {
+                encode_utf8: false,
+            },
+            cascadeRule: 'clear',
+            label: 'Previous assessment run',
+            readOnly: true,
+            readOnlyOption: 'instance_configured',
+            referenceTable: 'x_maf_core_assessment_run',
+        }),
     },
 })

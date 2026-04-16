@@ -138,6 +138,8 @@ MAFAssessmentRunner.prototype = {
       this._collectOneMetric(md.getUniqueValue(), runGR, runSysId, factory, scoring)
     }
 
+    scoring.applyTrendDeltas(runSysId)
+
     runGR.get(runSysId)
     runGR.setValue('state', 'collected')
     runGR.update()
