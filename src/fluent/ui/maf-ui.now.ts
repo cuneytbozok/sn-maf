@@ -15,14 +15,14 @@ export const mafAppMenu = ApplicationMenu({
 })
 
 Record({
-    $id: Now.ID['maf_mod_assessment_runs'],
+    $id: Now.ID['maf_mod_new_run'],
     table: 'sys_app_module',
     data: {
         application: mafAppMenu,
-        title: 'Assessment Runs',
+        title: 'New Assessment Run',
         active: true,
         order: 100,
-        link_type: 'LIST',
+        link_type: 'NEW',
         name: 'x_maf_core_assessment_run',
         override_menu_roles: false,
         require_confirmation: false,
@@ -33,14 +33,14 @@ Record({
 })
 
 Record({
-    $id: Now.ID['maf_mod_new_run'],
+    $id: Now.ID['maf_mod_assessment_runs'],
     table: 'sys_app_module',
     data: {
         application: mafAppMenu,
-        title: 'New Assessment Run',
+        title: 'Assessment Runs',
         active: true,
         order: 110,
-        link_type: 'NEW',
+        link_type: 'LIST',
         name: 'x_maf_core_assessment_run',
         override_menu_roles: false,
         require_confirmation: false,
@@ -78,6 +78,24 @@ Record({
         order: 300,
         link_type: 'LIST',
         name: 'x_maf_core_metric_definition',
+        override_menu_roles: false,
+        require_confirmation: false,
+        sys_domain: 'global',
+        sys_domain_path: '/',
+        uncancelable: false,
+    },
+})
+
+Record({
+    $id: Now.ID['maf_mod_categories'],
+    table: 'sys_app_module',
+    data: {
+        application: mafAppMenu,
+        title: 'Categories',
+        active: true,
+        order: 340,
+        link_type: 'LIST',
+        name: 'x_maf_core_category',
         override_menu_roles: false,
         require_confirmation: false,
         sys_domain: 'global',
@@ -163,13 +181,13 @@ Record({
     table: 'sys_app_module',
     data: {
         application: mafAppMenu,
-        title: 'Dashboards',
+        title: 'Dashboard',
         active: true,
         order: 600,
         link_type: 'DIRECT',
         name: 'par_dashboard',
         query: '/x/maf/maf/home/',
-        mobile_title: 'Dashboards',
+        mobile_title: 'Dashboard',
         mobile_view_name: 'Mobile',
         override_menu_roles: false,
         require_confirmation: false,
@@ -189,7 +207,7 @@ Record({
         order: 700,
         link_type: 'FILTER',
         name: 'sys_properties',
-        query: 'sysparm_query=nameSTARTSWITHx_maf_core^ORDERBYname',
+        filter: 'sys_scope=4bf84d8fdd7d46a9ac225ce71bdb76b2',
         override_menu_roles: false,
         require_confirmation: false,
         sys_domain: 'global',
